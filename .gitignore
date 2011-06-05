@@ -1,3 +1,5 @@
 start_apache.sh
 stop_apache.sh
+restart_apache.sh
 *.sh
+logs/
