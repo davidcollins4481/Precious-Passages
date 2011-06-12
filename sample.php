@@ -6,9 +6,7 @@
 
         <!-- unique -->
         <div id="content">
-            <div>
-                <img src="images/logo.jpg" alt="Your Logo" class="logo" />
-            </div>
+            <!--
             <p class="introduction">
                 Welcome to Precious Passage Birth Services. 
                 I specialize in direct-entry midwifery and doula 
@@ -17,7 +15,7 @@
                 As a midwife and doula I strives to give you the 
                 gift of a birth experience you will want to remember. 
             </p>
-                
+            -->
             <?php include("includes/sidebar.php") ?>
             
             <div id="mainbar">
