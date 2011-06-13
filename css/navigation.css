@@ -1,0 +1,46 @@
+
+.dijitAccordionTitleFocus {
+    display:block;
+    width:100%;
+    background-image:url(../images/backgrounds/submenua.gif);
+    background-position:right;
+    background-repeat:no-repeat;
+    padding:5px;
+    padding-right:0;
+    color: #99B198;
+    
+    
+}
+
+.dijitAccordionInnerContainerSelected .dijitAccordionTitle {
+    font-weight: bold;
+}
+
+.dijitAccordionTitle .arrowTextUp, 
+.dijitAccordionTitle .arrowTextDown {
+    display: none;
+}
+
+#resources-container .dijitContentPane,
+#services-container  .dijitContentPane {
+    overflow: visible !important;
+    
+}
+
+#resources-container,
+#services-container { 
+    width: 160px;
+}
+
+    #resources-container .submenu,
+    #services-container  .submenu {
+        overflow: visible !important;
+    }
+
+    #resources-container .submenu a,
+    #services-container  .submenu a {
+        font-weight: normal;
+        background-image: none;
+        font-style: italic;
+        margin-left: 20px;
+    }
