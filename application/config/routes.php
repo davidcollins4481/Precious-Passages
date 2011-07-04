@@ -38,11 +38,13 @@
 |
 */
 
-$route['default_controller'] = "user";
-$route['404_override'] = '';
+$route['default_controller'] = "d";
+$route['404_override'] = 'errors/error_general';
 
 // config/routes.php
-//$route['(:any)'] = '$1';
+
+// route static content
+//$route["content/:any"] = "content/$1";
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
