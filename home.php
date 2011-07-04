@@ -6,7 +6,16 @@
 
         <!-- unique -->
         <div id="content">
-            
+            <!--
+            <p class="introduction">
+                Welcome to Precious Passage Birth Services. 
+                I specialize in direct-entry midwifery and doula 
+                services, particularly in the home setting. I service 
+                the Cleveland, Akron, and Canton area of Ohio. 
+                As a midwife and doula I strives to give you the 
+                gift of a birth experience you will want to remember. 
+            </p>
+            -->
             <?php include("includes/sidebar.php") ?>
             
             <div id="mainbar">
