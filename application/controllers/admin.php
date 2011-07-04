@@ -10,8 +10,12 @@ class Admin extends CI_Controller {
         $this->load->view('admin/index.php');
     }
     
-    public function test() {
-        $this->load->view('index.html');
+    public function create_user() {
+        $this->load->view('admin/create_user.php');
+    }
+    
+    public function create_user_post() {
+        log_message('level', 'messageajdsaslkd');
     }
 }
 

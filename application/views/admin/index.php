@@ -10,7 +10,7 @@
     
     <h2>What do you want to do?</h2>
     <ul>
-        <li><a href="#">Create a User</a></li>
+        <li><a href="/index.php/admin/create_user">Create a User</a></li>
     </ul>
 </div>
 
