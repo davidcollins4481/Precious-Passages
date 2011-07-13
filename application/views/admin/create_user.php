@@ -12,7 +12,7 @@
         <p id="response"></p>
     </div>
     
-    <form id="create-user" jsId="create-user" encType="multipart/form-data" action="/index.php/admin/create_user_post" method="" dojoType="dijit.form.Form">
+    <form id="create-user" jsId="create-user" encType="multipart/form-data" action="/index.php/admin/create_new_user" method="" dojoType="dijit.form.Form">
         <label for="username">Username</label>
         <input type="text" required="true" dojoType="dijit.form.ValidationTextBox" name="username" />
         

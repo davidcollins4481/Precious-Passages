@@ -3,7 +3,7 @@
 class Admin extends CI_Controller {
     public function __construct() {
         parent::__construct();
-        $this->load->library('Erkanaauth'); 
+        $this->load->library('Erkanaauth');
     }
     
     public function index() {
@@ -12,10 +12,6 @@ class Admin extends CI_Controller {
     
     public function create_user() {
         $this->load->view('admin/create_user.php');
-    }
-    
-    public function create_user_post() {
-        log_message('level', 'messageajdsaslkd');
     }
 }
 
