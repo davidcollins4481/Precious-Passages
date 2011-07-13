@@ -106,7 +106,9 @@
                 </p>
                 <p>
 					To learn more about doulas and access other links about pregnancy, 
-					birth, nutrition and newborns, visit dona.org or doulanetwork.com.
+					birth, nutrition and newborns, visit 
+					<a href="http://www.dona.org" target="_blank">dona.org</a> or 
+					<a href="http://www.doulanetwork.com" target="_blank">doulanetwork.com</a>.
                 </p>
             </div>           
         </div>
