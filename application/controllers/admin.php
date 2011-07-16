@@ -4,6 +4,7 @@ class Admin extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->library('Erkanaauth');
+        $this->load->library('User');
     }
     
     public function index() {
@@ -12,6 +13,56 @@ class Admin extends CI_Controller {
     
     public function create_user() {
         $this->load->view('admin/create_user.php');
+    }
+    
+    public function create_new_user_json() {
+        $user = $this->user;
+        
+        $username  = $_POST["username"];
+        $password  = $_POST["password"];
+        $confirm   = $_POST["confirm"];
+        
+        $check = $this->validateUserForm(array(
+            'username' => $username,
+            'password' => $password,
+            'confirm'  => $confirm
+        ));
+        
+        if (!$check['valid']) {
+            $result = array(
+                'created' => 0,
+                'message' => $check['message']
+            );
+        } else {
+            $result = $user->create_new_user($username, $password);
+        }
+        
+        $this->output
+            ->set_content_type('application/json')
+            ->set_output(json_encode($result));
+    }
+    
+    private function validateUserForm($fields) {
+        $username = $fields['username'];
+        $password = $fields['password'];
+        $password_confirm = $fields['confirm'];
+        
+        log_message('debug', "password: " . $password);
+        log_message('debug', "confirm: " . $password_confirm);
+        
+        $valid = 1;
+        $message = "";
+        
+        if ($password != $password_confirm) { // is this how you compare strings in PHP?
+            $valid = 0;
+            log_message('debug', "NOT VALID");
+            $message = "passwords do not match";
+        }
+        
+        return array(
+            'valid'   => $valid,
+            'message' => $message
+        );
     }
 }
 

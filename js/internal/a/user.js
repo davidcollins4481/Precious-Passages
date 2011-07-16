@@ -3,7 +3,6 @@ dojo.require("dijit.form.Button");
 dojo.require("dijit.form.ValidationTextBox");
 dojo.require("dijit.form.DateTextBox");
 
-
 dojo.addOnLoad(function() {
     var createUserForm = dijit.byId("create-user");
     
@@ -14,24 +13,30 @@ dojo.addOnLoad(function() {
             var obj = dojo.fromJson(json);
             if (obj.password !== obj.confirm) {
                 alert("passwords do not match");
-                return;
+             //   return;
             }
             
+            var responseNode = dojo.byId("response");
             
             var xhrArgs = {
                 form: createUserForm.domNode,
                 handleAs: "json",
                 load: function(data) {
-                    dojo.byId("response").innerHTML = "Form posted.";
+                    responseNode.className = "";// clear all classes
+                    var className = !data.created ? "error" : "success";
+                    
+                    dojo.addClass(responseNode, className);
+                    
+                    responseNode.innerHTML = data.message;
                 },
-                error: function(error) {
-                    //We'll 404 in the demo, but that's okay.  We don't have a 'postIt' service on the
-                    //docs server.
-                    dojo.byId("response").innerHTML = "Form posted.";
+                error: function(e) {
+                    // not even sure if this is needed
+                    responseNode.innerHTML = 'unknown error has occurred';
                 }
             }
             //Call the asynchronous xhrPost
-            dojo.byId("response").innerHTML = "Form being sent..."
+            responseNode.className = "";
+            responseNode.innerHTML = "Form being sent..."
             var deferred = dojo.xhrPost(xhrArgs);
         }
     });

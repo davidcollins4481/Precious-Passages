@@ -20,9 +20,8 @@ class Xmlrpc_client extends CI_Controller {
         }
         else
         {
-            echo '<pre>';
-            print_r($this->xmlrpc->display_response());
-            echo '</pre>';
+            echo $this->xmlrpc->display_response();
+            
         }
     }
 }
