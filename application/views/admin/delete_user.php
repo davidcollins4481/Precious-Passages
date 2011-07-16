@@ -5,14 +5,18 @@
 <?php $this->load->view("includes/head_end.php") ?>
 <?php $this->load->view("includes/body_start.php") ?>
 
-<div class="admin-container">
-    <p>Admin Landing</p>
+<div class="admin-container claro">
+    <h2>Delete User(s)</h2>
     
-    <h2>What do you want to do?</h2>
-    <ul>
-        <li><a href="/index.php/admin/create_user">Create a User</a></li>
-        <li><a href="/index.php/admin/delete_user">Delete a User</a></li>
-    </ul>
+    <div>
+        <p id="response"></p>
+    </div>
+    
+    <?php
+        echo $users;
+    
+    ?>
+    
 </div>
 
 

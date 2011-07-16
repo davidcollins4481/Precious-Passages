@@ -15,6 +15,15 @@ class Admin extends CI_Controller {
         $this->load->view('admin/create_user.php');
     }
     
+    public function delete_user() {
+        $users = $this->db->query('YOUR QUERY HERE');
+        $data = array(
+            'users' => 1
+        );
+        
+        $this->load->view('admin/delete_user.php', $data);
+    }
+    
     public function create_new_user_json() {
         $user = $this->user;
         
