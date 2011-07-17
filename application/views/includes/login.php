@@ -1,3 +1,1 @@
-    <div dojoType="pp.sidebar.login">
-
-    </div>
+    <div dojoType="pp.sidebar.login"></div>
