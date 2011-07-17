@@ -11,7 +11,8 @@ class User extends CI_Model {
     }
     
     function get_all() {
-        $query = $this->db->get('users', 10);
+        $sql = "select * from users";
+        $query = $this->db->query($sql);
         return $query->result();
     }
     

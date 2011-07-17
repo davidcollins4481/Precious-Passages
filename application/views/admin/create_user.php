@@ -7,12 +7,12 @@
 
 <div class="admin-container claro">
     <h2>Enter new username and password</h2>
-    
+
     <div>
         <p id="response"></p>
     </div>
-    
-    <form id="create-user" jsId="create-user" encType="multipart/form-data" action="/index.php/admin/create_new_user_json" method="" dojoType="dijit.form.Form">
+
+    <form id="create-user" jsId="create-user" encType="multipart/form-data" action="/index.php/admin/create_new_user_post_json" method="POST" dojoType="dijit.form.Form">
         <label for="username">Username</label>
         <input type="text" required="true" dojoType="dijit.form.ValidationTextBox" name="username" />
         
@@ -26,6 +26,8 @@
             Submit
         </button>
     </form>
+
+    <p><a href="/index.php/admin">back</a></p>
 </div>
 
 

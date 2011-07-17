@@ -17,13 +17,13 @@ class Admin extends CI_Controller {
     
     public function delete_user() {
         $data = array(
-            'users' => 1
+            'users' => $this->user->get_all(),
         );
         
         $this->load->view('admin/delete_user.php', $data);
     }
     
-    public function create_new_user_json() {
+    public function create_new_user_post_json() {
         $user = $this->user;
         
         $username  = $_POST["username"];
