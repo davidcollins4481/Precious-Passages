@@ -43,6 +43,7 @@ dojo.addOnLoad(function() {
         });
     }
 
+    // delete users
     dojo.query(".useritem").forEach(function(form) {
         var a = dojo.query('.remove-link', form)[0];
         var obj = dojo.formToObject(form);
@@ -54,25 +55,45 @@ dojo.addOnLoad(function() {
             e.preventDefault();
             console.log('removing user: ' + user_id);
 
-            //
-            a.innerHTML = "processing";
-            responseNode.className = "";
-            dojo.addClass(responseNode, "success");
-            responseNode.innerHTML = "User has been removed";
-            dojo.animateProperty({
-                node: row,
-                properties: {
-                    opacity: {
-                        end: 0
+            var xhrArgs = {
+                form: form,
+                handleAs: "json",
+                load: function(data) {
+                    responseNode.className = "";// clear all classes
+                    var className = !data.success ? "error" : "success";
+
+                    dojo.addClass(responseNode, className);
+
+                    responseNode.innerHTML = data.message;
+                    
+                    if (data.success) {
+                        dojo.animateProperty({
+                            node: row,
+                            properties: {
+                                opacity: {
+                                    end: 0
+                                }
+                            },
+                            onEnd: function() {
+                                dojo.style(row, {
+                                    display: "none"
+                                });
+                            }
+                        }).play();
+                    } else {
+                        a.innerHTML = "remove";
                     }
                 },
-                onEnd: function() {
-                    dojo.style(row, {
-                        display: "none"
-                    });
+                error: function(e) {
+                    // not even sure if this is needed
+                    responseNode.innerHTML = 'unknown error has occurred';
                 }
-            }).play();
-            //
+            };
+
+            //Call the asynchronous xhrPost
+            responseNode.className = "";
+            a.innerHTML = "processing";
+            var deferred = dojo.xhrPost(xhrArgs);
         });
     });
 });

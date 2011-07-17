@@ -50,6 +50,17 @@ class Admin extends CI_Controller {
             ->set_output(json_encode($result));
     }
     
+    public function delete_user_post_json() {
+        $result = array(
+            'success' => 1,
+            'message' => "user has been deleted"
+        );
+        
+        $this->output
+            ->set_content_type('application/json')
+            ->set_output(json_encode($result));
+    }
+    
     private function validateUserForm($fields) {
         $username = $fields['username'];
         $password = $fields['password'];
