@@ -51,11 +51,9 @@ class Admin extends CI_Controller {
     }
     
     public function delete_user_post_json() {
-        $result = array(
-            'success' => 1,
-            'message' => "user has been deleted"
-        );
-        
+        $user_id = $_POST["user_id"];
+        $result = $this->user->delete($user_id);
+
         $this->output
             ->set_content_type('application/json')
             ->set_output(json_encode($result));

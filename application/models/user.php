@@ -39,7 +39,20 @@ class User extends CI_Model {
             'message' => 'User successfully created'
         );
     }
-    
+
+    function delete($user_id) {
+        $data = array(
+            'id' => $user_id
+        );
+
+        $result = $this->db->delete('users', $data);
+
+        return array(
+            'success' => $result,
+            'message' => $result ? 'User has been deleted' : 'An error has occurred'
+        );
+    }
+
     function exists($username) {
         $sql = 
             "select * from users where username = " . $this->db->escape($username) . ";";
