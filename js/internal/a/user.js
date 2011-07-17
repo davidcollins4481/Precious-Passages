@@ -13,7 +13,7 @@ dojo.addOnLoad(function() {
             var obj = dojo.fromJson(json);
             if (obj.password !== obj.confirm) {
                 alert("passwords do not match");
-             //   return;
+                return;
             }
             
             var responseNode = dojo.byId("response");

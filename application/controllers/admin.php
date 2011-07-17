@@ -4,7 +4,7 @@ class Admin extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->library('Erkanaauth');
-        $this->load->library('User');
+        $this->load->model('User');
     }
     
     public function index() {
@@ -16,7 +16,6 @@ class Admin extends CI_Controller {
     }
     
     public function delete_user() {
-        $users = $this->db->query('YOUR QUERY HERE');
         $data = array(
             'users' => 1
         );

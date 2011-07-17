@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); 
 
-class User {
-    function User() {
+class UserUtils {
+    function UserUtils() {
         $this->CI =& get_instance();
         $this->CI->load->database();
     }
