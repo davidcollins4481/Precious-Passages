@@ -1,5 +1,6 @@
 dojo.require("dijit.layout.AccordionContainer");
-dojo.require("sidebar.pp.Login");
+dojo.require("dojo.parser");
+dojo.require("pp.sidebar.login");
 
 dojo.addOnLoad(function() {
     

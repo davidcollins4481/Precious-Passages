@@ -4,10 +4,11 @@
         isDebug: true,
         locale: 'en-us',
         modulePaths: {
-            pp:''
+            pp:'../../pp'
         }
     };
 </script>
 
-<script type="text/javascript" src="/js/external/dojo/dojo/dojo.js"></script>
-<script type="text/javascript" src="/js/internal/sidebar/navigation.js"></script>
+<script type="text/javascript" src="/js/dojo/dojo/dojo.js"></script>
+<script type="text/javascript" src="/js/pp/sidebar/navigation.js"></script>
+
