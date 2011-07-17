@@ -2,7 +2,10 @@
     var djConfig = {
         parseOnLoad: true,
         isDebug: true,
-        locale: 'en-us'
+        locale: 'en-us',
+        modulePaths: {
+            pp:''
+        }
     };
 </script>
 

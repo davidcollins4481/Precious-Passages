@@ -5,12 +5,22 @@ class Admin extends CI_Controller {
         parent::__construct();
         $this->load->library('Erkanaauth');
         $this->load->model('User');
+
+        $session = $this->session;
+        if (!$session->userdata('logged_in')) {
+            log_message("debug", "not logged in");
+            redirect('/');
+        }
     }
     
     public function index() {
         $this->load->view('admin/index.php');
     }
     
+    public function login() {
+        
+    }
+
     public function create_user() {
         $this->load->view('admin/create_user.php');
     }
