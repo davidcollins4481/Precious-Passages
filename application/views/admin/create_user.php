@@ -22,7 +22,7 @@
         <label for="password">Confirm</label>
         <input type="password" required="true" dojoType="dijit.form.ValidationTextBox" name="confirm" />
          
-        <button dojoType="dijit.form.Button" type="submit" name="submitButton" value="Submit">
+        <button dojoType="dijit.form.Button" id="submitNode" name="submitButton" value="Submit">
             Submit
         </button>
     </form>

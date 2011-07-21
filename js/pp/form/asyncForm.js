@@ -9,8 +9,9 @@ dojo.declare(
         submitNode: null,
         progressNode: null,
         onComplete: null,
+        onValidate: null, // validate the form before submitting. return false for invalid
         onError: null,
-        _loading: false,
+        loading: false,
 
         constructor: function(args) {
             this.formNode     = args.formNode;
@@ -20,10 +21,19 @@ dojo.declare(
 
             this.onComplete = args.onComplete;
             this.onError = args.onError;
+            this.onValidate = args.onValidate;
             var self = this;
 
-            dojo.connect(this.formNode, "onsubmit", function(evt) {
+            dojo.connect(this.submitNode, "onclick", function(evt) {
                 evt.preventDefault();
+
+                var valid = true;
+                if (self.onValidate) {
+                    valid = self.onValidate();
+                    if (!valid) {
+                        return false;
+                    }
+                }
 
                 var xhrArgs = {
                     form: self.formNode,
@@ -49,7 +59,7 @@ dojo.declare(
         },
 
         _toggleLoading: function() {
-            if (!this.submitNode && !this.progressNode) {
+            if (!this.submitNode || !this.progressNode) {
                 return;
             }
             

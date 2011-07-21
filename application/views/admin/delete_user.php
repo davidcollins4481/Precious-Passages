@@ -19,7 +19,7 @@
                     echo "<tr id='row-" . $u->id . "'>";
                     echo "<td>" . $u->username . "</td>";
                     echo "<td width='200'>";
-                    echo "<form action='/index.php/admin/delete_user_post_json' class='useritem'>";
+                    echo "<form action='/index.php/admin/delete_user_post_json' method='POST' class='useritem'>";
                     echo "<input type='hidden' name='user_id' value='" . $u->id . "' />";
                     echo "<a class='remove-link' href='#'>remove</a>";
                     echo "</form>";

@@ -22,7 +22,7 @@ class User extends CI_Model {
         
         if ($this->exists($username)) {
             return array(
-                'created' => 0,
+                'success' => 0,
                 'message'   => 'user already exists'
             );
         }
@@ -35,7 +35,7 @@ class User extends CI_Model {
         $this->db->insert('users', $data); 
         
         return array(
-            'created' => 1,
+            'success' => 1,
             'message' => 'User successfully created'
         );
     }

@@ -7,38 +7,29 @@ dojo.addOnLoad(function() {
     var createUserForm = dijit.byId("create-user");
 
     if (createUserForm) {
-        dojo.connect(createUserForm, "onSubmit", function(e) {
-            e.preventDefault();
-            if (createUserForm.isValid()) {
+        var responseNode = dojo.byId("response");
+
+        var form = new pp.form.asyncForm({
+            formNode: createUserForm.domNode,
+            submitNode: dojo.byId("submitNode"),
+            messageNode: responseNode,
+            onValidate: function() {
                 var json = dojo.toJson(createUserForm.attr("value"));
                 var obj = dojo.fromJson(json);
                 if (obj.password !== obj.confirm) {
                     alert("passwords do not match");
-                    return;
+                    return false;
                 }
-
-                var responseNode = dojo.byId("response");
-
-                var xhrArgs = {
-                    form: createUserForm.domNode,
-                    handleAs: "json",
-                    load: function(data) {
-                        responseNode.className = "";// clear all classes
-                        var className = !data.created ? "error" : "success";
-
-                        dojo.addClass(responseNode, className);
-
-                        responseNode.innerHTML = data.message;
-                    },
-                    error: function(e) {
-                        // not even sure if this is needed
-                        responseNode.innerHTML = 'unknown error has occurred';
-                    }
-                }
-                //Call the asynchronous xhrPost
-                responseNode.className = "";
-                responseNode.innerHTML = "Form being sent..."
-                var deferred = dojo.xhrPost(xhrArgs);
+                return true;
+            },
+            onComplete: function(response) {
+                var className = response.success ? "success" : "error";
+                // in case this isn't the first request, remove
+                // previous classes
+                dojo.addClass(responseNode, className);
+            },
+            onError: function(err) {
+                console.error(err);
             }
         });
     }
@@ -51,49 +42,38 @@ dojo.addOnLoad(function() {
         var row = dojo.byId("row-" + user_id);
         var responseNode = dojo.byId("response");
 
-        dojo.connect(a, "onclick", function(e) {
-            e.preventDefault();
-            console.log('removing user: ' + user_id);
-
-            var xhrArgs = {
-                form: form,
-                handleAs: "json",
-                load: function(data) {
-                    responseNode.className = "";// clear all classes
-                    var className = !data.success ? "error" : "success";
-
-                    dojo.addClass(responseNode, className);
-
-                    responseNode.innerHTML = data.message;
-                    
-                    if (data.success) {
-                        dojo.animateProperty({
-                            node: row,
-                            properties: {
-                                opacity: {
-                                    end: 0
-                                }
-                            },
-                            onEnd: function() {
-                                dojo.style(row, {
-                                    display: "none"
-                                });
+        var removeForm = new pp.form.asyncForm({
+            formNode: form,
+            messageNode: responseNode,
+            submitNode: a,
+            onComplete: function(response) {
+                responseNode.className = "";// clear all classes
+                var className = response.success ? "success" : "error";
+                dojo.addClass(responseNode, className);
+                // in case this isn't the first request, remove
+                // previous classes
+                if (response.success) {
+                    dojo.animateProperty({
+                        node: row,
+                        properties: {
+                            opacity: {
+                                end: 0
                             }
-                        }).play();
-                    } else {
-                        a.innerHTML = "remove";
-                    }
-                },
-                error: function(e) {
-                    // not even sure if this is needed
-                    responseNode.innerHTML = 'unknown error has occurred';
+                        },
+                        onEnd: function() {
+                            dojo.style(row, {
+                                display: "none"
+                            });
+                        }
+                    }).play();
+                } else {
+                    a.innerHTML = "remove";
                 }
-            };
-
-            //Call the asynchronous xhrPost
-            responseNode.className = "";
-            a.innerHTML = "processing";
-            var deferred = dojo.xhrPost(xhrArgs);
+            },
+            onError: function(err) {
+                console.error(err);
+                responseNode.innerHTML = 'unknown error has occurred';
+            }
         });
     });
 });

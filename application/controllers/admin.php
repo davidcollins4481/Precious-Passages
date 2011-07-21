@@ -7,18 +7,14 @@ class Admin extends CI_Controller {
         $this->load->model('User');
 
         $session = $this->session;
-        if (!$session->userdata('logged_in')) {
-            log_message("debug", "not logged in");
-            redirect('/');
-        }
+        //if (!$session->userdata('logged_in')) {
+        //    log_message("debug", "not logged in");
+        //    redirect('/');
+        //}
     }
     
     public function index() {
         $this->load->view('admin/index.php');
-    }
-    
-    public function login() {
-        
     }
 
     public function create_user() {
@@ -48,7 +44,7 @@ class Admin extends CI_Controller {
         
         if (!$check['valid']) {
             $result = array(
-                'created' => 0,
+                'success' => 0,
                 'message' => $check['message']
             );
         } else {
