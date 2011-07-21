@@ -25,7 +25,7 @@
 	 */	
 	function try_login($condition = array()) {
 		$this->CI->db->select('id');
-		$query = $this->CI->db->getwhere('users', $condition, 1, 0);
+		$query = $this->CI->db->get_where('users', $condition, 1, 0);
 		if ($query->num_rows != 1) {
 			return FALSE;
 		} else {
@@ -78,14 +78,15 @@
 	 * Returns a field from the user's table for the logged in user
 	 *
 	 * Example: $this->erkanaauth->getField('username')
-	 *
+	 * NOTE: HAD TO CHANGE 'getwhere' TO 'get_where'
+     * 
 	 * @access	public
 	 * @param	string	field to return
 	 * @return	string
 	 */
 	function getField($field = '') {
 		$this->CI->db->select($field);
-		$query = $this->CI->db->getwhere('users', array('id'=>$this->CI->session->userdata('user_id')), 1, 0);
+		$query = $this->CI->db->get_where('users', array('id'=>$this->CI->session->userdata('user_id')), 1, 0);
 	  if ($query->num_rows() == 1) {
 			$row = $query->row();
 			return $row->$field;
@@ -103,7 +104,7 @@
 	function getRole() {
 		$this->CI->db->select('roles.name');
 		$this->CI->db->JOIN('roles', 'users.role_id = roles.id');
-		$query = $this->CI->db->getwhere('users', array('users.id'=>$this->CI->session->userdata('user_id')), 1, 0);
+		$query = $this->CI->db->get_where('users', array('users.id'=>$this->CI->session->userdata('user_id')), 1, 0);
 		if ($query->num_rows() == 1) {
 			$row = $query->row();
 			return $row->name;

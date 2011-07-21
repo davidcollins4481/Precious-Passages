@@ -207,8 +207,13 @@ li {
     color:#FFFFFF;
     background-image:url(../images/backgrounds/a_hover_reverse.png);
 }
+
 #footer a {
     color:#ffffff;
+}
+
+.error {
+    color: #C60808;
 }
 
 

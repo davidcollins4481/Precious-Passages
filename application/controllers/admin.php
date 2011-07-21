@@ -7,10 +7,10 @@ class Admin extends CI_Controller {
         $this->load->model('User');
 
         $session = $this->session;
-        //if (!$session->userdata('logged_in')) {
-        //    log_message("debug", "not logged in");
-        //    redirect('/');
-        //}
+        if (!$session->userdata('logged_in')) {
+            log_message("debug", "not logged in");
+            redirect('/');
+        }
     }
     
     public function index() {
