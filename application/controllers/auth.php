@@ -18,17 +18,18 @@ class Auth extends CI_Controller {
             )
         );
 
-        log_message("debug", "Success? " . $success . " User: " . $username);
+        //log_message("debug", "Success? " . $success . " User: " . $username);
 
         $session = $this->session;
         
         if ($success) {
             $session->set_userdata('logged_in', TRUE);
+            $session->set_userdata('username', $username);
         }
 
         $result = array(
             'success' => $success,
-            'message' => "test message",
+            'message' => $success ? "success" : "Invalid Credentials",
             'data'    => $success ? array( 
                 'username' => $username
             ) : array()
@@ -37,6 +38,11 @@ class Auth extends CI_Controller {
         $this->output
             ->set_content_type('application/json')
             ->set_output(json_encode($result));
+    }
+    
+    public function logout() {
+        $success = $this->erkanaauth->logout();
+        redirect('c=d&m=test');
     }
 }
 

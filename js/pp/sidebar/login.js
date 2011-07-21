@@ -8,7 +8,6 @@ dojo.declare(
     [dijit._Widget, dijit._Templated],
     {
         templatePath: dojo.moduleUrl("pp", "templates/login.html"),
-        
         startup: function() {
             var self = this;
 
@@ -26,7 +25,28 @@ dojo.declare(
 
                     dojo.addClass(self.messageNode, className);
 
-                    console.log("finished");
+                    var userContainer = dojo.byId("user-container");
+                    var data = response.data;
+                    
+                    if (response.success) {
+                        var username = data.username;
+                        // this is ugly
+                        dojo.animateProperty({
+                            node: userContainer,
+                            properties: {
+                                opacity: {
+                                    end: 0
+                                }
+                            },
+                            onEnd: function() {
+                                //self.userContainer.innerHTML = "";
+                                var panel = new pp.sidebar.userPanel({
+                                    username: username
+                                }, userContainer);
+                            }
+                        }).play();
+                    }
+                    
                 },
                 onError: function(err) {
                     console.error(err);

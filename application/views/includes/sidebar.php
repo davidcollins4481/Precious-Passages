@@ -32,7 +32,15 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <?php $this->load->view('includes/login.php') ?>
+
+                    <div id="user-container">
+                        <?php 
+                            $session = $this->session;
+                            $session->userdata('logged_in') ? 
+                            $this->load->view('includes/user.php')
+                            :
+                            $this->load->view('includes/login.php') 
+                        ?>
+                    </div>
                 </div>
             </div>

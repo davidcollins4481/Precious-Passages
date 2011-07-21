@@ -1,1 +1,1 @@
-<p>logged in</p>
+    <div dojoType="pp.sidebar.userPanel"></div>

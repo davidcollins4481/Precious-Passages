@@ -13,6 +13,8 @@
         <li><a href="/index.php/admin/create_user">Create a User</a></li>
         <li><a href="/index.php/admin/delete_user">Delete a User</a></li>
     </ul>
+    
+    <p><a href="/index.php?c=d&m=test">home</a></p>
 </div>
 
 
