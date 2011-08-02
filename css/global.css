@@ -70,7 +70,7 @@ li {
 #header h1 {
     font-family:"Century Gothic", "Trebuchet MS", "Arial Narrow", Arial, sans-serif;
     font-size:30px;
-    text-transform:uppercase;
+    /*text-transform:uppercase;*/
     font-weight:normal;
     margin:0;
     padding:0;
@@ -82,7 +82,7 @@ li {
 #header h2 {
     font-family:"Century Gothic", "Trebuchet MS", "Arial Narrow", Arial, sans-serif;
     font-size:15px;
-    text-transform:uppercase;
+    /*text-transform:uppercase;*/
     text-align:right;
     font-weight:normal;
     margin:0;
@@ -131,7 +131,7 @@ li {
     #sidebar h1 {
         font-family:"Century Gothic", "Trebuchet MS", "Arial Narrow", Arial, sans-serif;
         font-size:20px;
-        text-transform:uppercase;
+        text-transform:lowercase;
         font-weight:normal;
         border-bottom:1px solid #eeeeee;
         /*color:#9D73A4;*/
@@ -177,7 +177,7 @@ li {
 #mainbar h1 {
     font-family:"Century Gothic", "Trebuchet MS", "Arial Narrow", Arial, sans-serif;
     font-size:25px;
-    text-transform:uppercase;
+    /*text-transform:uppercase;*/
     font-weight:normal;
     border-bottom:1px solid #eeeeee;
     /*color: #99B198;*/
