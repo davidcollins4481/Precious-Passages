@@ -11,6 +11,8 @@ dojo.declare(
         startup: function() {
             var self = this;
 
+            this._initFieldFocus();
+
             var form = new pp.form.asyncForm({
                 formNode: this.formNode,
                 messageNode: this.messageNode,
@@ -50,6 +52,28 @@ dojo.declare(
                 },
                 onError: function(err) {
                     console.error(err);
+                }
+            });
+        },
+
+        _initFieldFocus: function() {
+            dojo.connect(this.usernameNode, 'focus', function(e) {
+                this.value = '';
+            });
+
+            dojo.connect(this.usernameNode, 'blur', function(e) {
+                if (this.value === '') {
+                    this.value = 'Username';
+                }
+            });
+
+            dojo.connect(this.passwordNode, 'focus', function(e) {
+                this.value = '';
+            });
+
+            dojo.connect(this.passwordNode, 'blur', function(e) {
+                if (this.value === '') {
+                    this.value = 'password';
                 }
             });
         }
