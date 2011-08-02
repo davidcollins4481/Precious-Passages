@@ -1,6 +1,6 @@
             <div id="sidebar">
                 <div id="logo-container">
-                    <img src="/images/logo.jpg" alt="Your Logo" class="logo" />
+                    <img src="/images/resources/logo.jpg" alt="Your Logo" class="logo" style="width: 175px" />
                 </div>
 
                 <div id="menu-container">

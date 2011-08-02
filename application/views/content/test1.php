@@ -15,7 +15,7 @@
                     Home Birth Advantages
                 </h1>
                 
-                <img src="/images/resources/dreamtime.jpg" alt="dream time" title="dreamtime" class="articleimg" />
+               <!-- <img src="/images/resources/dreamtime.jpg" alt="dream time" title="dreamtime" class="articleimg" />-->
                 
                 <p>
                     To date, I have had five children.&nbsp; 
