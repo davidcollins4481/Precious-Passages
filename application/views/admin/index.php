@@ -1,23 +1,33 @@
 <?php $this->load->view("includes/doctype_html.php") ?>
 <?php $this->load->view("includes/head_start.php") ?>
+
 <?php $this->load->view("admin/includes/js.php") ?>
 <?php $this->load->view("admin/includes/css.php") ?>
+
 <?php $this->load->view("includes/head_end.php") ?>
 <?php $this->load->view("includes/body_start.php") ?>
+<?php $this->load->view("includes/globalnav.php") ?>
 
-<div class="admin-container">
-    <p>Admin Landing</p>
-    
-    <h2>What do you want to do?</h2>
-    <ul>
-        <li><a href="/index.php/admin/create_user">Create a User</a></li>
-        <li><a href="/index.php/admin/delete_user">Delete a User</a></li>
-    </ul>
-    
-    <p><a href="/index.php?c=d&m=test">home</a></p>
+
+<div id="content">
+    <div class="admin-container">
+        <div class="admin-tools-container">
+            <h2>Admin Tools</h2>
+            <ul>
+                <li><a href="/index.php/admin/create_user">Create a User</a></li>
+                <li><a href="/index.php/admin/delete_user">Delete a User</a></li>
+            </ul>
+        </div>
+
+        <div class="User Tools">
+            <h2>User Tools</h2>
+            <ul>
+                <li><a href="/index.php/admin/upload">Upload Files</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
 
-
+<?php $this->load->view("includes/footer.php");?>
 <?php $this->load->view("includes/body_end.php");?>
 <?php $this->load->view("includes/html_end.php");?>
-
