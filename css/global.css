@@ -22,8 +22,8 @@ ol,ul {
 
 }
 
-li {
-    list-style-image:url(../images/backgrounds/li.gif);
+ul li {
+    list-style-image:url(/images/resources/bullet.gif);
     line-height:20px;
     text-align:left;
 }
@@ -32,15 +32,15 @@ li {
     width:100%;
     padding-top:20px;
     padding-bottom:20px;
-    background-color:#9D73A4;
+    /*background-color:#759C01;*/
     margin-bottom:50px;
-    color:#FFFFFF;
+    color:#666;
     text-align:center;
     font-family:Verdana, Arial, Helvetica, sans-serif;
     font-size:11px;
     font-variant:small-caps;
     /*background-image:url(../images/backgrounds/menu.jpg);*/
-    background-image:url(../images/backgrounds/a_hover.png);
+   /* background-image:url(../images/backgrounds/a_hover.png);*/
     height: 20px;
 }
 #menu a {
@@ -70,24 +70,24 @@ li {
 #header h1 {
     font-family:"Century Gothic", "Trebuchet MS", "Arial Narrow", Arial, sans-serif;
     font-size:30px;
-    text-transform:uppercase;
+    /*text-transform:uppercase;*/
     font-weight:normal;
     margin:0;
     padding:0;
     padding-top:5px;
-    color:#9D73A4;
+    /*color:#9D73A4;*/
     margin-bottom:0px;
     text-align:left;
 }
 #header h2 {
     font-family:"Century Gothic", "Trebuchet MS", "Arial Narrow", Arial, sans-serif;
     font-size:15px;
-    text-transform:uppercase;
+    /*text-transform:uppercase;*/
     text-align:right;
     font-weight:normal;
     margin:0;
     padding:0;
-    color:#99B198;
+    /*color:#99B198;*/
     border-bottom:1px solid #eeeeee;
 }
 
@@ -95,6 +95,7 @@ li {
     width:720px;
     margin:0 auto 0 auto;
     text-align:left;
+    min-height: 700px;
 }
 
 .introduction {
@@ -130,10 +131,10 @@ li {
     #sidebar h1 {
         font-family:"Century Gothic", "Trebuchet MS", "Arial Narrow", Arial, sans-serif;
         font-size:20px;
-        text-transform:uppercase;
+        text-transform:lowercase;
         font-weight:normal;
         border-bottom:1px solid #eeeeee;
-        color:#9D73A4;
+        /*color:#9D73A4;*/
         text-align:right;
     }
 
@@ -141,15 +142,17 @@ li {
         float: left;
         clear: both;
         padding-bottom: 40px;
-        padding-left: 30px;
+        /*padding-left: 30px;*/
     }
     
     #sidebar #menu-container {
         clear: both;
     }
 
-.submenu {
-}
+    #sidebar input {
+        border: 1px solid #ccc;
+    }
+
 .submenu a {
     display:block;
     width:100%;
@@ -158,7 +161,7 @@ li {
     background-repeat:no-repeat;
     padding:5px;
     padding-right:0;
-    color: #99B198;
+    color: #666;
 }
 .submenu a:hover {
     background-color:#eeeeee;
@@ -176,10 +179,10 @@ li {
 #mainbar h1 {
     font-family:"Century Gothic", "Trebuchet MS", "Arial Narrow", Arial, sans-serif;
     font-size:25px;
-    text-transform:uppercase;
+    /*text-transform:uppercase;*/
     font-weight:normal;
     border-bottom:1px solid #eeeeee;
-    color: #99B198;
+    /*color: #99B198;*/
 }
 
 #mainbar p {
@@ -199,13 +202,13 @@ li {
 
 #footer {
     width:100%;
-    background-color: #9D73A4;
-    /*border-top:1px solid #d8efa6;
-    border-bottom:5px solid #94ae62;*/
+    /*background-color: #759C01;*/
+    border-top:1px solid #d8efa6;
+    border-bottom:5px solid #94ae62;
     padding-top:10px;
     padding-bottom:10px;
-    color:#FFFFFF;
-    background-image:url(../images/backgrounds/a_hover_reverse.png);
+    color:#666;
+    /*background-image:url(../images/backgrounds/a_hover_reverse.png);*/
 }
 
 #footer a {
@@ -226,5 +229,5 @@ li {
     }
     
     .user-panel a {
-        color: #99B198;
+        color: #666;
     }
