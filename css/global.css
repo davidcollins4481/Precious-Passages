@@ -22,8 +22,8 @@ ol,ul {
 
 }
 
-li {
-    list-style-image:url(../images/backgrounds/li.gif);
+ul li {
+    list-style-image:url(/images/resources/bullet.gif);
     line-height:20px;
     text-align:left;
 }
@@ -149,8 +149,10 @@ li {
         clear: both;
     }
 
-.submenu {
-}
+    #sidebar input {
+        border: 1px solid #ccc;
+    }
+
 .submenu a {
     display:block;
     width:100%;
@@ -201,8 +203,8 @@ li {
 #footer {
     width:100%;
     /*background-color: #759C01;*/
-    /*border-top:1px solid #d8efa6;
-    border-bottom:5px solid #94ae62;*/
+    border-top:1px solid #d8efa6;
+    border-bottom:5px solid #94ae62;
     padding-top:10px;
     padding-bottom:10px;
     color:#666;
