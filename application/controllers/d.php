@@ -5,6 +5,10 @@ class D extends CI_Controller {
     public function index() {
         $this->load->view('sample.php');
     }
+    
+    public function billOfRights() {
+        $this->load->view('billOfRights.php');
+    }
 
 }
 

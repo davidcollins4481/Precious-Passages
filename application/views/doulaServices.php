@@ -1,13 +1,13 @@
-<?php include("includes/doctype_html.php") ?>
-<?php include("includes/head_start.php") ?>
-<?php include("includes/head_end.php") ?>
-<?php include("includes/body_start.php") ?>
-<?php include("includes/globalnav.php") ?>
+<?php $this->load->view("includes/doctype_html.php") ?>
+<?php $this->load->view("includes/head_start.php") ?>
+<?php $this->load->view("includes/head_end.php") ?>
+<?php $this->load->view("includes/body_start.php") ?>
+<?php $this->load->view("includes/globalnav.php") ?>
 
         <!-- unique -->
         <div id="content">
             
-            <?php include("includes/sidebar.php") ?>
+            <?php $this->load->view("includes/sidebar.php") ?>
             
             <div id="mainbar">
                 <h1>
@@ -106,8 +106,8 @@
         </div>
         <!-- /unique -->
 
-<?php include("includes/footer.php");?>
-<?php include("includes/body_end.php");?>
-<?php include("includes/html_end.php");?>
+<?php $this->load->view("includes/footer.php");?>
+<?php $this->load->view("includes/body_end.php");?>
+<?php $this->load->view("includes/html_end.php");?>
 
 
