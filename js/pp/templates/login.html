@@ -1,0 +1,14 @@
+<div>
+    <form action="/index.php?c=auth&m=login" method="POST" dojoAttachPoint="formNode">
+        <h1>Log In</h1>
+        <input name="username" type="text" value="Username" dojoAttachPoint="usernameNode" />
+        <br />
+        <input name="password" type="password" value="Password" dojoAttachPoint="passwordNode" />
+        <br />
+        <input dojoAttachPoint="submitNode" type="submit" value="Log In" />
+        <div dojoAttachPoint="progressNode" style="display:none">Loading...</div>
+    </form>
+    <div>
+        <p dojoAttachPoint="messageNode"></p>
+    </div>
+</div>

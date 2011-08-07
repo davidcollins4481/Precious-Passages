@@ -1,0 +1,21 @@
+.admin-container {
+    width: 250px;
+    text-align: left;
+    min-height: 500px;
+}
+
+#response.error {
+    color: #C60808;
+}
+
+#response.success {
+    color: #27C608;
+}
+
+.users table {
+   border-spacing: 0px;
+}
+
+.users tr,td {
+    border-bottom: 1px solid #ccc;
+}

@@ -3,3 +3,5 @@ stop_apache.sh
 restart_apache.sh
 *.sh
 logs/errors.log
+logs/*.php
+uploads/*
