@@ -1,15 +1,20 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class D extends CI_Controller {
- 
+class d extends CI_Controller {
+
     public function index() {
+        log_message("debug", "index");
         $this->load->view('sample.php');
     }
-    
+
+    // /d/billOfRights
     public function billOfRights() {
         $this->load->view('billOfRights.php');
     }
 
+    //public function _remap($method) {
+    //    log_message("debug", "remap");
+    //}
 }
 
 /* End of file welcome.php */

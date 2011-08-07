@@ -42,7 +42,7 @@ class Auth extends CI_Controller {
     
     public function logout() {
         $success = $this->erkanaauth->logout();
-        redirect('c=d&m=test');
+        redirect('c=d');
     }
 }
 

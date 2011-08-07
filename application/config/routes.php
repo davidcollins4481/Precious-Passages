@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = 'D';
+$route['default_controller'] = 'd';
 $route['404_override'] = 'errors/error_general';
 
 // config/routes.php

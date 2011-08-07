@@ -14,7 +14,8 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://david.preciouspassage.com/';
+$config['base_url'] = '';
+//$config['base_url']	= 'http://david.preciouspassage.com/';
 
 /*
 |--------------------------------------------------------------------------
