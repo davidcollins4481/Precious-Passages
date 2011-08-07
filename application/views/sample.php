@@ -6,16 +6,6 @@
 
         <!-- unique -->
         <div id="content">
-            <!--
-            <p class="introduction">
-                Welcome to Precious Passage Birth Services. 
-                I specialize in direct-entry midwifery and doula 
-                services, particularly in the home setting. I service 
-                the Cleveland, Akron, and Canton area of Ohio. 
-                As a midwife and doula I strives to give you the 
-                gift of a birth experience you will want to remember. 
-            </p>
-            -->
             <?php $this->load->view("includes/sidebar.php") ?>
             
             <div id="mainbar">
@@ -23,9 +13,6 @@
                     <a name="intro" id="intro"></a>
                     Home Birth Advantages
                 </h1>
-                
-                <img src="images/resources/dreamtime.jpg" alt="dream time" title="dreamtime" class="articleimg" />
-                
                 <p>
                     To date, I have had five children.&nbsp; 
                     The first in the hospital, the other four at home.&nbsp; 
