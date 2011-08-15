@@ -3,7 +3,6 @@
 class d extends CI_Controller {
 
     public function index() {
-        log_message("debug", "index");
         $this->load->view('sample.php');
     }
 
