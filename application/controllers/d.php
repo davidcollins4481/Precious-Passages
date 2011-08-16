@@ -3,18 +3,18 @@
 class d extends CI_Controller {
 
     public function index() {
-        $this->load->view('sample.php');
+        $this->load->view('static/sample.php');
     }
 
     /* Add functions for static pages below this point */
     
     // Sample URL: /d/billOfRights
     public function billOfRights() {
-        $this->load->view('billOfRights.php');
+        $this->load->view('static/billOfRights.php');
     }
 
     public function birthingFromWithin() {
-        $this->load->view('birthingFromWithin.php');
+        $this->load->view('static/birthingFromWithin.php');
     }
 }
 

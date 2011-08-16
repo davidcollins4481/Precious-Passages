@@ -12,10 +12,10 @@
             <div id="mainbar">
                 <h1>
                     <a name="intro" id="intro"></a>
-                    THE ORIGIN OF BIRTHING FROM WITHIN®
+                    THE ORIGIN OF BIRTHING FROM WITHIN&reg;
                 </h1> 
                 
-                <img src="images/resources/pam3.gif" alt="Pam England" title="pamEngland" class="articleimg" />
+                <img src="/images/resources/pam3.gif" alt="Pam England" title="pamEngland" class="articleimg" />
                 
                 <p>
                     Birthing From Within; was conceived and developed by a midwife after giving 
