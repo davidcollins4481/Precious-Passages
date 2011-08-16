@@ -1,15 +1,21 @@
 {
     // remember...no trailing commas :) IE doesn't like that
     services: {
-        Doula: [
+        "Doula": [
             { url: "/d/billOfRights.php", name: "Bill of Rights" },
             { url: "/d/billOfRights.php", name: "Test 2" }
         ],
-        Counseling: [
+        "Counseling": [
             { url: "/d/billOfRights.php", name: "Bill of Rights" }
         ]
     },
     resources: {
-
+        "Item 1": [
+            { url: "/d/billOfRights.php", name: "Bill of Rights" },
+            { url: "/d/billOfRights.php", name: "Test 2" }
+        ],
+        "Item 2": [
+            { url: "/d/billOfRights.php", name: "Bill of Rights" }
+        ]
     }
 }

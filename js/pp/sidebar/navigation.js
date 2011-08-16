@@ -23,6 +23,7 @@ dojo.declare(
         // access data for links.json
         init: function() {
             this._initServicesMenu();
+            this._initResourcesMenu();
         },
 
         _initServicesMenu: function() {
@@ -59,7 +60,36 @@ dojo.declare(
         },
 
         _initResourcesMenu: function() {
+            var resourcesContainer = new dijit.layout.AccordionContainer({
+                class: "submenu"
+            });
 
+            dojo.place(resourcesContainer.domNode, this.resourcesNode, "first");
+
+            // set sub-children
+            var data = this.dataSource["resources"];
+
+            for (submenu in data) {
+                var name = submenu;
+                var links = data[name];
+
+                var linkify = function(l) {
+                    return '<a href="' + l.url + '">' + l.name + '</a>';
+                };
+
+                var content = "";
+
+                dojo.forEach(links, function(link) {
+                    content += linkify(link);
+                });
+
+                resourcesContainer.addChild(new dijit.layout.ContentPane({
+                    title: name,
+                    content: content
+                }));
+            }
+
+            resourcesContainer.startup();
         },
 
         _loadDataSource: function() {
