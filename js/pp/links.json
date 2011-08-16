@@ -1,0 +1,9 @@
+{
+    // remember...no trailing commas :) IE doesn't like that
+    services: [
+        { url: "/", name: "Test name" }
+    ],
+    resources: [
+        { url: "/d/billOfRights.php", name: "Bill of Rights" }
+    ]
+}
