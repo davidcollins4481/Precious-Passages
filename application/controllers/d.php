@@ -6,14 +6,16 @@ class d extends CI_Controller {
         $this->load->view('sample.php');
     }
 
-    // /d/billOfRights
+    /* Add functions for static pages below this point */
+    
+    // Sample URL: /d/billOfRights
     public function billOfRights() {
         $this->load->view('billOfRights.php');
     }
 
-    //public function _remap($method) {
-    //    log_message("debug", "remap");
-    //}
+    public function birthingFromWithin() {
+        $this->load->view('birthingFromWithin.php');
+    }
 }
 
 /* End of file welcome.php */

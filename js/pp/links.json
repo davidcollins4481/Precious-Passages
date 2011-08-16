@@ -10,9 +10,9 @@
         ]
     },
     resources: {
-        "Item 1": [
+        "Birthing Resources": [
             { url: "/d/billOfRights.php", name: "Bill of Rights" },
-            { url: "/d/billOfRights.php", name: "Test 2" }
+            { url: "/d/birthingFromWithin.php", name: "Birthing From Within" }
         ],
         "Item 2": [
             { url: "/d/billOfRights.php", name: "Bill of Rights" }
