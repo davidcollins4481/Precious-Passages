@@ -22,19 +22,26 @@ dojo.declare(
         // this is the first place you can reliably
         // access data for links.json
         init: function() {
-            this._initServicesMenu();
-            this._initResourcesMenu();
+            this._initMenu({
+                containerNode: this.servicesNode,
+                dataKey: "services"
+            });
+
+            this._initMenu({
+                containerNode: this.resourcesNode,
+                dataKey: "resources"
+            });
         },
 
-        _initServicesMenu: function() {
-            var servicesContainer = new dijit.layout.AccordionContainer({
+        _initMenu: function(args) {
+            var containerNode = new dijit.layout.AccordionContainer({
                 class: "submenu"
             });
 
-            dojo.place(servicesContainer.domNode, this.servicesNode, "first");
+            dojo.place(containerNode.domNode, args.containerNode, "first");
 
             // set sub-children
-            var data = this.dataSource["services"];
+            var data = this.dataSource[args.dataKey];
 
             for (submenu in data) {
                 var name = submenu;
@@ -50,46 +57,13 @@ dojo.declare(
                     content += linkify(link);
                 });
 
-                servicesContainer.addChild(new dijit.layout.ContentPane({
+                containerNode.addChild(new dijit.layout.ContentPane({
                     title: name,
                     content: content
                 }));
             }
 
-            servicesContainer.startup();
-        },
-
-        _initResourcesMenu: function() {
-            var resourcesContainer = new dijit.layout.AccordionContainer({
-                class: "submenu"
-            });
-
-            dojo.place(resourcesContainer.domNode, this.resourcesNode, "first");
-
-            // set sub-children
-            var data = this.dataSource["resources"];
-
-            for (submenu in data) {
-                var name = submenu;
-                var links = data[name];
-
-                var linkify = function(l) {
-                    return '<a href="' + l.url + '">' + l.name + '</a>';
-                };
-
-                var content = "";
-
-                dojo.forEach(links, function(link) {
-                    content += linkify(link);
-                });
-
-                resourcesContainer.addChild(new dijit.layout.ContentPane({
-                    title: name,
-                    content: content
-                }));
-            }
-
-            resourcesContainer.startup();
+            containerNode.startup();
         },
 
         _loadDataSource: function() {
