@@ -29,7 +29,11 @@
                     <br/>
                     30 Comfort Measures to Ease Labor Pain
                     <br/>
-                    
+                    Massage Techniques for Childbirth
+                    <br/>
+                    Birth Affirmations
+                    <br/>
+                    TENS
                 </p>
                 
                 <hr/>
