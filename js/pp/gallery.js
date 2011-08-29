@@ -11,27 +11,7 @@ dojo.declare(
         templatePath: dojo.moduleUrl("pp", "templates/gallery.html"),
 
         startup: function() {
-            var image = new pp.gallery.image({
-                src: "testsrc",
-                alt: "testalt",
-                description: "test description"
-            }, this.imageAttachNode);
-            
-            var request = {
-                query: {},
-                onComplete: function(items, request) { 
-                    var x = 3;
-                    console.log("wapow"); 
-                },
-                onError: function(error, request) { console.log("error"); }
-            };
-            
-            // images are returning...just not for my user id
-            request.query.userid = 'davidcollins4481';
-            
-                
-            var picasaStore = new dojox.data.PicasaStore();
-            picasaStore.fetch(request);
+            console.log("startup fired");
         }
     }
 );
