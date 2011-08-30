@@ -28,8 +28,12 @@ class gallery extends CI_Controller {
 
                 $title = $photoEntry->title->text;
 
+                $mediaThumbnailArray = $photoEntry->getMediaGroup()->getThumbnail();
+                $thumb = $mediaThumbnailArray[1]->getUrl();
+
                 array_push($images, array(
                     "src"   => $src,
+                    "thumb" => $thumb,
                     "title" => $title
                 ));
             }

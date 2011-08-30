@@ -46,8 +46,8 @@ dojo.declare(
             this.selectedImage && this.selectedImage.deselect();
             this.selectedImage = image;
 
-            this.selectedImageContainer.src = image.data.src;
-            this.selectedImageContainer.alt = image.data.alt;
+            this.selectedImageContainer.src = image.src;
+            this.selectedImageContainer.alt = image.alt;
         }
     }
 );
@@ -65,8 +65,9 @@ dojo.declare(
             this.gallery = args.gallery;
             this.data    = args.data;
 
-            this.src = this.data.src;
-            this.alt = this.data.title;
+            this.src   = this.data.src;
+            this.alt   = this.data.title;
+            this.thumb = this.data.thumb;
         },
 
         _onClick: function() {
