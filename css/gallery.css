@@ -6,7 +6,7 @@
         float: left;
         padding: 0 5px;
     }
-    
+
     #gallery-container .photo-container img {
         width: 150px;
         padding:4px;
@@ -14,4 +14,14 @@
         -moz-box-shadow: 5px 5px 7px #999;
         box-shadow: 5px 5px 7px #999;
         -webkit-box-shadow: 5px 5px 7px #999;
+    }
+
+    #gallery-container .photo-container img.selected {
+        border: 1px solid #666;
+    }
+
+    /* large selected image */
+    #gallery-container .selected-container img {
+        float: left;
+        height: 300px;
     }

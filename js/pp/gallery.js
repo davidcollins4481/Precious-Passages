@@ -9,25 +9,45 @@ dojo.declare(
     [dijit._Widget, dijit._Templated],
     {
         templatePath: dojo.moduleUrl("pp", "templates/gallery.html"),
+        selectedImage: null,
+        images: [],
 
         startup: function() {
             var self = this;
             // this data comes from the backend. See application/views/gallery.php
-            var images = galleryImages;
+            self.images = galleryImages;
 
-            dojo.forEach(images, function(image) {
-                self._append(
-                    new pp.gallery.image({
-                        src: image.src,
-                        alt: image.title,
-                        description: 'test'
-                    })
-                );
+            // intialize selected image with the first
+            var selectedImage = new pp.gallery.image({
+                data: self.images.shift(),
+                gallery: this
             });
+
+            self._append(selectedImage);
+
+            dojo.forEach(self.images, function(image) {
+                self._append(image);
+            });
+
+            // FIXME: this isn't fully selected when loaded (no border)
+            selectedImage.select();
         },
 
-        _append: function(image) {
+        _append: function(imageData) {
+            var image = new pp.gallery.image({
+                data: imageData,
+                gallery: this
+            });
+
             this.imageAttachNode.appendChild(image.domNode);
+        },
+
+        setLargeImage: function(image) {
+            this.selectedImage && this.selectedImage.deselect();
+            this.selectedImage = image;
+
+            this.selectedImageContainer.src = image.data.src;
+            this.selectedImageContainer.alt = image.data.alt;
         }
     }
 );
@@ -37,8 +57,35 @@ dojo.declare(
     [dijit._Widget, dijit._Templated],
     {
         templatePath: dojo.moduleUrl("pp", "templates/galleryImage.html"),
+        data: null,
+        gallery: null,
+        selected: false,
 
-        startup: function() {
+        constructor: function(args) {
+            this.gallery = args.gallery;
+            this.data    = args.data;
+
+            this.src = this.data.src;
+            this.alt = this.data.title;
+        },
+
+        _onClick: function() {
+            this._select();
+        },
+
+        _select: function() {
+            this.gallery.setLargeImage(this);
+            dojo.addClass(this.imageNode, "selected");
+        },
+
+        select: function() {
+            this.selected = true;
+            this._select();
+        },
+
+        deselect: function() {
+            this.selected = false;
+            dojo.removeClass(this.imageNode, "selected");
         }
     }
 );
