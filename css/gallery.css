@@ -1,3 +1,17 @@
 #gallery-container {
     min-height: 300px;
 }
+
+    #gallery-container .photo-container {
+        float: left;
+        padding: 0 5px;
+    }
+    
+    #gallery-container .photo-container img {
+        width: 150px;
+        padding:4px;
+        border:1px solid #DDD;
+        -moz-box-shadow: 5px 5px 7px #999;
+        box-shadow: 5px 5px 7px #999;
+        -webkit-box-shadow: 5px 5px 7px #999;
+    }

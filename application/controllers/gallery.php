@@ -9,6 +9,7 @@ class gallery extends CI_Controller {
         $this->zend->load('Zend/Gdata/Photos/AlbumQuery');
 
         $gp = new Zend_Gdata_Photos();
+        $images = array();
 
         try {
             $query = $gp->newAlbumQuery();
@@ -17,27 +18,26 @@ class gallery extends CI_Controller {
             // album MUST be set to public for this to work!
             // comes from URL of RSS feed for album
 
-            //$query->setAlbumId("5577722144030642753");
-            //$query->setAlbumName("Arizona");
-
+            $query->setAlbumId("5577722144030642753");
             $albumFeed = $gp->getAlbumFeed($query);
 
             foreach ($albumFeed as $photoEntry) {
-                echo "***<br/>";
-
-                // See Gdata/App/FeedEntryParent.php
-                echo $photoEntry->title->text. "<br />";
                 $mediaContentArray = $photoEntry->getMediaGroup()->getContent();
-                $contentUrl = $mediaContentArray[0]->getUrl();
-                echo $contentUrl;
+                $src = $mediaContentArray[0]->getUrl();
 
-                echo "<br/>***";
+                $title = $photoEntry->title->text;
+
+                array_push($images, array(
+                    "src"   => $src,
+                    "title" => $title
+                ));
             }
         } catch (Zend_Gdata_App_Exception $e) {
             // hmm...not sure i want to do this here
             echo "Error: " . $e->getMessage();
         }
 
-        $this->load->view('gallery.php');
+        $data['images'] = $images;
+        $this->load->view('gallery.php', $data);
     }
 }
