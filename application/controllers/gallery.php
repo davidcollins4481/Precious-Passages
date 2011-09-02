@@ -13,19 +13,23 @@ class gallery extends CI_Controller {
         try {
             $query = $gp->newAlbumQuery();
 
+            /*
+             * Erika's user: abbeysmom1971@gmail.com
+             * Album Id: 5647822452656257313
+             */
             $query->setUser("davidcollins4481");
+
             // album MUST be set to public for this to work!
             // comes from URL of RSS feed for album
-
             $query->setAlbumId("5555395504381076721");
-            //$query->setAlbumId("5605589389953306209"); //arizona
+
             $albumFeed = $gp->getAlbumFeed($query);
 
             foreach ($albumFeed as $photoEntry) {
                 $mediaContentArray = $photoEntry->getMediaGroup()->getContent();
                 $src = $mediaContentArray[0]->getUrl();
 
-                $title = $photoEntry->title->text;
+                $title = $photoEntry->summary->text;
 
                 $mediaThumbnailArray = $photoEntry->getMediaGroup()->getThumbnail();
                 $thumb = $mediaThumbnailArray[1]->getUrl();

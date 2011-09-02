@@ -91,13 +91,36 @@ dojo.declare(
         },
 
         postMixInProperties: function() {
-            this.popup = new dijit.Dialog({});
+            var self = this;
+
+            this.popup = new dijit.Dialog({
+                draggable: false,
+                onHide: function() {
+                    self._toggleModal();
+                }
+            });
+
+            this.popup.closeText.innerHTML = "close";
+
             this.inherited(arguments);
         },
 
-        show: function() {
+        postCreate: function() {
             this.popup.set("content", this.domNode);
+        },
+
+        show: function() {
+            this._toggleModal();
             this.popup.show();
+        },
+
+        _toggleModal: function() {
+            var modalNode = dojo.byId("modal-background");
+            if (dojo.hasClass(modalNode, "on")) {
+                dojo.removeClass(modalNode, "on");
+            } else {
+                dojo.addClass(modalNode, "on");
+            }
         }
     }
 );

@@ -231,3 +231,18 @@ ul li {
     .user-panel a {
         color: #666;
     }
+
+#modal-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display:none;
+    top: 0;
+    left: 0;
+    opacity: .90;
+}
+
+#modal-background.on {
+    display:block;
+}
