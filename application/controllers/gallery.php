@@ -5,7 +5,6 @@ class gallery extends CI_Controller {
     public function index() {
         $this->load->library('zend');
         $this->zend->load('Zend/Gdata/Photos');
-        $this->zend->load('Zend/Gdata/ClientLogin');
         $this->zend->load('Zend/Gdata/Photos/AlbumQuery');
 
         $gp = new Zend_Gdata_Photos();

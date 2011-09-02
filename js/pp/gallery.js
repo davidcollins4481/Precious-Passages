@@ -17,20 +17,9 @@ dojo.declare(
             // this data comes from the backend. See application/views/gallery.php
             self.images = galleryImages;
 
-            // intialize selected image with the first
-            var selectedImage = new pp.gallery.image({
-                data: self.images.shift(),
-                gallery: this
-            });
-
-            self._append(selectedImage);
-
             dojo.forEach(self.images, function(image) {
                 self._append(image);
             });
-
-            // FIXME: this isn't fully selected when loaded (no border)
-            selectedImage.select();
         },
 
         _append: function(imageData) {
@@ -40,14 +29,6 @@ dojo.declare(
             });
 
             this.imageAttachNode.appendChild(image.domNode);
-        },
-
-        setLargeImage: function(image) {
-            this.selectedImage && this.selectedImage.deselect();
-            this.selectedImage = image;
-
-            this.selectedImageContainer.src = image.src;
-            this.selectedImageContainer.alt = image.alt;
         }
     }
 );
@@ -74,14 +55,9 @@ dojo.declare(
             this._select();
         },
 
-        _select: function() {
-            this.gallery.setLargeImage(this);
-            dojo.addClass(this.imageNode, "selected");
-        },
-
         select: function() {
             this.selected = true;
-            this._select();
+            dojo.addClass(this.imageNode, "selected");
         },
 
         deselect: function() {

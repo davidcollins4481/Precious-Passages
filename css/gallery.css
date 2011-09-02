@@ -1,10 +1,12 @@
 #gallery-container {
-    min-height: 300px;
+    min-height: 700px;
+    width: 750px;
 }
 
     #gallery-container .photo-container {
         float: left;
-        padding: 0 5px;
+        padding: 0 15px;
+        min-width: 144px;
     }
 
     #gallery-container .photo-container img {
@@ -20,13 +22,6 @@
         border: 1px solid #666;
     }
 
-    #gallery-container .selected-container,
     #gallery-container .image-thumb-container {
         float: left;
-    }
-
-    /* large selected image */
-    #gallery-container .selected-container img {
-        float: left;
-        height: 300px;
     }
