@@ -11,23 +11,27 @@ dojo.declare(
         templatePath: dojo.moduleUrl("pp", "templates/gallery.html"),
         selectedImage: null,
         images: [],
+        maxPerPage: 16,
+        currentPage: 1,
 
         startup: function() {
             var self = this;
             // this data comes from the backend. See application/views/gallery.php
-            self.images = galleryImages;
-
-            dojo.forEach(self.images, function(image) {
-                self._append(image);
+            dojo.forEach(galleryImages, function(imageData) {
+                self.images.push(
+                    new pp.gallery.image({
+                        data: imageData,
+                        gallery: self
+                    })
+                )
             });
+
+            for (var i = 0; i < self.maxPerPage; i++) {
+                self._append(self.images[i]);
+            }
         },
 
-        _append: function(imageData) {
-            var image = new pp.gallery.image({
-                data: imageData,
-                gallery: this
-            });
-
+        _append: function(image) {
             this.imageAttachNode.appendChild(image.domNode);
         }
     }
