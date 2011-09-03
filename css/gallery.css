@@ -29,7 +29,20 @@
         float: left;
     }
 
-    span.closeText {
-        float: right;
-        cursor: pointer;
+    #gallery-container #pagination-container {
+        display: none;
     }
+
+        #gallery-container #pagination-container .previous,
+        #gallery-container #pagination-container .next {
+            cursor: pointer;
+        }
+
+        #gallery-container .invisible {
+            visibility: hidden;
+        }
+
+span.closeText {
+    float: right;
+    cursor: pointer;
+}

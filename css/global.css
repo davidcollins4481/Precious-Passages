@@ -202,13 +202,11 @@ ul li {
 
 #footer {
     width:100%;
-    /*background-color: #759C01;*/
     border-top:1px solid #d8efa6;
     border-bottom:5px solid #94ae62;
     padding-top:10px;
     padding-bottom:10px;
     color:#666;
-    /*background-image:url(../images/backgrounds/a_hover_reverse.png);*/
 }
 
 #footer a {

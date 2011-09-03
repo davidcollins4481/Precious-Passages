@@ -12,6 +12,7 @@ dojo.declare(
         selectedImage: null,
         images: [],
         maxPerPage: 16,
+        totalPages: 1,
         currentPage: 1,
 
         startup: function() {
@@ -26,13 +27,91 @@ dojo.declare(
                 )
             });
 
-            for (var i = 0; i < self.maxPerPage; i++) {
-                self._append(self.images[i]);
+            this.totalPages = Math.ceil(this.images.length / this.maxPerPage);
+            self._renderPage();
+
+            if (self.images.length > self.maxPerPage) {
+                self._initPagination();
             }
         },
 
         _append: function(image) {
             this.imageAttachNode.appendChild(image.domNode);
+        },
+
+        _initPagination: function() {
+            dojo.style(this.paginationContainerNode, {
+                "display" : "block"
+            });
+        },
+
+        _onPreviousClick: function() {
+            console.log("previous");
+            this.currentPage--;
+
+            if (this.currentPage <= 1) {
+                this._togglePrevious();
+            }
+
+            if (this.currentPage < this.totalPages) {
+                this._toggleNext();
+            }
+
+            this._renderPage();
+        },
+
+        _onNextClick: function() {
+            console.log("next");
+            this.currentPage++;
+
+            if (this.currentPage >= this.totalPages) {
+                this._toggleNext();
+            }
+
+            if (this.currentPage != 1) {
+                this._togglePrevious();
+            }
+
+            this._renderPage();
+        },
+
+        _togglePrevious: function() {
+            var hidden = dojo.hasClass(this.previousNode, "invisible");
+
+            if (hidden) {
+                dojo.removeClass(this.previousNode, "invisible");
+            } else {
+                dojo.addClass(this.previousNode, "invisible");
+            }
+        },
+
+        _toggleNext: function() {
+            var hidden = dojo.hasClass(this.nextNode, "invisible");
+
+            if (hidden) {
+                dojo.removeClass(this.nextNode, "invisible");
+            } else {
+                dojo.addClass(this.nextNode, "invisible");
+            }
+        },
+
+        _scrub: function() {
+            // i hate cleaning nodes like this!
+            this.imageAttachNode.innerHTML = "";
+        },
+
+        _renderPage: function() {
+            var startIndex = (this.currentPage - 1) * this.maxPerPage;
+            var endIndex = (this.currentPage * this.maxPerPage) - 1;
+
+            console.log("Start: " + startIndex);
+            console.log("End: " + endIndex);
+
+            this._scrub();
+
+            for (var i = startIndex; i <= endIndex; i++) {
+                this._append(this.images[i]);
+            }
         }
     }
 );

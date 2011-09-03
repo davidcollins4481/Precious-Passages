@@ -21,7 +21,8 @@ class gallery extends CI_Controller {
 
             // album MUST be set to public for this to work!
             // comes from URL of RSS feed for album
-            $query->setAlbumId("5555395504381076721");
+            //$query->setAlbumId("5555395504381076721");
+            $query->setAlbumId("5547307457720721249");
 
             $albumFeed = $gp->getAlbumFeed($query);
 
