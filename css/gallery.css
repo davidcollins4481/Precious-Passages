@@ -29,6 +29,10 @@
         float: left;
     }
 
+    #gallery-container .progress-indicator {
+
+    }
+
     #gallery-container #pagination-container {
         display: none;
     }
@@ -40,6 +44,10 @@
 
         #gallery-container .invisible {
             visibility: hidden;
+        }
+
+        #gallery-container .hidden {
+            display:none;
         }
 
 span.closeText {

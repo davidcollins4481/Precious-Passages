@@ -1,8 +1,14 @@
-<div dojoAttachPoint="containerNode">
-    <div class="image-thumb-container" dojoAttachPoint="imageAttachNode"></div>
+<div>
 
-    <div id="pagination-container" dojoAttachPoint="paginationContainerNode">
-        <span class="previous invisible" dojoAttachPoint="previousNode" dojoAttachEvent="onclick:_onPreviousClick">Previous</span>
-        <span class="next" dojoAttachPoint="nextNode" dojoAttachEvent="onclick:_onNextClick">Next</span>
+    <div class="gallery-container-node" dojoAttachPoint="galleryNode">
+        <div class="image-thumb-container" dojoAttachPoint="imageAttachNode"></div>
+        <div id="pagination-container" dojoAttachPoint="paginationContainerNode">
+            <span class="previous invisible" dojoAttachPoint="previousNode" dojoAttachEvent="onclick:_onPreviousClick">Previous</span>
+            <span class="next" dojoAttachPoint="nextNode" dojoAttachEvent="onclick:_onNextClick">Next</span>
+        </div>
+    </div>
+
+    <div class="progress-indicator hidden" dojoAttachPoint="progressNode">
+        <img src="/images/resources/ajax-loader.gif" />
     </div>
 </div>

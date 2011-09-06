@@ -95,7 +95,19 @@ dojo.declare(
             }
         },
 
+        _toggleProgress: function() {
+            if (dojo.hasClass(this.galleryNode, "hidden")) {
+                dojo.removeClass(this.galleryNode, "hidden");
+                dojo.addClass(this.progressNode, "hidden");
+            } else {
+                dojo.addClass(this.galleryNode, "hidden");
+                dojo.removeClass(this.progressNode, "hidden");
+            }
+        },
+
         _scrub: function() {
+            dojo.addClass(this.galleryNode, "hidden");
+            dojo.removeClass(this.progressNode, "hidden");
             // i hate cleaning nodes like this!
             this.imageAttachNode.innerHTML = "";
         },
@@ -112,6 +124,9 @@ dojo.declare(
             for (var i = startIndex; i <= endIndex; i++) {
                 this._append(this.images[i]);
             }
+
+            dojo.removeClass(this.galleryNode, "hidden");
+            dojo.addClass(this.progressNode, "hidden");
         }
     }
 );
