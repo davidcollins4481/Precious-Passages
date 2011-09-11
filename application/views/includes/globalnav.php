@@ -1,7 +1,7 @@
         <div id="menu">
-            <a href="#top">home</a> 
-            <a href="#intro">introduction</a> 
-            <a href="#about">about me</a> 
+            <a href="/">home</a>
+            <a href="/gallery">gallery</a>
+            <a href="/bio">about me</a>
         </div>
         
         <div id="header">
