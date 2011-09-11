@@ -33,6 +33,10 @@
 
     }
 
+    #gallery-container .row {
+        float: left;
+    }
+
     #gallery-container #pagination-container {
         display: none;
     }

@@ -46,6 +46,7 @@ dojo.declare(
 
         _startRow: function() {
             this.currentRow = dojo.doc.createElement('div');
+            dojo.addClass(this.currentRow, "row");
             this.imageAttachNode.appendChild(this.currentRow);
         },
 
