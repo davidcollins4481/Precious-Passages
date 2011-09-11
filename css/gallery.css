@@ -1,6 +1,7 @@
 #gallery-container {
     min-height: 750px;
     width: 750px;
+    position: relative;
 }
 
     #gallery-container .photo-container {

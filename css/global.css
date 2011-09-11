@@ -91,11 +91,23 @@ ul li {
     border-bottom:1px solid #eeeeee;
 }
 
+#header img.leaf {
+    position:absolute;
+    opacity: .1;
+    top: -189px;
+    left: 0.8px;
+    -webkit-transform: rotate(237deg);
+    -moz-transform: rotate(237deg);
+    transform: rotate(237deg);
+    width: 700px;
+}
+
 #content {
     width:720px;
     margin:0 auto 0 auto;
     text-align:left;
     min-height: 700px;
+    position: relative;
 }
 
 .introduction {
