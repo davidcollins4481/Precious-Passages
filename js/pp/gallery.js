@@ -14,6 +14,7 @@ dojo.declare(
         maxPerPage: 16,
         totalPages: 1,
         currentPage: 1,
+        currentRow: null,
 
         startup: function() {
             var self = this;
@@ -35,8 +36,17 @@ dojo.declare(
             }
         },
 
-        _append: function(image) {
-            this.imageAttachNode.appendChild(image.domNode);
+        _append: function(image, newRow) {
+            if (newRow) {
+                this._startRow();
+            }
+
+            this.currentRow.appendChild(image.domNode);
+        },
+
+        _startRow: function() {
+            this.currentRow = dojo.doc.createElement('div');
+            this.imageAttachNode.appendChild(this.currentRow);
         },
 
         _initPagination: function() {
@@ -106,8 +116,8 @@ dojo.declare(
         },
 
         _scrub: function() {
-            dojo.addClass(this.galleryNode, "hidden");
-            dojo.removeClass(this.progressNode, "hidden");
+            //dojo.addClass(this.galleryNode, "hidden");
+            //dojo.removeClass(this.progressNode, "hidden");
             // i hate cleaning nodes like this!
             this.imageAttachNode.innerHTML = "";
         },
@@ -116,13 +126,17 @@ dojo.declare(
             var startIndex = (this.currentPage - 1) * this.maxPerPage;
             var endIndex = (this.currentPage * this.maxPerPage) - 1;
 
-            console.log("Start: " + startIndex);
-            console.log("End: " + endIndex);
-
             this._scrub();
 
             for (var i = startIndex; i <= endIndex; i++) {
-                this._append(this.images[i]);
+                console.log(i);
+                var newRow = false;
+                if (i % 4 == 0) {
+                    console.log("end previous row / start next row");
+                    newRow = true;
+                }
+
+                this._append(this.images[i], newRow);
             }
 
             dojo.removeClass(this.galleryNode, "hidden");
