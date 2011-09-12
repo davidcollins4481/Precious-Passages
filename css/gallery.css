@@ -58,4 +58,5 @@
 span.closeText {
     float: right;
     cursor: pointer;
+    /*background-image: url(/images/resources/close_button.png);*/
 }
