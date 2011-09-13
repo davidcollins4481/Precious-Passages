@@ -6,6 +6,7 @@ class Admin extends CI_Controller {
         $this->load->helper(array('form', 'url'));
         $this->load->library('Erkanaauth');
         $this->load->model('User');
+        $this->load->model('File');
 
         $session = $this->session;
         if (!$session->userdata('logged_in')) {
@@ -37,21 +38,38 @@ class Admin extends CI_Controller {
     function do_upload() {
         $config['upload_path'] = 'uploads';
         $config['allowed_types'] = '*';
-        //$config['max_size']    = '100';
-        //$config['max_width']  = '1024';
-        //$config['max_height']  = '768';
 
         $this->load->library('upload', $config);
 
-        if ( ! $this->upload->do_upload()) {
-            $error = array('error' => $this->upload->display_errors());
+        $upload_success = $this->upload->do_upload();
+        $upload_data = $this->upload->data();
+
+        $filename = $upload_data["file_name"];
+
+        $description = $_POST["description"];
+        $file = $this->file;
+
+        $exists = $file->exists($filename);
+
+        if ($exists || ! $upload_success) {
+            $message = $exists ? 'File already exists' : $this->upload->display_errors();
+            $error = array('error' => $message);
 
             $this->load->view('admin/upload.php', $error);
-        }
-        else {
-            $data = array('upload_data' => $this->upload->data());
+        } else {
 
-            $this->load->view('admin/upload_success', $data);
+            $result = $file->add_file(array(
+                'filename'    => $filename,
+                'description' => $description
+            ));
+
+            if (!$result["success"]) {
+                $this->load->view('admin/upload.php', array('error' => $result["message"] ));
+            } else {
+                $data = array('upload_data' => $upload_data);
+
+                $this->load->view('admin/upload_success', $data);
+            }
         }
     }
 

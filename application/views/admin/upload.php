@@ -14,10 +14,14 @@
     <?php echo $error; ?>
 
     <?php echo form_open_multipart('/admin/do_upload');?>
+        <label for="description">Description of File</label>
+        <input type="text" name="description" style="width: 300px" />
         <input type="file" name="userfile" size="20" />
         <br /><br />
         <input type="submit" value="upload" />
     </form>
+
+    <p><a href="/index.php/admin">back</a></p>
 </div>
 
 <?php $this->load->view("includes/footer.php");?>
