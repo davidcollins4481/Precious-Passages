@@ -9,6 +9,10 @@ class d extends CI_Controller {
     /* Add functions for static pages below this point */
     
     // Sample URL: /d/billOfRights
+    public function home() {
+        $this->load->view('static/home.php');
+    }
+    
     public function billOfRights() {
         $this->load->view('static/billOfRights.php');
     }
@@ -105,8 +109,8 @@ class d extends CI_Controller {
         $this->load->view('static/episiotomy.php');
     }
     
-    public function laborPainManagement() {
-        $this->load->view('static/laborPainManagement.php');
+    public function laborPainManagment() {
+        $this->load->view('static/laborPainManagment.php');
     }
     
     public function natureAndManage() {
@@ -119,6 +123,62 @@ class d extends CI_Controller {
     
     public function thirtyMeasures() {
         $this->load->view('static/thirtyMeasures.php');
+    }
+    
+    public function tens() {
+        $this->load->view('static/tens.php');
+    }
+    
+    public function epiduralsForPain() {
+        $this->load->view('static/epiduralsForPain.php');
+    }
+    
+    public function easingLaborPain() {
+        $this->load->view('static/easingLaborPain.php');
+    }
+    
+    public function painRelief() {
+        $this->load->view('static/painRelief.php');
+    }
+    
+    public function cesareanSection() {
+        $this->load->view('static/cesareanSection.php');
+    }
+    
+    public function cSectionRisks() {
+        $this->load->view('static/cSectionRisks.php');
+    }
+    
+    public function cSectionPictures() {
+        $this->load->view('static/cSectionPictures.php');
+    }
+    
+    public function painMedSecConn() {
+        $this->load->view('static/painMedSecConn.php');
+    }
+    
+    public function usingBirthTech() {
+        $this->load->view('static/usingBirthTech.php');
+    }
+    
+    public function interventionCascade() {
+        $this->load->view('static/interventionCascade.php');
+    }
+    
+    public function kangarooCare() {
+        $this->load->view('static/kangarooCare.php');
+    }
+    
+    public function kangCareBenefits() {
+        $this->load->view('static/kangCareBenefits.php');
+    }
+    
+    public function whyKangCare() {
+        $this->load->view('static/whyKangCare.php');
+    }
+    
+    public function babywearing() {
+        $this->load->view('static/babywearing.php');
     }
 }
 

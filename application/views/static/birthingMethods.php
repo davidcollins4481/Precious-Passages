@@ -33,42 +33,42 @@
                     of childbirth preparation. 
                     <ul>
 						<li>
-							<a href="">
+							<a href="/d/chooseAnEducator">
 								Choosing a Childbirth Educator
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/d/nineTips">
 								9 Tips for a Successful Home Birth
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/d/bradleyMethod">
 								The Bradley Method
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/d/hypnobabies">
 								Hypnobabies
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/d/hypnobirthing">
 								HypnoBirthing
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/d/lamaze">
 								Lamaze
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/d/birthingFromWithin">
 								Birthing From Within
 							</a>
 						</li>
 						<li>
-							<a href="">
+							<a href="/d/birthworks">
 								Birthworks
 							</a>
 						</li>

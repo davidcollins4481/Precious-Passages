@@ -1,21 +1,36 @@
 {
     // remember...no trailing commas :) IE doesn't like that
     services: {
-        "Doula": [
-            { url: "/d/billOfRights.php", name: "Bill of Rights" },
-            { url: "/d/billOfRights.php", name: "Test 2" }
+        "Midwifery": [
+            { url: "/d/midwiferyDescription.php", name: "Midwifery Description" },
+            { url: "/d/midwiferyServices.php", name: "Midwifery Services" },
+            { url: "/d/costComparison.php", name: "Home vs. Hospital Cost" }
         ],
-        "Counseling": [
-            { url: "/d/billOfRights.php", name: "Bill of Rights" }
+        "Doula": [
+            { url: "/d/doulaDescription.php", name: "Doula Description" },
+            { url: "/d/doulaServices.php", name: "Doula Services" }
         ]
     },
     resources: {
-        "Birthing Resources": [
-            { url: "/d/billOfRights.php", name: "Bill of Rights" },
-            { url: "/d/birthingFromWithin.php", name: "Birthing From Within" }
+        "Pregnancy": [
+            { url: "/d/pregnancyAndBirth.php", name: "Pregnancy and Birth Websites" },
+            { url: "/d/gestationalDiabetes.php", name: "Gestational Diabetes" },
+            { url: "/d/billOfRights.php", name: "Pregnant Patient's Bill of Rights" }
         ],
-        "Item 2": [
-            { url: "/d/billOfRights.php", name: "Bill of Rights" }
+        "Labor and Delivery": [
+            { url: "/d/birthingMethods.php", name: "Birthing Methods" },
+            { url: "/d/birthPlans.php", name: "Birth Plans" },
+            { url: "/d/episiotomy.php", name: "Episiotomy" },
+            { url: "/d/laborPainManagment.php", name: "Labor Pain Management" }
+        ],
+        "New Baby Care": [
+            { url: "/d/circumcision.php", name: "Circumcision" },
+            { url: "/d/kangarooCare.php", name: "Kangaroo Care" }
+        ],
+        "Interventions": [
+            { url: "/d/cesareanSection.php", name: "Cesarean Section" },
+            { url: "/d/usingBirthTech.php", name: "Using Birth Technology" },
+            { url: "/d/interventionCascade.php", name: "Cascade of Interventions" }
         ]
     }
 }

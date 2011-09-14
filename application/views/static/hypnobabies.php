@@ -21,12 +21,14 @@
                     childbirth experience".  Finding very little in the way of instructional 
                     hypnosis for childbirth, Kerry created the Hypnobabies program.  
                     Her website is 
-                    <a href="" target="_blank">www.Hypnobabies.com</a> .  
+                    <a href="http://www.hypnobabies.com/" target="_blank">www.Hypnobabies.com</a> .  
                     On the site you can purchase the Hypnobabies home study course for $139. 
                 </p>
                 <p>
 					Kerry has written,
-					<a href="">Hypnosis for Childbirth</a> , 
+					<a href="/d/hypnosisForChildbirth">
+						Hypnosis for Childbirth					
+					</a> , 
 					an article concisely explaining Hypnobabies and why she feels it is the 
 					best hypnosis program for childbirth.  
                 </p>

@@ -31,7 +31,10 @@
                     of any kind.  A doula will not make medical decisions for the mother 
                     or partner, but will provide them with the necessary and accurate 
                     information to make an informed decision.  For answers to some 
-                    common misconceptions regarding doulas read Doula Myths vs Realities.
+                    common misconceptions regarding doulas read 
+                    <a href="/d/doulaMythsVsReality">
+						Doula Myths vs Realities.
+                    </a>
                 </p>
             </div>
             <div id="mainbar">

@@ -123,15 +123,18 @@
                 </p>
                 
                 <p>
-					 It is entirely possible to have the birth experience you want 
-					 and deserve.   Much  research has shown that when women and 
-					 their partners are provided with continuous, compassionate support, 
-					 they recall the birth experience with greater satisfaction and bond 
-					 to their infants sooner, even if the experience they had wasn't 
-					 what they would describe as "ideal".  My goal is to give you the 
-					 gift of a birth experience you will WANT to remember.  Please 
-					 feel free to e-mail me with any questions or comments at 
-					 erikao@preciouspassage.com I also welcome phone calls at 330 577-5180.
+					It is entirely possible to have the birth experience you want 
+					and deserve.   Much  research has shown that when women and 
+					their partners are provided with continuous, compassionate support, 
+					they recall the birth experience with greater satisfaction and bond 
+					to their infants sooner, even if the experience they had wasn't 
+					what they would describe as "ideal".  My goal is to give you the 
+					gift of a birth experience you will WANT to remember.  Please 
+					feel free to e-mail me with any questions or comments at
+					<a href="mailto:erikao@preciouspassage.com"> 
+						erikao@preciouspassage.com
+					</a> 
+					I also welcome phone calls at 330 577-5180.
                 </p>
             </div>
         </div>
