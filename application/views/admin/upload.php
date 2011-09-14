@@ -21,6 +21,19 @@
         <input type="submit" value="upload" />
     </form>
 
+    <h2>All uploaded files</h2>
+    <table>
+        <?php
+            foreach ($files as $file) {
+                echo "<tr>";
+                echo "<td>" . $file->filename . " </td>";
+                echo "<td>" . $file->description . " </td>";
+                echo "<td><a href='/admin/delete_file?id=" . $file->id . "'>delete</a></td>";
+                echo "</tr>";
+            }
+        ?>
+    </table>
+
     <p><a href="/index.php/admin">back</a></p>
 </div>
 

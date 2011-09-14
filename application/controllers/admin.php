@@ -32,7 +32,8 @@ class Admin extends CI_Controller {
     }
    
     public function upload() {
-        $this->load->view('admin/upload.php', array('error' => ' ' ));
+        $all_files = $this->file->get_all();
+        $this->load->view('admin/upload.php', array('error' => ' ', 'files' => $all_files ));
     }
 
     function do_upload() {
