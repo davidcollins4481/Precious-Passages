@@ -160,6 +160,26 @@ class d extends CI_Controller {
     public function usingBirthTech() {
         $this->load->view('static/usingBirthTech.php');
     }
+    
+    public function interventionCascade() {
+        $this->load->view('static/interventionCascade.php');
+    }
+    
+    public function kangarooCare() {
+        $this->load->view('static/kangarooCare.php');
+    }
+    
+    public function kangCareBenefits() {
+        $this->load->view('static/kangCareBenefits.php');
+    }
+    
+    public function whyKangCare() {
+        $this->load->view('static/whyKangCare.php');
+    }
+    
+    public function babywearing() {
+        $this->load->view('static/babywearing.php');
+    }
 }
 
 /* End of file welcome.php */

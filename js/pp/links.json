@@ -24,11 +24,13 @@
             { url: "/d/laborPainManagment.php", name: "Labor Pain Management" }
         ],
         "New Baby Care": [
-            { url: "/d/circumcision.php", name: "Circumcision" }
+            { url: "/d/circumcision.php", name: "Circumcision" },
+            { url: "/d/kangarooCare.php", name: "Kangaroo Care" }
         ],
         "Interventions": [
             { url: "/d/cesareanSection.php", name: "Cesarean Section" },
-            { url: "/d/usingBirthTech.php", name: "Using Birth Technology" }
+            { url: "/d/usingBirthTech.php", name: "Using Birth Technology" },
+            { url: "/d/interventionCascade.php", name: "Cascade of Interventions" }
         ]
     }
 }
