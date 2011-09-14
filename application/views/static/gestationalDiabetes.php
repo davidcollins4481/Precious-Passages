@@ -26,7 +26,7 @@
                 </p>
                 <p>
 					I highly recommend the article by Henci Goer: 
-					<a href="">
+					<a href="/d/gdArticle">
 						Gestational Diabetes: The Emperor Has No Clothes. 
 					</a>
                 </p>

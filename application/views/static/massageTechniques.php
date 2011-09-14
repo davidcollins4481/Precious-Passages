@@ -32,7 +32,7 @@
                     Techniques available from Talking Pictures PO Box 77, Cirencester, 
                     Gloucestershire, GL7 5YN. Phone: 01865 841256, Fax: 01285 750686, 
 					E-mail 
-					<a href="mailto:info@talkingpictures.co.uk">mailto:info@talkingpictures.co.uk</a> 
+					<a href="mailto:info@talkingpictures.co.uk">info@talkingpictures.co.uk</a> 
 					Price &pound;15.95 + &pound;2 postage and handling.
                 </p>
                 <p>
