@@ -68,9 +68,9 @@ dojo.declare(
 
         _loadDataSource: function() {
             var self = this;
-
+            var minute = new Date().getMinutes();
             dojo.xhrGet({
-                url: "/js/pp/links.json",
+                url: "/js/pp/links.json?cachebuster=" + minute,
                 handleAs: "json",
                 handle: function(data){
                     self.dataSource = data;
