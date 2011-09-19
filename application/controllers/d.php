@@ -169,16 +169,16 @@ class d extends CI_Controller {
         $this->load->view('static/kangarooCare.php');
     }
     
-    public function kangCareBenefits() {
-        $this->load->view('static/kangCareBenefits.php');
+    public function waterbirth() {
+        $this->load->view('static/waterbirth.php');
     }
     
-    public function whyKangCare() {
-        $this->load->view('static/whyKangCare.php');
+    public function waterbirthBasics() {
+        $this->load->view('static/waterbirthBasics.php');
     }
     
-    public function babywearing() {
-        $this->load->view('static/babywearing.php');
+    public function waterbirthInternational() {
+        $this->load->view('static/waterbirthInternational.php');
     }
 }
 

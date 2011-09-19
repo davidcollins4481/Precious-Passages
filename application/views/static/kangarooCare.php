@@ -24,7 +24,7 @@
                     gain, better milk supply in the mother, less crying, less sleep apnea, 
                     easier temperature regulation in the newborn and most importantly a 
                     vastly increased sense of bonding between the newborn and the mother.  
-                    <a href="/d/kangCareBenefits.php">Kangaroo Care Benefits</a> 
+                    <a href="http://www.prematurity.org/baby/kangaroo.html" target="_blank">Kangaroo Care Benefits</a> 
                     for preemies have been extensively studied.  However, every baby and 
                     parent will benefit from kangaroo care.   
                 </p>
@@ -84,11 +84,11 @@
 								Kangaroo Care on Wikipedia
 							</a>
 							<br/>
-							<a href="" target="_blank">
+							<a href="http://www.midwiferytoday.com/articles/kangaroocare.asp" target="_blank">
 								Kangaroo Care: Why Does It Work?
 							</a>
 							<br/>
-							<a href="" target="_blank">
+							<a href="http://www.instinctiveparenting.com/flex/baby_wearing/44/1	" target="_blank">
 								Babywearing
 							</a>
 						</td>

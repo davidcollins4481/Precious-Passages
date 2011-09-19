@@ -21,7 +21,8 @@
             { url: "/d/birthingMethods.php", name: "Birthing Methods" },
             { url: "/d/birthPlans.php", name: "Birth Plans" },
             { url: "/d/episiotomy.php", name: "Episiotomy" },
-            { url: "/d/laborPainManagment.php", name: "Labor Pain Management" }
+            { url: "/d/laborPainManagment.php", name: "Labor Pain Management" },
+            { url: "/d/waterbirth.php", name: "Waterbirth" }
         ],
         "New Baby Care": [
             { url: "/d/circumcision.php", name: "Circumcision" },
