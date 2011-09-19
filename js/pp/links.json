@@ -31,6 +31,9 @@
             { url: "/d/cesareanSection.php", name: "Cesarean Section" },
             { url: "/d/usingBirthTech.php", name: "Using Birth Technology" },
             { url: "/d/interventionCascade.php", name: "Cascade of Interventions" }
+        ],
+        "Download": [
+            { url : "/p/documents", name: "Documents" }
         ]
     }
 }
