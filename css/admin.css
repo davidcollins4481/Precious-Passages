@@ -4,11 +4,18 @@
     min-height: 500px;
 }
 
-#response.error {
+    .admin-container .no-files tr,td {
+        border: none !important;
+    }
+
+
+#response.error,
+.error {
     color: #C60808;
 }
 
-#response.success {
+#response.success,
+.success {
     color: #27C608;
 }
 

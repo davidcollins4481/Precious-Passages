@@ -34,6 +34,21 @@ class File extends CI_Model {
         );
     }
 
+    function get_file($id) {
+        $data = array(
+            'id' => $id
+        );
+
+        $sql =
+            "select * from files where id = " . $this->db->escape($id) . ";";
+
+        $query = $this->db->query($sql);
+
+        $row = $query->row_array();
+
+        return $row;
+    }
+
     function delete($id) {
         $data = array(
             'id' => $id

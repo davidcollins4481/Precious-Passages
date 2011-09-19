@@ -33,7 +33,7 @@ class Admin extends CI_Controller {
    
     public function upload() {
         $all_files = $this->file->get_all();
-        $this->load->view('admin/upload.php', array('error' => ' ', 'files' => $all_files ));
+        $this->load->view('admin/upload.php', array('message' => ' '));
     }
 
     function do_upload() {
@@ -54,7 +54,7 @@ class Admin extends CI_Controller {
 
         if ($exists || ! $upload_success) {
             $message = $exists ? 'File already exists' : $this->upload->display_errors();
-            $error = array('error' => $message);
+            $error = array('message' => $message, 'error' => 1);
 
             $this->load->view('admin/upload.php', $error);
         } else {
@@ -65,13 +65,27 @@ class Admin extends CI_Controller {
             ));
 
             if (!$result["success"]) {
-                $this->load->view('admin/upload.php', array('error' => $result["message"] ));
+                $this->load->view('admin/upload.php', array('message' => $result["message"], 'error' => 1 ));
             } else {
-                $data = array('upload_data' => $upload_data);
-
-                $this->load->view('admin/upload_success', $data);
+                $data = array('message' => 'File uploaded successfully');
+                $this->load->view('admin/upload.php', $data);
             }
         }
+    }
+
+    public function delete_file() {
+        $id = $_GET["id"];
+
+        $file = $this->file;
+        $selected = $file->get_file($id);
+
+        // TODO: get this path into the config
+        unlink('uploads/' . $selected['filename']);
+
+        $file->delete($id);
+
+        $message = array('message' => 'File deleted successfully');
+        $this->load->view('admin/upload.php', $message);
     }
 
     public function create_new_user_post_json() {
