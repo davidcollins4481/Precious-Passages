@@ -22,7 +22,7 @@
         <div class="User Tools">
             <h2>User Tools</h2>
             <ul>
-                <li><a href="/index.php/admin/upload">Upload Files</a></li>
+                <li><a href="/index.php/admin/upload">File Management (upload files)</a></li>
             </ul>
         </div>
     </div>

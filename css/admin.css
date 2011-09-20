@@ -1,11 +1,13 @@
 .admin-container {
-    width: 250px;
+    width: 750px;
     text-align: left;
     min-height: 500px;
     margin: auto;
+    position: relative;
 }
 
-    .admin-container .no-files tr,td {
+    .admin-container .no-files tr,
+    .admin-container .no-files td {
         border: none !important;
     }
 
@@ -25,5 +27,7 @@
 }
 
 .users tr,td {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px dotted #ccc;
+    border-right: 1px dotted #ccc;
+    padding: 5px;
 }

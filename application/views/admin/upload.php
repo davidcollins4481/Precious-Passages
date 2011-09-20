@@ -17,7 +17,7 @@
     ?>
 
     <?php echo form_open_multipart('/admin/do_upload');?>
-        <label for="description">Description of File</label>
+        <label for="description">Description of File</label><br/>
         <input type="text" name="description" style="width: 300px" />
         <input type="file" name="userfile" size="20" />
         <br /><br />

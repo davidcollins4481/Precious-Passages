@@ -5,7 +5,7 @@
 <?php $this->load->view("includes/globalnav.php") ?>
 
         <!-- unique -->
-        <div id="content">
+        <div id="content" class="documents-container">
             
             <?php $this->load->view("includes/sidebar.php") ?>
             
