@@ -1,3 +1,4 @@
 <body>
-    <a name="top" id="top"></a>
-    <center>
+    <div id="wrapper">
+        <!--<a name="top" id="top"></a>-->
+        <div id="content-wrapper">

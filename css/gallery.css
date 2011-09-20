@@ -2,6 +2,7 @@
     min-height: 750px;
     width: 750px;
     position: relative;
+    margin: auto;
 }
 
     #gallery-container .photo-container {

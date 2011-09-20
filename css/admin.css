@@ -2,6 +2,7 @@
     width: 250px;
     text-align: left;
     min-height: 500px;
+    margin: auto;
 }
 
     .admin-container .no-files tr,td {
