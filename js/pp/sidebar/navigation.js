@@ -43,6 +43,8 @@ dojo.declare(
             // set sub-children
             var data = this.dataSource[args.dataKey];
 
+            var rowHeight = 26;
+
             for (submenu in data) {
                 var name = submenu;
                 var links = data[name];
@@ -57,10 +59,16 @@ dojo.declare(
                     content += linkify(link);
                 });
 
-                containerNode.addChild(new dijit.layout.ContentPane({
+                var c = new dijit.layout.ContentPane({
                     title: name,
                     content: content
-                }));
+                });
+
+                dojo.style(c.domNode, {
+                    height: (rowHeight * links.length) + "px !important"
+                });
+
+                containerNode.addChild(c);
             }
 
             containerNode.startup();
