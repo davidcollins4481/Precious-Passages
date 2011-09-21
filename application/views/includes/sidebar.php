@@ -3,10 +3,7 @@
                     <img src="/images/resources/logo.jpg" alt="Your Logo" class="logo" style="width: 175px" />
                 </div>
 
-
                 <div id="menu-container">
-                    <div id="navigation-container" dojoType="pp.sidebar.navigation"></div>
-
                     <div id="user-container">
                         <?php 
                             $session = $this->session;
@@ -16,5 +13,7 @@
                             $this->load->view('includes/login.php') 
                         ?>
                     </div>
+
+                    <div id="navigation-container" dojoType="pp.sidebar.navigation"></div>
                 </div>
             </div>
