@@ -23,7 +23,7 @@ class gallery extends CI_Controller {
             // comes from URL of RSS feed for album
             //$query->setAlbumId("5555395504381076721");
             $query->setAlbumId("5547307457720721249");
-
+            $query->setImgMax('640');
             $albumFeed = $gp->getAlbumFeed($query);
 
             foreach ($albumFeed as $photoEntry) {
