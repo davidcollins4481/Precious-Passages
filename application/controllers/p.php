@@ -4,7 +4,7 @@ class p extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('File');
-
+        $this->load->helper('file');
     }
 
     public function documents() {
@@ -19,21 +19,17 @@ class p extends CI_Controller {
             $fsize = filesize($fullPath);
             $path_parts = pathinfo($fullPath);
             $ext = strtolower($path_parts["extension"]);
-            switch ($ext) {
-                case "pdf":
-                header("Content-type: application/pdf"); // add here more headers for diff. extensions
-                header("Content-Disposition: attachment; filename=\"".$path_parts["basename"]."\""); // use 'attachment' to force a download
-                break;
-                default;
-                header("Content-type: application/octet-stream");
-                header("Content-Disposition: filename=\"".$path_parts["basename"]."\"");
-            }
+            $mime_type = get_mime_by_extension($fullPath);
+            header("Content-type: " . $mime_type); // add here more headers for diff. extensions
+            header("Content-Disposition: attachment; filename=\"".$path_parts["basename"]."\""); // use 'attachment' to force a download
             header("Content-length: $fsize");
             header("Cache-control: private"); //use this to open files directly
+
             while(!feof($fd)) {
                 $buffer = fread($fd, 2048);
                 echo $buffer;
             }
+
         }
         fclose ($fd);
     }

@@ -28,6 +28,12 @@ ul li {
     text-align:left;
 }
 
+#content-wrapper,
+#wrapper {
+    float: left;
+    width: 100%;
+}
+
 #menu {
     width:100%;
     padding-top:20px;
@@ -125,6 +131,7 @@ ul li {
     font-size:95%;
     color:#6C534A;
     text-align:left;
+    padding-bottom: 20px;
 }
 
     #sidebar h1 {
@@ -173,6 +180,7 @@ ul li {
     background-image:url(../images/backgrounds/mainbar.jpg);
     background-position:top right;
     background-repeat:no-repeat;
+    float: left;
 }
 
 #mainbar h1 {
@@ -206,6 +214,8 @@ ul li {
     padding-top:10px;
     padding-bottom:10px;
     color:#666;
+    float: left;
+    text-align: center;
 }
 
 #footer a {
@@ -242,4 +252,10 @@ ul li {
 
 #modal-background.on {
     display:block;
+}
+
+.documents-container tr, 
+.documents-container td {
+    border-bottom: 1px solid #eee;
+    padding: 5px;
 }

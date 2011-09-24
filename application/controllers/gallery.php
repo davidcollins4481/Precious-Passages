@@ -23,16 +23,17 @@ class gallery extends CI_Controller {
             // comes from URL of RSS feed for album
             //$query->setAlbumId("5555395504381076721");
             $query->setAlbumId("5547307457720721249");
-
+            $query->setImgMax('640');
             $albumFeed = $gp->getAlbumFeed($query);
 
             foreach ($albumFeed as $photoEntry) {
+                $photoEntry = $photoEntry->setGphotoWidth(500);
                 $mediaContentArray = $photoEntry->getMediaGroup()->getContent();
                 $src = $mediaContentArray[0]->getUrl();
 
                 $title = $photoEntry->summary->text;
 
-                $mediaThumbnailArray = $photoEntry->getMediaGroup()->getThumbnail();
+                $mediaThumbnailArray = $photoEntry->getMediaGroup()->getThumbnail(72);
                 $thumb = $mediaThumbnailArray[1]->getUrl();
 
                 array_push($images, array(

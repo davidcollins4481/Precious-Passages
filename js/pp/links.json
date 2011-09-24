@@ -33,7 +33,7 @@
             { url: "/d/usingBirthTech.php", name: "Using Birth Technology" },
             { url: "/d/interventionCascade.php", name: "Cascade of Interventions" }
         ],
-        "Download": [
+        "Downloads": [
             { url : "/p/documents", name: "Documents" }
         ]
     }
