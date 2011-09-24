@@ -28,6 +28,11 @@
 <div id="gallery-container">
     <div id="pagination-container" style="<?php echo $style; ?>">
         <span id="previous" class="invisible previous">Previous</span>
+        <?php
+            for ($i = 1;$i <= $pageCount; $i++) {
+                echo '<span id="page-' . $i . '" class="pagination-link">' . $i. '</span>';
+            }
+        ?>
         <span id="next" class="next">Next</span>
     </div>
 

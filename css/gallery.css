@@ -3,10 +3,11 @@
 }
 
 #gallery-container {
-    min-height: 750px;
     width: 750px;
     position: relative;
     margin: auto;
+    min-height: 700px;
+    padding-bottom: 20px;
 }
 
     #gallery-container .photo-container {
@@ -51,9 +52,21 @@
     }
 
         #gallery-container #pagination-container .previous,
-        #gallery-container #pagination-container .next {
+        #gallery-container #pagination-container .next,
+        #gallery-container #pagination-container .pagination-link {
             cursor: pointer;
             color: #2A65AD;
+        }
+
+        #gallery-container #pagination-container .pagination-link {
+            padding: 0 5px;
+            text-decoration: underline;
+        }
+
+        #gallery-container #pagination-container .pagination-link.active {
+            text-decoration: none;
+            font-weight: bold;
+            cursor: default;
         }
 
         #gallery-container .invisible {

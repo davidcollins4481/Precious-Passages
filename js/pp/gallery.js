@@ -29,6 +29,15 @@ dojo.addOnLoad(function() {
         }
     };
 
+    var setActivePage = function() {
+        dojo.query('.pagination-link').forEach(function(node) {
+            dojo.removeClass(node, 'active');
+        });
+
+        dojo.addClass(dojo.byId('page-' + currentPage), 'active');
+    };
+    // handle toggles for previous/next links
+
     dojo.connect(dojo.byId('previous'),"onclick", null, function(evt) {
         console.log('previous');
         currentPage--;
@@ -65,5 +74,15 @@ dojo.addOnLoad(function() {
         }
 
         renderPage();
+    });
+
+    // hook up page numbers
+    dojo.query('.pagination-link').forEach(function(node) {
+        dojo.connect(node, "onclick", null, function(evt) {
+            var pageNumber = parseInt(this.id.match(/\d/)[0]);
+            currentPage = pageNumber;
+            renderPage();
+            setActivePage();
+        });
     });
 });
