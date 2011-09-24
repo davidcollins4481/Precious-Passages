@@ -13,14 +13,24 @@
 
 <div id="gallery-container">
     <?php
-        foreach ($images as $image) {
-            $src = $image['src'];
-            $thumb = $image['thumb'];
-            $title = $image['title'];
+        for ($i = 0; $i < count($images);$i++) {
+            $newRow = $i % 4 == 0;
+            $endRow = $i % 4 == 3;
+
+            if ($newRow) {
+                echo '<div class="row">';
+            }
+
+            $src = $images[$i]['src'];
+            $thumb = $images[$i]['thumb'];
+            $title = $images[$i]['title'];
             echo '<div class="photo-container">';
             echo '<a href="' . $src . '" rel="lightbox" title="' . $title . '"><img src="' . $thumb . '"/></a>';
             echo '<p>' . $title . '</p>';
             echo '</div>';
+            if ($endRow) {
+                echo '</div>';
+            }
         }
     ?>
 </div>
