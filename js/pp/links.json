@@ -15,7 +15,8 @@
         "Pregnancy": [
             { url: "/d/pregnancyAndBirth.php", name: "Pregnancy and Birth Websites" },
             { url: "/d/gestationalDiabetes.php", name: "Gestational Diabetes" },
-            { url: "/d/billOfRights.php", name: "Pregnant Patient's Bill of Rights" }
+            { url: "/d/billOfRights.php", name: "Pregnant Patient's Bill of Rights" },
+            { url: "/d/rhogam.php", name: "Rhogam and Rh Incompatability" }
         ],
         "Labor and Delivery": [
             { url: "/d/birthingMethods.php", name: "Birthing Methods" },
@@ -26,12 +27,12 @@
         ],
         "New Baby Care": [
             { url: "/d/circumcision.php", name: "Circumcision" },
-            { url: "/d/kangarooCare.php", name: "Kangaroo Care" }
+            { url: "/d/kangarooCare.php", name: "Kangaroo Care" },
+            { url: "/d/vitaminK.php", name: "Vitamin K" }
         ],
         "Interventions": [
             { url: "/d/cesareanSection.php", name: "Cesarean Section" },
-            { url: "/d/usingBirthTech.php", name: "Using Birth Technology" },
-            { url: "/d/interventionCascade.php", name: "Cascade of Interventions" }
+            { url: "/d/usingBirthTech.php", name: "Using Birth Technology" }
         ],
         "Downloads": [
             { url : "/p/documents", name: "Documents" }

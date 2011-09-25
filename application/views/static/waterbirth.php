@@ -50,9 +50,6 @@
 							<a href="/d/waterbirthBasics">Waterbirth Basics</a>
 						</li>
 						<li>
-							<a href="/d/waterbirthInternational">Waterbirth International</a>
-						</li>
-						<li>
 							<a href="http://www.birthintobeing.com/" target="_blank">Birth Into Being</a>
 						</li>
 						<li>

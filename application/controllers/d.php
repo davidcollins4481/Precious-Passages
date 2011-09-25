@@ -177,8 +177,24 @@ class d extends CI_Controller {
         $this->load->view('static/waterbirthBasics.php');
     }
     
-    public function waterbirthInternational() {
-        $this->load->view('static/waterbirthInternational.php');
+    public function vitaminK() {
+        $this->load->view('static/vitaminK.php');
+    }
+    
+    public function rhogam() {
+        $this->load->view('static/rhogam.php');
+    }
+    
+    public function rhIncompatability() {
+        $this->load->view('static/rhIncompatability.php');
+    }
+    
+    public function whyRhogam() {
+        $this->load->view('static/whyRhogam.php');
+    }
+    
+    public function antiD() {
+        $this->load->view('static/antiD.php');
     }
 }
 
