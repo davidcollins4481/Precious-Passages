@@ -3,7 +3,6 @@ dojo.addOnLoad(function() {
 
     var renderPage = function() {
         dojo.query('.row').forEach(function(row) {
-            //dojo.addClass(row, 'hidden');
             dojo.fadeOut({
                 node: row,
                 onEnd: function(node) {
@@ -36,16 +35,14 @@ dojo.addOnLoad(function() {
 
         dojo.addClass(dojo.byId('page-' + currentPage), 'active');
     };
+
     // handle toggles for previous/next links
-
-    dojo.connect(dojo.byId('previous'),"onclick", null, function(evt) {
-        console.log('previous');
-        currentPage--;
-
+    var toggleNextPrevious = function() {
+        // previous links
         if (currentPage > 1) {
-            dojo.removeClass(this, "invisible");
+            dojo.removeClass(dojo.byId('previous'), "invisible");
         } else {
-            dojo.addClass(this, "invisible");
+            dojo.addClass(dojo.byId('previous'), "invisible");
         }
 
         if (currentPage < pageCount) {
@@ -53,26 +50,21 @@ dojo.addOnLoad(function() {
         } else {
             dojo.addClass(dojo.byId('next'), 'invisible');
         }
+    };
 
+    dojo.connect(dojo.byId('previous'),"onclick", null, function(evt) {
+        console.log('previous');
+        currentPage--;
+        toggleNextPrevious();
+        setActivePage()
         renderPage();
     });
 
     dojo.connect(dojo.byId('next'),"onclick", null, function(evt) {
         console.log('next');
         currentPage++;
-
-        if (currentPage >= pageCount) {
-            dojo.addClass(this, "invisible");
-        } else {
-            dojo.removeClass(this, "invisible");
-        }
-
-        if (currentPage > 1) {
-            dojo.removeClass(dojo.byId('previous'), 'invisible');
-        } else {
-            dojo.addClass(dojo.byId('previous'), 'invisible');
-        }
-
+        toggleNextPrevious();
+        setActivePage();
         renderPage();
     });
 
@@ -81,6 +73,7 @@ dojo.addOnLoad(function() {
         dojo.connect(node, "onclick", null, function(evt) {
             var pageNumber = parseInt(this.id.match(/\d/)[0]);
             currentPage = pageNumber;
+            toggleNextPrevious();
             renderPage();
             setActivePage();
         });

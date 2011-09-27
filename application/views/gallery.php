@@ -30,7 +30,8 @@
         <span id="previous" class="invisible previous">Previous</span>
         <?php
             for ($i = 1;$i <= $pageCount; $i++) {
-                echo '<span id="page-' . $i . '" class="pagination-link">' . $i. '</span>';
+                $selectedClass = $i == 1 ? ' active' : '';
+                echo '<span id="page-' . $i . '" class="pagination-link' . $selectedClass . '">' . $i. '</span>';
             }
         ?>
         <span id="next" class="next">Next</span>
