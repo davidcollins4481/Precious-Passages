@@ -16,7 +16,8 @@
             { url: "/d/pregnancyAndBirth.php", name: "Pregnancy and Birth Websites" },
             { url: "/d/gestationalDiabetes.php", name: "Gestational Diabetes" },
             { url: "/d/billOfRights.php", name: "Pregnant Patient's Bill of Rights" },
-            { url: "/d/rhogam.php", name: "Rhogam and Rh Incompatability" }
+            { url: "/d/rhogam.php", name: "Rhogam and Rh Incompatability" },
+            { url: "/d/nutrition.php", name: "Nutrition During Pregnancy" }
         ],
         "Labor and Delivery": [
             { url: "/d/birthingMethods.php", name: "Birthing Methods" },

@@ -196,6 +196,14 @@ class d extends CI_Controller {
     public function antiD() {
         $this->load->view('static/antiD.php');
     }
+    
+    public function nutrition() {
+        $this->load->view('static/nutrition.php');
+    }
+    
+    public function allstarFoods() {
+        $this->load->view('static/allstarFoods.php');
+    }
 }
 
 /* End of file welcome.php */
