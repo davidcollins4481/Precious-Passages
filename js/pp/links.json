@@ -16,8 +16,7 @@
             { url: "/d/pregnancyAndBirth.php", name: "Pregnancy and Birth Websites" },
             { url: "/d/gestationalDiabetes.php", name: "Gestational Diabetes" },
             { url: "/d/billOfRights.php", name: "Pregnant Patient's Bill of Rights" },
-            { url: "/d/rhogam.php", name: "Rhogam and Rh Incompatability" },
-            { url: "/d/nutrition.php", name: "Nutrition During Pregnancy" }
+            { url: "/d/rhogam.php", name: "Rhogam and Rh Incompatability" }
         ],
         "Labor and Delivery": [
             { url: "/d/birthingMethods.php", name: "Birthing Methods" },
@@ -34,6 +33,12 @@
         "Interventions": [
             { url: "/d/cesareanSection.php", name: "Cesarean Section" },
             { url: "/d/usingBirthTech.php", name: "Using Birth Technology" }
+        ],
+        "Exercise and Nutrition": [
+            { url: "/d/nutrition.php", name: "Nutrition During Pregnancy" },
+            { url: "/d/vitamins.php", name: "Prenatal Vitamins" },
+            { url: "/d/herbs.php", name: "Herbs During Pregnancy" },
+            { url: "/d/exercise.php", name: "Exercise During Pregnancy" }
         ],
         "Downloads": [
             { url : "/p/documents", name: "Documents" }

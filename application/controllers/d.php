@@ -201,8 +201,48 @@ class d extends CI_Controller {
         $this->load->view('static/nutrition.php');
     }
     
+    public function basicDiet() {
+        $this->load->view('static/basicDiet.php');
+    }
+    
+    public function lactoDiet() {
+        $this->load->view('static/lactoDiet.php');
+    }
+    
+    public function veganDiet() {
+        $this->load->view('static/veganDiet.php');
+    }
+    
     public function allstarFoods() {
         $this->load->view('static/allstarFoods.php');
+    }
+    
+    public function vitamins() {
+        $this->load->view('static/vitamins.php');
+    }
+    
+    public function herbs() {
+        $this->load->view('static/herbs.php');
+    }
+    
+    public function herbalDictionary() {
+        $this->load->view('static/herbalDictionary.php');
+    }
+    
+    public function herbsToAvoid() {
+        $this->load->view('static/herbsToAvoid.php');
+    }
+    
+    public function exercise() {
+        $this->load->view('static/exercise.php');
+    }
+    
+    public function exerciseAndInfantSize() {
+        $this->load->view('static/exerciseAndInfantSize.php');
+    }
+    
+    public function choosingActivities() {
+        $this->load->view('static/choosingActivities.php');
     }
 }
 
