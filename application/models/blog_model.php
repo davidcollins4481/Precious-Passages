@@ -7,7 +7,7 @@ class Blog_model extends CI_Model {
     
     //Gets all entries in the blog table
     public function get_all_entries() {
-        $this->db->select('summary, title, url_title, author'); 
+        $this->db->select('summary, title, url_title, author','edited_date'); 
         $query = $this->db->get('blog');
         
         if ($query->num_rows() > 0)
@@ -20,7 +20,7 @@ class Blog_model extends CI_Model {
 
     //gets a single entry based on its url title
     public function get_entry($url_title) {
-        $this->db->select('title, entry, author')->where('url_title', $url_title);
+        $this->db->select('*')->where('url_title', $url_title);
         $query = $this->db->get('blog', 1);
       
         if ($query->num_rows() == 1) {

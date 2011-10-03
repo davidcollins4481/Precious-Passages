@@ -53,15 +53,16 @@ class Blog extends CI_Controller {
         $title     = $_POST["title"];
         $entry     = urldecode($_POST["entry"]);
         $url_title = str_replace(" ", "-", $title);
-        $summary   = substr($entry, 500);
+        $summary   = substr($entry, 0, 500);
         $author    = $session->userdata('username');
 
         $data = array(
-            'author'    => $author,
-            'entry'     => $entry,
-            'url_title' => $url_title,
-            'title'     => $title,
-            'summary'   => $summary
+            'author'        => $author,
+            'entry'         => $entry,
+            'url_title'     => $url_title,
+            'title'         => $title,
+            'summary'       => $summary,
+            'edited_date'   => date('Y-m-d H:i:s')
         );
         
         $this->load->model('Blog_model', 'blog');

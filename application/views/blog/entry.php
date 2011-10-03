@@ -13,6 +13,7 @@
 
                 <?php echo $post->entry; ?>
 
+                <p>Date: <?php echo $post->edited_date; ?></p>
                 <p><a href="/index.php/blog/">Back to Blog</a></p>
             </div>
         </div>

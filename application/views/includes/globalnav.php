@@ -2,6 +2,7 @@
             <a href="/">home</a>
             <a href="/gallery">gallery</a>
             <a href="/bio">about me</a>
+            <a href="/blog">blog</a>
         </div>
         
         <div id="header">
