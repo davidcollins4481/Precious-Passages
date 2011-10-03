@@ -62,7 +62,8 @@ class Blog extends CI_Controller {
             'url_title'     => $url_title,
             'title'         => $title,
             'summary'       => $summary,
-            'edited_date'   => date('Y-m-d H:i:s')
+            'edited_date'   => date('Y-m-d H:i:s'),
+            'creation_date'  => date('Y-m-d H:i:s')
         );
         
         $this->load->model('Blog_model', 'blog');
