@@ -1,5 +1,5 @@
 <?php
-    $args['body_class'] = 'claro';
+    $args['body_class'] = "claro";
 ?>
 
 <?php $this->load->view("includes/doctype_html.php") ?>
@@ -12,13 +12,19 @@
 <?php $this->load->view("includes/body_start.php", $args) ?>
 <?php $this->load->view("includes/globalnav.php") ?>
 
+<div id="message-container"></div>
+
 <div id="edit-container">
-    <div dojoType="dijit.Editor" id="editor1" onChange="console.log('editor1 onChange handler: ' + arguments[0])">
-        <p>
-            This instance is created from a div directly with default toolbar and
-            plugins
-        </p>
-    </div>
+    <form id="form-parent" method="post" action="/blog/edit_post">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" />
+
+        <div id="editor"></div>
+
+        <div id="post-btn">
+            <button id="submit-btn">Post</button>
+        </div>
+    </form>
 </div>
 
 <?php $this->load->view("includes/footer.php");?>

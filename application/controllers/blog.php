@@ -32,10 +32,50 @@ class Blog extends CI_Controller {
     }
 
     public function edit() {
-  
+        $session = $this->session;
+        if (!$session->userdata('logged_in')) {
+            log_message("debug", "not logged in");
+            redirect('/');
+            return;
+        }
+        
         $this->load->view('blog/edit');
+    }
+
+    public function edit_post() {
+        $session = $this->session;
+        if (!$session->userdata('logged_in')) {
+            log_message("debug", "not logged in");
+            redirect('/');
+            return;
+        }
+
+        $title     = $_POST["title"];
+        $entry     = urldecode($_POST["entry"]);
+        $url_title = str_replace(" ", "-", $title);
+        $summary   = substr($entry, 500);
+        $author    = $session->userdata('username');
+
+        $data = array(
+            'author'    => $author,
+            'entry'     => $entry,
+            'url_title' => $url_title,
+            'title'     => $title,
+            'summary'   => $summary
+        );
+        
+        $this->load->model('Blog_model', 'blog');
+        $this->blog->add_entry($data);
+
+        $result = array(
+            'result' => 1,
+            'message' => 'success!'
+        );
+
+        $this->output
+            ->set_content_type('application/json')
+            ->set_output(json_encode($result));
     }
 }
 
 /* End of file blog.php */
-/* Location: ./system/tumbleupon/controllers/blog.php */ 
