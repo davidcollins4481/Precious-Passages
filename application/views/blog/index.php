@@ -39,6 +39,9 @@
                         <a href="/blog/entry/<?php echo $entry->url_title; ?>">[...]</a>
                     </p>
                     <?php echo $entry->author; ?> -- <?php $time = strtotime($entry->edited_date); echo date('Y-m-d @ H:i', $time); ?>
+                    <?php if ($editable) {?>
+                        <p><a href="/blog/edit?entry_id=<?php echo $entry->entry_id ?>" style="font-weight: normal">edit</a></p>
+                    <?php } ?>
                 </div>
             <?php } ?>
         </div>

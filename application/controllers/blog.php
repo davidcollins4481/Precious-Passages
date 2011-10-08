@@ -8,6 +8,8 @@ class Blog extends CI_Controller {
     //the home page of the blog
     public function index() {
         $this->load->model('Blog_model', 'blog');
+        $session = $this->session;
+        $logged_in = $session->userdata('logged_in');
         // sort types newest,oldest
 
         $sort = 'desc';
@@ -23,6 +25,7 @@ class Blog extends CI_Controller {
         }
 
         $entries['query'] = $this->blog->get_all_entries($sort);
+        $entries['editable'] = $logged_in ? true : false;
         $entries['sort_order'] = $sort;
         $this->load->view('blog/index', $entries);
     }
