@@ -16,7 +16,7 @@
 
 <div id="edit-container">
     <form id="form-parent" method="post" action="/blog/edit_post">
-        <label for="title">Title</label>
+        <label for="title">Title</label><br/>
         <input type="text" name="title" id="title" />
 
         <div id="editor"></div>
