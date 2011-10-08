@@ -52,7 +52,7 @@
             $thumb = $images[$i]['thumb'];
             $title = $images[$i]['title'];
             echo '<div class="photo-container">';
-            echo '<a href="' . $src . '" rel="lightbox" title="' . $title . '"><img src="' . $thumb . '"/></a>';
+            echo '<a href="' . $src . '" rel="lightbox[gallery]" title="' . $title . '"><img src="' . $thumb . '"/></a>';
             echo '<p>' . $title . '</p>';
             echo '</div>';
             if ($endRow || $i == count($images) - 1) {
