@@ -1,5 +1,19 @@
 <?php $this->load->view("includes/doctype_html.php") ?>
 <?php $this->load->view("includes/head_start.php") ?>
+
+<script type="text/javascript">
+    dojo.addOnLoad(function() {
+
+        dojo.connect(dojo.byId('entry_sorter'), "onchange", null, function(e) {
+            var selected = e.target.selectedIndex;
+            var value = e.target.options[selected].value;
+
+            document.location = "/blog/index?order=" + value;
+        });
+
+    });
+</script>
+
 <?php $this->load->view("includes/head_end.php") ?>
 <?php $this->load->view("includes/body_start.php") ?>
 <?php $this->load->view("includes/globalnav.php") ?>
@@ -7,7 +21,12 @@
         <!-- unique -->
         <div id="content">
             <?php $this->load->view("includes/sidebar.php") ?>
-            
+
+            <select id="entry_sorter">
+                <option <?php echo $sort_order == 'desc' ? 'selected' : '' ?> value="desc">Newest to Oldest</option>
+                <option <?php echo $sort_order == 'asc' ? 'selected' : '' ?> value="asc">Oldest to Newest</option>
+            </select>
+
             <?php if (!$query) { ?>
                 <p>No Entries</p>
             <?php } ?>
@@ -19,7 +38,7 @@
                         <?php echo $entry->summary; ?>
                         <a href="/blog/entry/<?php echo $entry->url_title; ?>">[...]</a>
                     </p>
-                    <!--<span class="metadata"><?php echo $entry->author; ?></span>-->
+                    <?php echo $entry->author; ?>
                 </div>
             <?php } ?>
         </div>

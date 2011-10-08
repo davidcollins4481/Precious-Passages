@@ -8,7 +8,22 @@ class Blog extends CI_Controller {
     //the home page of the blog
     public function index() {
         $this->load->model('Blog_model', 'blog');
-        $entries['query'] = $this->blog->get_all_entries();
+        // sort types newest,oldest
+
+        $sort = 'desc';
+
+        if (isset($_GET['order'])) {
+            $order = $_GET['order'];
+
+            if ($order == 'asc' || $order == 'desc') {
+                $sort = $order;
+            } else {
+                $sort = 'desc';
+            }
+        }
+
+        $entries['query'] = $this->blog->get_all_entries($sort);
+        $entries['sort_order'] = $sort;
         $this->load->view('blog/index', $entries);
     }
 

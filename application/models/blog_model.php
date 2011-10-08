@@ -6,8 +6,9 @@ class Blog_model extends CI_Model {
     }
     
     //Gets all entries in the blog table
-    public function get_all_entries() {
+    public function get_all_entries($sort = 'desc') {
         $this->db->select('*'); 
+        $this->db->order_by('creation_date ' . $sort);
         $query = $this->db->get('blog');
         
         if ($query->num_rows() > 0)
@@ -40,5 +41,4 @@ class Blog_model extends CI_Model {
 }
 
 /* End of file blog_model.php */
-/* Location: ./tumbleupon/models/blog_model.php */ 
 ?> 

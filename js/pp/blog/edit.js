@@ -18,7 +18,7 @@ dojo.addOnLoad(function() {
 
     var form = new pp.form.asyncForm({
         formNode: dojo.byId('form-parent'),
-        messageNode: dojo.byId('message-container'),
+        messageNode: null,
         submitNode: dojo.byId('submit-btn'),
         progressNode: null,
         onValidate: function() {
@@ -60,7 +60,7 @@ dojo.addOnLoad(function() {
             }
         },
         onError: function(err) {
-            debugger;
+            alert(err);
         }
     });  
 
