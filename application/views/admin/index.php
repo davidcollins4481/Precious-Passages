@@ -25,6 +25,13 @@
                 <li><a href="/index.php/admin/upload">File Management (upload files)</a></li>
             </ul>
         </div>
+
+        <div>
+            <h2>Blogging</h2>
+            <ul>
+                <li><a href="/blog/edit">New Entry</a></li>
+            </ul>
+        </div>
     </div>
 </div>
 
