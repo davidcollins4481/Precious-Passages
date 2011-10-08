@@ -30,7 +30,7 @@
             <h2>Blogging</h2>
             <ul>
                 <li><a href="/blog/edit">New Entry</a></li>
-                <li><a href="/blog/delete">Delete Entry (coming soon!)</a></li>
+                <li><a href="/blog/delete">Delete Entry</a></li>
             </ul>
         </div>
     </div>

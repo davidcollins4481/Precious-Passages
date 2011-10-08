@@ -35,7 +35,7 @@ td,th {
         <?php $this->load->view("includes/sidebar.php") ?>
         
         <?php if (!$query) { ?>
-            <p>No Entries</p>
+            <p><i>No Blog Entries</i></p>
         <?php }  else { ?>
             <table>
                 <thead>

@@ -78,24 +78,38 @@ class Blog extends CI_Controller {
             ->set_content_type('application/json')
             ->set_output(json_encode($result));
     }
-    
+
     public function delete() {
+        $session = $this->session;
+        if (!$session->userdata('logged_in')) {
+            log_message("debug", "not logged in");
+            redirect('/');
+            return;
+        }
+
         $this->load->model('Blog_model', 'blog');
         $entries['query'] = $this->blog->get_all_entries();
         
         $this->load->view('blog/delete', $entries);
     }
-    
+
     public function delete_post() {
-        
+
+        $session = $this->session;
+        if (!$session->userdata('logged_in')) {
+            log_message("debug", "not logged in");
+            redirect('/');
+            return;
+        }
+
         $entry_id = $_POST["entry_id"];
         
         $this->load->model('Blog_model', 'blog');
-        
-        
-        
+
+        $result = $this->blog->delete_entry($entry_id);
+
         $result = array(
-            'result' => 1,
+            'result' => $result,
             'success' => 1,
             'message' => 'success!'
         );

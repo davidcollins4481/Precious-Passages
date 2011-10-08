@@ -29,9 +29,13 @@ class Blog_model extends CI_Model {
             return false; 
         }
     }
-    
+
     public function add_entry($data) {
         $this->db->insert('blog', $data); 
+    }
+
+    public function delete_entry($entry_id) {
+        return $this->db->delete('blog', array('entry_id' => $entry_id));
     }
 }
 
