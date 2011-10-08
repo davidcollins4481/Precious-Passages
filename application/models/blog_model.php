@@ -4,7 +4,7 @@ class Blog_model extends CI_Model {
     public function __construct() {
         parent::__construct();
     }
-    
+
     //Gets all entries in the blog table
     public function get_all_entries($sort = 'desc') {
         $this->db->select('*'); 
@@ -23,12 +23,30 @@ class Blog_model extends CI_Model {
     public function get_entry($url_title) {
         $this->db->select('*')->where('url_title', $url_title);
         $query = $this->db->get('blog', 1);
+
+        if ($query->num_rows() == 1) {
+            return $query->row();
+        } else {
+            return false;
+        }
+    }
+
+    public function get_entry_by_id($entry_id) {
+        $this->db->select('*')->where('entry_id', $entry_id);
+        $query = $this->db->get('blog', 1);
       
         if ($query->num_rows() == 1) {
             return $query->row();
         } else {
             return false; 
         }
+    }
+
+    public function edit_entry($data) {
+        $entry_id = $data['entry_id'];
+        unset($data['entry_id']);
+        $this->db->where('entry_id', $entry_id);
+        return $this->db->update('blog', $data);
     }
 
     public function add_entry($data) {

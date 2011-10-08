@@ -54,7 +54,15 @@ class Blog extends CI_Controller {
             return;
         }
         
-        $this->load->view('blog/edit');
+        $data = array();
+
+        if (isset($_GET['entry_id'])) {
+            $entry_id = $_GET['entry_id'];
+            $this->load->model('Blog_model', 'blog');
+            $data['entry'] = $this->blog->get_entry_by_id($entry_id);
+        }
+
+        $this->load->view('blog/edit', $data);
     }
 
     public function edit_post() {
@@ -65,28 +73,50 @@ class Blog extends CI_Controller {
             return;
         }
 
-        $title     = $_POST["title"];
-        $entry     = urldecode($_POST["entry"]);
-        $url_title = str_replace(" ", "-", $title);
-        $summary   = substr($entry, 0, 500);
-        $author    = $session->userdata('username');
-
-        $data = array(
-            'author'        => $author,
-            'entry'         => $entry,
-            'url_title'     => $url_title,
-            'title'         => $title,
-            'summary'       => $summary,
-            'edited_date'   => date('Y-m-d H:i:s'),
-            'creation_date'  => date('Y-m-d H:i:s')
-        );
-        
         $this->load->model('Blog_model', 'blog');
-        $this->blog->add_entry($data);
+        // are we editing ?
+        if (isset($_POST["entry_id"])) {
+            $entry_id           = $_POST["entry_id"];
+            $edited_title       = $_POST["title"];
+            $edited_entry       = urldecode($_POST["entry"]);
+            $edited_url_title   = str_replace(" ", "-", $edited_title);
+            $edited_summary     = substr($edited_entry, 0, 500);
+            $author             = $session->userdata('username');
+
+            $data = array(
+                'entry_id'      => $entry_id,
+                'author'        => $author,
+                'entry'         => $edited_entry,
+                'url_title'     => $edited_url_title,
+                'title'         => $edited_title,
+                'summary'       => $edited_summary,
+                'edited_date'   => date('Y-m-d H:i:s')
+            );
+
+            $result = $this->blog->edit_entry($data);
+        } else { // new entry
+            $title     = $_POST["title"];
+            $entry     = urldecode($_POST["entry"]);
+            $url_title = str_replace(" ", "-", $title);
+            $summary   = substr($entry, 0, 500);
+            $author    = $session->userdata('username');
+
+            $data = array(
+                'author'        => $author,
+                'entry'         => $entry,
+                'url_title'     => $url_title,
+                'title'         => $title,
+                'summary'       => $summary,
+                'edited_date'   => date('Y-m-d H:i:s'),
+                'creation_date'  => date('Y-m-d H:i:s')
+            );
+
+            $result = $this->blog->add_entry($data);
+        }
 
         $result = array(
-            'result' => 1,
-            'message' => 'success!'
+            'result' => $result,
+            'message' => $result ? 'success!' : 'did not work :-('
         );
 
         $this->output
