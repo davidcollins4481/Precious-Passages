@@ -36,9 +36,9 @@
                     <h2><a href="/blog/entry/<?php echo $entry->url_title; ?>"><?php echo $entry->title; ?></a></h2>
                     <p>
                         <?php echo $entry->summary; ?>
-                        <a href="/blog/entry/<?php echo $entry->url_title; ?>">[...]</a>
+                        <a style="font-weight: normal" href="/blog/entry/<?php echo $entry->url_title; ?>">[...]</a>
                     </p>
-                    <?php echo $entry->author; ?> -- <?php $time = strtotime($entry->edited_date); echo date('Y-m-d @ H:i', $time); ?>
+                    -- Created <?php $time = strtotime($entry->creation_date); echo date('m/d/Y @H:i', $time); ?> by <?php echo $entry->author; ?>
                     <?php if ($editable) {?>
                         <p><a href="/blog/edit?entry_id=<?php echo $entry->entry_id ?>" style="font-weight: normal">edit</a></p>
                     <?php } ?>
