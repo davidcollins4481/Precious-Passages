@@ -276,6 +276,10 @@ ul li {
     padding: 5px 0;
 }
 
+#edit-container label {
+    font-weight: bold;
+}
+
 #edit-container input[name="title"] {
     width: 98%;
     margin-bottom: 10px;
