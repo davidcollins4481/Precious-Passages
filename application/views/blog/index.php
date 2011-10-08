@@ -38,7 +38,7 @@
                         <?php echo $entry->summary; ?>
                         <a href="/blog/entry/<?php echo $entry->url_title; ?>">[...]</a>
                     </p>
-                    <?php echo $entry->author; ?>
+                    <?php echo $entry->author; ?> -- <?php $time = strtotime($entry->edited_date); echo date('Y-m-d @ H:i', $time); ?>
                 </div>
             <?php } ?>
         </div>

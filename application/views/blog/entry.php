@@ -13,7 +13,7 @@
 
                 <?php echo $post->entry; ?>
 
-                <p><?php echo $post->author; ?> - Date: <?php echo $post->edited_date; ?></p>
+                <p><?php echo $post->author; ?> -- <?php $time = strtotime($post->edited_date); echo date('Y-m-d @ H:i', $time); ?></p>
                 <p><a href="/index.php/blog/">Back to Blog</a></p>
             </div>
         </div>
