@@ -78,6 +78,32 @@ class Blog extends CI_Controller {
             ->set_content_type('application/json')
             ->set_output(json_encode($result));
     }
+    
+    public function delete() {
+        $this->load->model('Blog_model', 'blog');
+        $entries['query'] = $this->blog->get_all_entries();
+        
+        $this->load->view('blog/delete', $entries);
+    }
+    
+    public function delete_post() {
+        
+        $entry_id = $_POST["entry_id"];
+        
+        $this->load->model('Blog_model', 'blog');
+        
+        
+        
+        $result = array(
+            'result' => 1,
+            'success' => 1,
+            'message' => 'success!'
+        );
+
+        $this->output
+            ->set_content_type('application/json')
+            ->set_output(json_encode($result));
+    }
 }
 
 /* End of file blog.php */

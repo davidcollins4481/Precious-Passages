@@ -7,7 +7,7 @@ class Blog_model extends CI_Model {
     
     //Gets all entries in the blog table
     public function get_all_entries() {
-        $this->db->select('summary, title, url_title, author','edited_date'); 
+        $this->db->select('*'); 
         $query = $this->db->get('blog');
         
         if ($query->num_rows() > 0)
