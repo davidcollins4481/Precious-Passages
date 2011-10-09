@@ -8,6 +8,8 @@ dojo.declare(
     [dijit._Widget, dijit._Templated],
     {
         templatePath: dojo.moduleUrl("pp", "templates/login.html"),
+        redirectOnLogin: true,
+
         startup: function() {
             var self = this;
 
@@ -32,23 +34,24 @@ dojo.declare(
                     
                     if (response.success) {
                         var username = data.username;
-                        // this is ugly
-                        dojo.animateProperty({
-                            node: userContainer,
-                            properties: {
-                                opacity: {
-                                    end: 0
+                        if (self.redirectOnLogin) {
+                            javascript:location.reload(true);
+                        } else {
+                            dojo.animateProperty({
+                                node: userContainer,
+                                properties: {
+                                    opacity: {
+                                        end: 0
+                                    }
+                                },
+                                onEnd: function() {
+                                    var panel = new pp.sidebar.userPanel({
+                                        username: username
+                                    }, userContainer);
                                 }
-                            },
-                            onEnd: function() {
-                                //self.userContainer.innerHTML = "";
-                                var panel = new pp.sidebar.userPanel({
-                                    username: username
-                                }, userContainer);
-                            }
-                        }).play();
+                            }).play();
+                        }
                     }
-                    
                 },
                 onError: function(err) {
                     console.error(err);

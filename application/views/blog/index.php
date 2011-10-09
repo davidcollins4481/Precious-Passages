@@ -1,16 +1,20 @@
 <?php $this->load->view("includes/doctype_html.php") ?>
 <?php $this->load->view("includes/head_start.php") ?>
+<?php
+    $redirect_on_login = true;
+?>
 
 <script type="text/javascript">
     dojo.addOnLoad(function() {
+        
+        if (dojo.byId('entry_sorter')) {
+            dojo.connect(dojo.byId('entry_sorter'), "onchange", null, function(e) {
+                var selected = e.target.selectedIndex;
+                var value = e.target.options[selected].value;
 
-        dojo.connect(dojo.byId('entry_sorter'), "onchange", null, function(e) {
-            var selected = e.target.selectedIndex;
-            var value = e.target.options[selected].value;
-
-            document.location = "/blog/index?order=" + value;
-        });
-
+                document.location = "/blog/index?order=" + value;
+            });
+        }
     });
 </script>
 
