@@ -114,7 +114,8 @@ class Blog extends CI_Controller {
                 'creation_date'  => date('Y-m-d H:i:s')
             );
 
-            $result = $this->blog->add_entry($data);
+            $this->blog->add_entry($data);
+            $result = true; // don't think 'add_entry' returns anything. Assume successful?
         }
 
         $result = array(

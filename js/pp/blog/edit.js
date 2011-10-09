@@ -60,6 +60,7 @@ dojo.addOnLoad(function() {
             }
         },
         onError: function(err) {
+            // NOTE: duplicate entry titles will trip this
             alert(err);
         }
     });  

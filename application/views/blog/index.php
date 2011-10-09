@@ -33,7 +33,7 @@
 
             <?php foreach ($query as $entry) { ?>
                 <div class="blog_entry">
-                    <h2><a href="/blog/entry/<?php echo $entry->url_title; ?>"><?php echo $entry->title; ?></a></h2>
+                    <h2 style="font-style: italic"><a href="/blog/entry/<?php echo $entry->url_title; ?>"><?php echo $entry->title; ?></a></h2>
                     <p>
                         <?php echo $entry->summary; ?>
                         <a style="font-weight: normal" href="/blog/entry/<?php echo $entry->url_title; ?>">[...]</a>
