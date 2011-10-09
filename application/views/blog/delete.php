@@ -46,7 +46,7 @@ td,th {
                     </tr>
                 </thead>
                 <?php foreach ($query as $entry) { ?>
-                    <tr class="blog-entry">
+                    <tr class="blog_entry">
                         <td><?php echo $entry->creation_date; ?></td>
                         <td><?php echo $entry->title; ?></td>
                         <td>

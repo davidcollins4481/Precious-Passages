@@ -294,3 +294,8 @@ ul li {
     padding: 10px 0;
 }
 
+.blog_index .edit-link,
+.blog_index .remove-link {
+    margin: 0;
+}
+

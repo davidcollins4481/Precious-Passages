@@ -1,9 +1,13 @@
 dojo.addOnLoad(function() {
 
-    dojo.query(".blog-entry").forEach(function(entryNode) {
+    dojo.query(".blog_entry").forEach(function(entryNode) {
 
         var formNode   = dojo.query(".remove-form", entryNode)[0];
         var removeLink = dojo.query(".remove-link", entryNode)[0];
+
+        if (!formNode || !removeLink) {
+            return;
+        }
 
         var removeForm = new pp.form.asyncForm({
             formNode: formNode,

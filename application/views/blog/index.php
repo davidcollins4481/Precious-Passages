@@ -14,12 +14,18 @@
     });
 </script>
 
+<?php if ($editable) { ?>
+    <script type="text/javascript" src="/js/pp/blog/delete.js"></script>
+<?php } ?>
+
 <?php $this->load->view("includes/head_end.php") ?>
 <?php $this->load->view("includes/body_start.php") ?>
 <?php $this->load->view("includes/globalnav.php") ?>
 
+        <div id="message-container" style="margin: 0 auto;text-align: left;width:720px;position: relative;"></div>
+
         <!-- unique -->
-        <div id="content">
+        <div id="content" class="blog_index">
             <?php $this->load->view("includes/sidebar.php") ?>
 
             <select id="entry_sorter">
@@ -40,7 +46,13 @@
                     </p>
                     -- Created <?php $time = strtotime($entry->creation_date); echo date('m/d/Y @H:i', $time); ?> by <?php echo $entry->author; ?>
                     <?php if ($editable) {?>
-                        <p><a href="/blog/edit?entry_id=<?php echo $entry->entry_id ?>" style="font-weight: normal">edit</a></p>
+                        <p><a class="edit-link" href="/blog/edit?entry_id=<?php echo $entry->entry_id ?>" style="font-weight: normal;">edit</a></p>
+
+                        <form class="remove-form" action="/blog/delete_post" method="POST">
+                            <a class="remove-link" href="#" style="font-weight: normal;">delete</a>
+                            <input type="hidden" name="entry_id" value="<?php echo $entry->entry_id; ?>"  />
+                        </form>
+
                     <?php } ?>
                 </div>
             <?php } ?>
