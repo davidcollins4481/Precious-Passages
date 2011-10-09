@@ -43,6 +43,19 @@ dojo.addOnLoad(function() {
                             });
                         }
                     }).play();
+
+                    // fade out message after a few seconds
+                    setTimeout(function() {
+                        dojo.fadeOut({
+                            node: 'message-container',
+                            onEnd: function(n){
+                                n.innerHTML = "";
+                                dojo.style(n, {
+                                    opacity: 1
+                                });
+                            },
+                        }).play();
+                    }, 5000);
                 } else {
                     this.submitNode.innerHTML = "remove";
                 }

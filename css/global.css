@@ -299,3 +299,12 @@ ul li {
     margin: 0;
 }
 
+.blog_index .edit-container {
+
+}
+
+    .blog_index .edit-container p {
+        margin-bottom: 0;
+    }
+
+

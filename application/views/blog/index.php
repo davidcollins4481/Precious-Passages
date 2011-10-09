@@ -28,10 +28,14 @@
         <div id="content" class="blog_index">
             <?php $this->load->view("includes/sidebar.php") ?>
 
+            <?php if ($query && count($query) > 1) { ?>
+
             <select id="entry_sorter">
                 <option <?php echo $sort_order == 'desc' ? 'selected' : '' ?> value="desc">Newest to Oldest</option>
                 <option <?php echo $sort_order == 'asc' ? 'selected' : '' ?> value="asc">Oldest to Newest</option>
             </select>
+
+            <?php } ?>
 
             <?php if (!$query) { ?>
                 <p>No Entries</p>
@@ -44,15 +48,16 @@
                         <?php echo $entry->summary; ?>
                         <a style="font-weight: normal" href="/blog/entry/<?php echo $entry->url_title; ?>">[...]</a>
                     </p>
-                    -- Created <?php $time = strtotime($entry->creation_date); echo date('m/d/Y @H:i', $time); ?> by <?php echo $entry->author; ?>
+                    -- Created <?php $time = strtotime($entry->creation_date); echo date('m/d/Y H:i', $time); ?> by <i><?php echo $entry->author; ?></i>
                     <?php if ($editable) {?>
-                        <p><a class="edit-link" href="/blog/edit?entry_id=<?php echo $entry->entry_id ?>" style="font-weight: normal;">edit</a></p>
+                        <div class="edit-container">
+                            <p><a class="edit-link" href="/blog/edit?entry_id=<?php echo $entry->entry_id ?>" style="font-weight: normal;">edit</a></p>
 
-                        <form class="remove-form" action="/blog/delete_post" method="POST">
-                            <a class="remove-link" href="#" style="font-weight: normal;">delete</a>
-                            <input type="hidden" name="entry_id" value="<?php echo $entry->entry_id; ?>"  />
-                        </form>
-
+                            <form class="remove-form" action="/blog/delete_post" method="POST">
+                                <a class="remove-link" href="#" style="font-weight: normal;">delete</a>
+                                <input type="hidden" name="entry_id" value="<?php echo $entry->entry_id; ?>"  />
+                            </form>
+                        </div>
                     <?php } ?>
                 </div>
             <?php } ?>
