@@ -70,17 +70,17 @@
 					The following links are to various Brewer Diets:
 					<ul>
 						<li>
-							<a href="/d/">
+							<a href="/d/basicDiet">
 								The Basic Diet 
 							</a>
 						</li>
 						<li>
-							<a href="/d/">
+							<a href="/d/lactoDiet">
 								The Lacto-Ovo Diet
 							</a>
 						</li>
 						<li>
-							<a href="/d/">
+							<a href="/d/veganDiet">
 								The Vegan Diet
 							</a>
 						</li>
