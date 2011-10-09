@@ -34,7 +34,11 @@ class Blog extends CI_Controller {
     //the entry
     public function entry($url_title = "") {
         $this->load->helper('url');
-      
+        $session = $this->session;
+        $logged_in = $session->userdata('logged_in');
+
+        $entry_data['editable'] = $logged_in ? true : false;
+        
         if ($url_title) {
             $this->load->model('Blog_model', 'blog');
             $entry_data['post'] = $this->blog->get_entry($url_title);

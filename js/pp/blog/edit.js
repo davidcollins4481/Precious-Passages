@@ -4,14 +4,16 @@ dojo.require("dijit.form.Button");
 dojo.require("dijit.form.ValidationTextBox");
 dojo.require("dijit.form.DateTextBox");
 dojo.require("dijit.Editor");
-dojo.require("dijit._editor.plugins.FontChoice"); // 'fontName','fontSize','formatBlock'
+dojo.require("dijit._editor.plugins.FontChoice");
 dojo.require("dijit._editor.plugins.TextColor");
 dojo.require("dijit._editor.plugins.LinkDialog");
+dojo.require("dijit._editor.plugins.Print");
+dojo.require("dijit._editor.plugins.ViewSource");
 
 dojo.addOnLoad(function() {
 
     var editor = new dijit.Editor({
-        extraPlugins: ['dijit._editor.plugins.AlwaysShowToolbar']
+        extraPlugins: ['insertImage','createLink', 'ViewSource', 'Print']
     },  dojo.byId('editor')); 
 
     var postButton = dojo.byId('submit-btn');

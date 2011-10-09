@@ -13,7 +13,12 @@
 
                 <?php echo $post->entry; ?>
 
-                <p>-- Last Edited <?php $time = strtotime($post->edited_date); echo date('m/d/Y @ H:i', $time); ?> <?php echo $post->author; ?> </p>
+                <p>-- Last Edited <?php $time = strtotime($post->edited_date); echo date('m/d/Y @ H:i', $time); ?> 
+                    <?php echo $post->author; ?>
+                    <?php if ($editable) { ?>
+                        <a href="/blog/edit?entry_id=<?php echo $post->entry_id ?>">edit</a>
+                    <?php } ?>
+                </p>
                 <p><a href="/index.php/blog/">Back to Blog</a></p>
             </div>
         </div>
