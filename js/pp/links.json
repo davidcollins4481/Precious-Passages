@@ -40,6 +40,10 @@
             { url: "/d/herbs.php", name: "Herbs During Pregnancy" },
             { url: "/d/exercise.php", name: "Exercise During Pregnancy" }
         ],
+        "Other Helpful Resources": [
+            { url: "/d/books.php", name: "Helpful Books" },
+            { url: "/d/articles.php", name: "Online Articles" }
+        ],
         "Downloads": [
             { url : "/p/documents", name: "Documents" }
         ]

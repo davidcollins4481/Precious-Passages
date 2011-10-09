@@ -244,6 +244,18 @@ class d extends CI_Controller {
     public function choosingActivities() {
         $this->load->view('static/choosingActivities.php');
     }
+    
+    public function books() {
+        $this->load->view('static/books.php');
+    }
+    
+    public function articles() {
+        $this->load->view('static/articles.php');
+    }
+    
+    public function wagnerArticle() {
+        $this->load->view('static/wagnerArticle.php');
+    }
 }
 
 /* End of file welcome.php */

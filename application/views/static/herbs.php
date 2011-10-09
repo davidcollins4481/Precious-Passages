@@ -100,12 +100,12 @@
 							</a>
 						</li>
 						<li>
-							<a href="herbalDictionary">
+							<a href="/d/herbalDictionary">
 								Herbal Dictionary
 							</a>
 						</li>
 						<li>
-							<a href="herbsToAvoid">
+							<a href="/d/herbsToAvoid">
 								Herbs to Avoid During Pregnancy
 							</a>
 						</li>
