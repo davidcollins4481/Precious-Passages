@@ -22,19 +22,27 @@ class Search extends CI_Controller {
             'query' => $query
         );
 
-        $data['query'] = $this->blog->search($args);
+        //$data['query'] = $this->blog->search($args);
+        $results = $this->blog->search($args);
 
-        if (!count($data['query'])) {
+        if (!count($results)) {
             $data['message'] = 'There are no results for the search phrase ' . '<b>"' . $query . '"</b>';
         } else {
-            $count = count($data['query']);
+            $count = count($results);
             
+            // highlight the context
+            for ($i = 0; $i < count($results); $i++) {
+                $results[$i]['context_segment'] = 
+                    str_replace($query, '<b style="background-color:yellow">' . $query . '</b>', $results[$i]['context_segment']);
+            }
+
             $data['message'] = ($count == 1) ? 
                 'There is <i>1</i> result for the search phrase ' . '<b>"' . $query . '"</b>'
                 :
                 'There are <i>' . $count . '</i> results for the search phrase ' . '<b>"' . $query . '"</b>';
         }
 
+        $data['query'] = $results;
         $this->load->view('search', $data);
     }
 }
