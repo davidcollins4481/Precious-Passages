@@ -307,4 +307,8 @@ ul li {
         margin-bottom: 0;
     }
 
-
+/* Search */
+.search-result {
+    border-bottom: 1px solid #eee;
+    width: 475px;
+}

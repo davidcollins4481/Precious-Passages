@@ -26,6 +26,13 @@ class Search extends CI_Controller {
 
         if (!count($data['query'])) {
             $data['message'] = 'There are no results for the search phrase ' . '<b>"' . $query . '"</b>';
+        } else {
+            $count = count($data['query']);
+            
+            $data['message'] = ($count == 1) ? 
+                'There is <i>1</i> result for the search phrase ' . '<b>"' . $query . '"</b>'
+                :
+                'There are <i>' . $count . '</i> results for the search phrase ' . '<b>"' . $query . '"</b>';
         }
 
         $this->load->view('search', $data);

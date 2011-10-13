@@ -26,7 +26,19 @@ class Blog_model extends CI_Model {
         $this->db->or_like('title',$match);
         $this->db->or_like('summary',$match);
         $query = $this->db->get('blog');
-        return $query->result();
+        $results = $query->result();
+        
+        $processed_results = array();
+        
+        foreach ($results as $result) {
+            array_push($processed_results, array(
+                'url'             => $result->url_title,
+                'title'           => $result->title,
+                'context_segment' => 'test context'
+            ));
+        }
+        
+        return $processed_results;
     }
 
     //gets a single entry based on its url title
