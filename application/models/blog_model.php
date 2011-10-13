@@ -20,24 +20,52 @@ class Blog_model extends CI_Model {
     }
 
     public function search($args) {
-        $match = $args['query'];
-        $this->db->like('entry',$match);
-        $this->db->or_like('author',$match);
-        $this->db->or_like('title',$match);
-        $this->db->or_like('summary',$match);
+        $search_term = $args['query'];
+        $this->db->like('entry',$search_term);
+        $this->db->or_like('author',$search_term);
+        $this->db->or_like('title',$search_term);
+        $this->db->or_like('summary',$search_term);
         $query = $this->db->get('blog');
         $results = $query->result();
-        
+
         $processed_results = array();
-        
+
         foreach ($results as $result) {
+            $entry = $result->entry;
+            $point = strpos($entry, $search_term);
+
+            if ($point) {
+                $length = strlen($entry);
+                $count_from_start = $length - $point;
+
+                // how many chars in front and back to be shown
+                /*
+                 * This logic is a bit of a disaster
+                 */
+                $context_length = 250;
+                $start;
+                $end;
+                if ($count_from_start < $context_length) {
+                    $start = 0;
+                    $end = $point + strlen($search_term) + $context_length;
+                } else if (length($search_term) + $context_length >= $length) {
+                    $start = $context_length;
+                    $end = $start + length($search_term) + $context_length;
+                } else {
+                    $start = 0;
+                    $end = $point + strlen($search_term);
+                }
+
+                $context = substr($entry, $start, $end);
+            }
+
             array_push($processed_results, array(
                 'url'             => $result->url_title,
                 'title'           => $result->title,
-                'context_segment' => 'test context'
+                'context_segment' => $context
             ));
         }
-        
+
         return $processed_results;
     }
 

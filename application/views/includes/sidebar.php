@@ -15,6 +15,7 @@
                     </div>
 
                     <div class="search-container">
+                        <br/>
                         <form method="GET" action="/search">
                             <label for="query">Search</label>
                             <input type="input" name="query" />
