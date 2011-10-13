@@ -19,6 +19,16 @@ class Blog_model extends CI_Model {
         }
     }
 
+    public function search($args) {
+        $match = $args['query'];
+        $this->db->like('entry',$match);
+        $this->db->or_like('author',$match);
+        $this->db->or_like('title',$match);
+        $this->db->or_like('summary',$match);
+        $query = $this->db->get('blog');
+        return $query->result();
+    }
+
     //gets a single entry based on its url title
     public function get_entry($url_title) {
         $this->db->select('*')->where('url_title', $url_title);

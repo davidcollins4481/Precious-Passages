@@ -14,6 +14,14 @@
                         ?>
                     </div>
 
+                    <div class="search-container">
+                        <form method="GET" action="/search">
+                            <label for="query">Search</label>
+                            <input type="input" name="query" />
+                            <input type="submit" />
+                        </form>
+                    </div>
+
                     <div id="navigation-container" dojoType="pp.sidebar.navigation"></div>
                 </div>
             </div>
