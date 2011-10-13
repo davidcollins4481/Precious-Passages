@@ -48,12 +48,12 @@ class Blog_model extends CI_Model {
                 if ($count_from_start < $context_length) {
                     $start = 0;
                     $end = $point + strlen($search_term) + $context_length;
-                } else if (length($search_term) + $context_length >= $length) {
+                } else if (strlen($search_term) + $context_length >= $length) {
                     $start = $context_length;
-                    $end = $start + length($search_term) + $context_length;
+                    $end = $start + strlen($search_term) + $context_length;
                 } else {
                     $start = 0;
-                    $end = $point + strlen($search_term);
+                    $end = $point + strlen($search_term) + $context_length;
                 }
 
                 $context = substr($entry, $start, $end);

@@ -9,10 +9,9 @@
             <?php $this->load->view("includes/sidebar.php") ?>
 
             <?php if (isset($query) && count($query)) { ?>
+                <p><?php echo $message; ?></p>
                 <?php foreach($query as $item) { ?>
                     <div class="search-result">
-                        <p><?php echo $message; ?></p>
-                        
                         <h2>
                             <a href="/blog/entry/<?php echo $item['url']; ?>">
                                 <?php echo $item['title']; ?>
