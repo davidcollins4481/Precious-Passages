@@ -45,12 +45,23 @@ dojo.declare(
 
             var rowHeight = 26;
 
+            var currentUrl = document.location.pathname;
+            var selectCurrent = false;
+            var selectedChild = null;
+            
             for (submenu in data) {
                 var name = submenu;
                 var links = data[name];
+                selectCurrent = false;
 
                 var linkify = function(l) {
-                    return '<a href="' + l.url + '">' + l.name + '</a>';
+                    var selectedClass = "";
+                    if (l.url === currentUrl) {
+                        selectedClass = 'class="selected"';
+                        selectCurrent = true;
+                    }
+
+                    return '<a ' + selectedClass + 'href="' + l.url + '">' + l.name + '</a>';
                 };
 
                 var content = "";
@@ -64,14 +75,27 @@ dojo.declare(
                     content: content
                 });
 
+                if (selectCurrent) {
+                    selectedChild = c;
+                } else {
+                    c.selected = false;
+                }
+
                 dojo.style(c.domNode, {
                     height: (rowHeight * links.length) + "px !important"
                 });
-
+                
                 containerNode.addChild(c);
             }
 
             containerNode.startup();
+            
+            if (selectedChild) {
+                containerNode.selectChild(selectedChild);
+                selectedChild = null;
+            } else {
+               //containerNode.selectChild(null);
+            }
         },
 
         _loadDataSource: function() {

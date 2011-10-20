@@ -44,3 +44,8 @@
         font-style: italic;
         margin-left: 20px;
     }
+
+#navigation-container .selected {
+    color: #94AE62;
+    background-color: #EFFCD7;
+}

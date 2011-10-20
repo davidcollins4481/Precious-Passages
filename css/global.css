@@ -171,7 +171,7 @@ ul li {
     color: #666;
 }
 .submenu a:hover {
-    background-color:#eeeeee;
+    background-color:#EFFCD7;
     background-image:url(../images/backgrounds/submenua_hover.jpg);
     background-repeat:repeat-y;
 }
@@ -311,4 +311,14 @@ ul li {
 .search-result {
     border-bottom: 1px solid #eee;
     width: 475px;
+    padding-top: 10px;
+    padding-left: 10px;
 }
+
+    .search-result h2 {
+        margin-top: 0;
+    }
+    
+    .search-result:hover {
+        background-color: #FBFBFB;
+    }

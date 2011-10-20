@@ -24,38 +24,9 @@ if ($handle = opendir('application/views/static')) {
         $content = $matches[1];
         
         // strip html
-        $search = array ("'<script[^>]*?>.*?</script>'si",  // Strip out javascript 
-                 "'<[/!]*?[^<>]*?>'si",          // Strip out HTML tags 
-                 "'([rn])[s]+'",                // Strip out white space 
-                 "'&(quot|#34);'i",                // Replace HTML entities 
-                 "'&(amp|#38);'i", 
-                 "'&(lt|#60);'i", 
-                 "'&(gt|#62);'i", 
-                 "'&(nbsp|#160);'i", 
-                 "'&(iexcl|#161);'i", 
-                 "'&(cent|#162);'i", 
-                 "'&(pound|#163);'i", 
-                 "'&(copy|#169);'i",
-                 "'&#(d+);'e"); 
+        $content = strip_tags($content);
 
-            $replace = array ("", 
-                 "", 
-                 "\1", 
-                 "\"", 
-                 "&", 
-                 "<", 
-                 ">", 
-                 " ", 
-                 chr(161), 
-                 chr(162), 
-                 chr(163), 
-                 chr(169), 
-                 "chr(\1)"); 
-
-        
-        $content = preg_replace($search, $replace, $content);
-
-        echo $content;        
+        echo $file . "," . $content, "\n";
     }
 
     closedir($handle);
