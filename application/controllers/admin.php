@@ -146,6 +146,45 @@ class Admin extends CI_Controller {
             'message' => $message
         );
     }
+    
+    public function create_search_index () {
+        
+        while (false !== ($file = readdir($handle))) {
+            if ($file == "." || $file == "..") {
+                continue;
+            }
+
+            $start_delimiter = "<!-- unique -->";
+            $end_delimiter   = "<!-- \/unique -->"; 
+
+            $output = file_get_contents("static/" . $file);
+        
+            $flattened_file = $this->flatten($output);
+            
+            preg_match("/$start_delimiter(.*)$end_delimiter/", $flattened_file, $matches);
+            
+            
+            $content = $matches[1];
+            
+            // strip html
+            $content = strip_tags($content);
+
+            echo $file . "," . $content, "\n";
+        }
+        
+        $result = array(
+            'result' => $content
+        );
+        
+        $this->output
+            ->set_content_type('application/json')
+            ->set_output(json_encode($result));
+            
+    }
+    
+    private function flatten($string) {
+        return (string)preg_replace(array("/\r/", "/\r\n/", "/\n/", "/\s\s+/"), '', $string);
+    }
 }
 
 /* End of file welcome.php */

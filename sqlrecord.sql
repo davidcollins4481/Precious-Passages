@@ -14,3 +14,11 @@ CREATE TABLE blog (
 -- sample entry
 INSERT INTO blog (title, url_title, summary, entry, author, creation_date) 
 VALUES ( 'a random title', 'this_is_the_greates_thing_ever', 'summary', 'entry','author name', NOW());
+
+-- create static index
+CREATE TABLE static_index (
+    id integer(10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    text TEXT NULL,
+    url TEXT NULL,
+    title varchar(255) NOT NULL
+);
