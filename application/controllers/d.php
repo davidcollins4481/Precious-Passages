@@ -256,6 +256,18 @@ class d extends CI_Controller {
     public function wagnerArticle() {
         $this->load->view('static/wagnerArticle.php');
     }
+    
+    public function homeBirth() {
+        $this->load->view('static/homeBirth.php');
+    }
+    
+    public function isItSafe() {
+        $this->load->view('static/isItSafe.php');
+    }
+    
+    public function safeAsItGets() {
+        $this->load->view('static/safeAsItGets.php');
+    }
 }
 
 /* End of file welcome.php */
