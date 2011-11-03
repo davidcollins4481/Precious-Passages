@@ -8,6 +8,7 @@ use File::Basename;
 # config
 my $content_directory = '/home/david/Projects/Precious-Passages/application/views/static';
 my $domain = 'http://david.preciouspassage.com';
+# not sure if CSV is gonna work here. Check for CSV module
 my $out_file = "results.csv";
 ###
 
