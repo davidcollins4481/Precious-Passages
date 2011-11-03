@@ -1,6 +1,10 @@
+<?php
+    $t = isset($title) ? $title : 'Precious Passage';
+?>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-    <title>Precious Passage</title>
+    <title><?php echo $t ?></title>
         <?php $this->load->view("includes/css.php") ?>
         <?php $this->load->view("includes/js.php") ?>
 
