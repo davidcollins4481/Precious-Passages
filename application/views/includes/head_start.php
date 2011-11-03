@@ -1,5 +1,5 @@
 <?php
-    $t = isset($title) ? $title : 'Precious Passage';
+    $t = isset($title) && $title ? $title : 'Precious Passage';
 ?>
 
 <head>
