@@ -16,7 +16,7 @@
                 gift of a birth experience you will want to remember. 
             </p>
             -->
-            <?php $this->load->view("includes/sidebar.php") ?>
+            <!-- exclude --><?php $this->load->view("includes/sidebar.php") ?><!-- /exclude -->
             
             <div id="mainbar">
                 <h1>
