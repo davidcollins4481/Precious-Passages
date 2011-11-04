@@ -1,5 +1,5 @@
 <?php $this->load->view("includes/doctype_html.php") ?>
-<?php $this->load->view("includes/head_start.php", array("title" => "")) ?>
+<?php $this->load->view("includes/head_start.php", array("title" => "Pregnancy and Birth")) ?>
 <?php $this->load->view("includes/head_end.php") ?>
 <?php $this->load->view("includes/body_start.php") ?>
 <?php $this->load->view("includes/globalnav.php") ?>
@@ -12,7 +12,7 @@
             <div id="mainbar">
                 <h1>
                     <a name="intro" id="intro"></a>
-                    PREGNANCY AND BIRTH
+                    Pregnancy and Birth
                 </h1>
                 
                 <p>

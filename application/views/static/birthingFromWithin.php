@@ -1,5 +1,5 @@
 <?php $this->load->view("includes/doctype_html.php") ?>
-<?php $this->load->view("includes/head_start.php", array("title" => "")) ?>
+<?php $this->load->view("includes/head_start.php", array("title" => "Birthing From Within")) ?>
 <?php $this->load->view("includes/head_end.php") ?>
 <?php $this->load->view("includes/body_start.php") ?>
 <?php $this->load->view("includes/globalnav.php") ?>
@@ -12,7 +12,7 @@
             <div id="mainbar">
                 <h1>
                     <a name="intro" id="intro"></a>
-                    THE ORIGIN OF BIRTHING FROM WITHIN&reg;
+                    The Origin of Birthing From Within&reg;
                 </h1> 
                 
                 <img src="/images/resources/pam3.gif" alt="Pam England" title="pamEngland" class="articleimg" />

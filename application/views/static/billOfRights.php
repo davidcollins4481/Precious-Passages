@@ -1,5 +1,5 @@
 <?php $this->load->view("includes/doctype_html.php") ?>
-<?php $this->load->view("includes/head_start.php", array("title" => "")) ?>
+<?php $this->load->view("includes/head_start.php", array("title" => "The Pregnant Patient's Bill of Rights")) ?>
 <?php $this->load->view("includes/head_end.php") ?>
 <?php $this->load->view("includes/body_start.php") ?>
 <?php $this->load->view("includes/globalnav.php") ?>
@@ -12,7 +12,7 @@
             <div id="mainbar">
                 <h1>
                     <a name="intro" id="intro"></a>
-                    THE PREGNANT PATIENT'S BILL OF RIGHTS
+                    The Pregnant Patient's Bill of Rights
                 </h1>
                 
                 <p>

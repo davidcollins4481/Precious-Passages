@@ -1,5 +1,5 @@
 <?php $this->load->view("includes/doctype_html.php") ?>
-<?php $this->load->view("includes/head_start.php", array("title" => "")) ?>
+<?php $this->load->view("includes/head_start.php", array("title" => "Lamaze")) ?>
 <?php $this->load->view("includes/head_end.php") ?>
 <?php $this->load->view("includes/body_start.php") ?>
 <?php $this->load->view("includes/globalnav.php") ?>
