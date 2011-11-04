@@ -268,6 +268,14 @@ class d extends CI_Controller {
     public function safeAsItGets() {
         $this->load->view('static/safeAsItGets.php');
     }
+    
+    public function aromatherapy() {
+        $this->load->view('static/aromatherapy.php');
+    }
+    
+    public function breastfeeding() {
+        $this->load->view('static/breastfeeding.php');
+    }
 }
 
 /* End of file welcome.php */

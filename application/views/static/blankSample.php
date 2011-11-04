@@ -17,6 +17,8 @@
                 
                 <p>
                     
+                    <img src="/images/resources/" alt="" title="" class="articleimg" />
+                    
                 </p>
             </div>
         </div>
