@@ -14,19 +14,19 @@
                     Rh incompatability and Rhogam
                 </h1>
                 <p>
-					The following pages will help you explore the issue of Rh 
-					incompatibility and the use of Rhogam during and after pregnancy. 
-					<ul>
-						<li>
-							<a href="/d/rhIncompatability">What is Rh incompatibility?</a>
-						</li>
-						<li>
-							<a href="/d/whyRhogam">Why use Rhogam?</a>
-						</li>
-						<li>
-							<a href="/d/antiD">Anti-d (Rhogam): Exploring Midwifery Knowledge</a>
-						</li>
-					</ul>
+                    The following pages will help you explore the issue of Rh 
+                    incompatibility and the use of Rhogam during and after pregnancy. 
+                    <ul>
+                        <li>
+                            <a href="/d/rhIncompatability">What is Rh incompatibility?</a>
+                        </li>
+                        <li>
+                            <a href="/d/whyRhogam">Why use Rhogam?</a>
+                        </li>
+                        <li>
+                            <a href="/d/antiD">Anti-d (Rhogam): Exploring Midwifery Knowledge</a>
+                        </li>
+                    </ul>
                 </p>
             </div>
         </div>

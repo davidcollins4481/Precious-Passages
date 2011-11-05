@@ -25,31 +25,31 @@
                     weight loss.
                 </p>
                 <p>
-					I highly recommend the article by Henci Goer: 
-					<a href="/d/gdArticle">
-						Gestational Diabetes: The Emperor Has No Clothes. 
-					</a>
+                    I highly recommend the article by Henci Goer: 
+                    <a href="/d/gdArticle">
+                        Gestational Diabetes: The Emperor Has No Clothes. 
+                    </a>
                 </p>
                 <p>
-					Diet is the primary factor influencing gestational diabetes.  
-					Here are a few sites that will assist you in researching pregnancy diets.
-					<ul>
-						<li>
-							<a href="http://www.essortment.com/handling-gestational-diabetes-during-preganancy-51000.html" target="_blank">
-								eSSORTMENT.com: Handling Gestational Diabetes During Pregnancy
-							</a>
-						</li>
-						<li>
-							<a href="http://www.blueribbonbaby.org/toxemia-case-studies/diabetic-diet-for-non-diabetic-mom/" target="_blank">
-								BlueRibbonBaby.org: Diabetic Diet for Non-Diabetic Mom
-							</a>
-						</li>
-						<li>
-							<a href="http://www.moondragon.org/health/disorders/diabetes.html" target="_blank">
-								MoonDragon.org: DIABETES
-							</a>
-						</li>
-					</ul>
+                    Diet is the primary factor influencing gestational diabetes.  
+                    Here are a few sites that will assist you in researching pregnancy diets.
+                    <ul>
+                        <li>
+                            <a href="http://www.essortment.com/handling-gestational-diabetes-during-preganancy-51000.html" target="_blank">
+                                eSSORTMENT.com: Handling Gestational Diabetes During Pregnancy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.blueribbonbaby.org/toxemia-case-studies/diabetic-diet-for-non-diabetic-mom/" target="_blank">
+                                BlueRibbonBaby.org: Diabetic Diet for Non-Diabetic Mom
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.moondragon.org/health/disorders/diabetes.html" target="_blank">
+                                MoonDragon.org: DIABETES
+                            </a>
+                        </li>
+                    </ul>
                 </p>
             </div>
         </div>

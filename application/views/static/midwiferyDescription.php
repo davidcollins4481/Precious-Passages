@@ -27,38 +27,38 @@
                 </p>
                 
                 <p>
-					The path through which a midwife has chosen her education 
-					varies from woman to woman and includes an academic program 
-					of study, an apprenticeship or both.  There is no "more correct" 
-					method of education.  Rather, there are different paths that lead 
-					to the same goal of serving birthing couples in the homebirth or 
-					hospital setting.  Interview your midwife as you would any other 
-					care provider.  Ask a lot of questions and make sure you are 
-					comfortable with the answers. 
+                    The path through which a midwife has chosen her education 
+                    varies from woman to woman and includes an academic program 
+                    of study, an apprenticeship or both.  There is no "more correct" 
+                    method of education.  Rather, there are different paths that lead 
+                    to the same goal of serving birthing couples in the homebirth or 
+                    hospital setting.  Interview your midwife as you would any other 
+                    care provider.  Ask a lot of questions and make sure you are 
+                    comfortable with the answers. 
                 </p>
                 
                 <p>
-					As your DEM I will provide prenatal care for the mother as well 
-					as labor and postpartum care for both the mother and the baby.  
-					I have a special interest in prenatal nutrition, VBAC and waterbirth.  
-					My education is through the Michigan School of Traditional Midwifery.  
-					Additional training includes adult, child and infant CPR with AED,  
-					First Aid, Neonatal Resuscitation, and breastfeeding certifications.    
-					My birth experience has included lots of natural vaginal birth as 
-					well as twins, episiotomy, vacuum, cesarean section, 
-					epidural/narcotic anesthesia, water birth, VBAC, single mothers, 
-					breastfeeding, bottle feeding and special needs infants.
+                    As your DEM I will provide prenatal care for the mother as well 
+                    as labor and postpartum care for both the mother and the baby.  
+                    I have a special interest in prenatal nutrition, VBAC and waterbirth.  
+                    My education is through the Michigan School of Traditional Midwifery.  
+                    Additional training includes adult, child and infant CPR with AED,  
+                    First Aid, Neonatal Resuscitation, and breastfeeding certifications.    
+                    My birth experience has included lots of natural vaginal birth as 
+                    well as twins, episiotomy, vacuum, cesarean section, 
+                    epidural/narcotic anesthesia, water birth, VBAC, single mothers, 
+                    breastfeeding, bottle feeding and special needs infants.
                 </p>
                 
                 <p>
-					Homebirth requires a large amount of personal responsibility for 
-					both your pregnancy and your birth.  While I am present to safeguard 
-					the passage of mother and child through the birth process, you are 
-					ultimately responsible for your birth.  A high level of commitment 
-					to health (mental, physical and spiritual) through birth preparation 
-					and prenatal nutrition is essential.  I cannot stress this enough; 
-					if you do not honestly prepare for your birth during your pregnancy, 
-					no amount of midwifery care will change the outcome.
+                    Homebirth requires a large amount of personal responsibility for 
+                    both your pregnancy and your birth.  While I am present to safeguard 
+                    the passage of mother and child through the birth process, you are 
+                    ultimately responsible for your birth.  A high level of commitment 
+                    to health (mental, physical and spiritual) through birth preparation 
+                    and prenatal nutrition is essential.  I cannot stress this enough; 
+                    if you do not honestly prepare for your birth during your pregnancy, 
+                    no amount of midwifery care will change the outcome.
                 </p>
             </div>
         </div>
