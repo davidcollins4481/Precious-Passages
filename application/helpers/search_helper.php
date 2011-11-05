@@ -2,7 +2,9 @@
 
 function contextualize_results($results, $search_term, $url_prefix = "") {
     $processed_results = array();
-    
+
+    $more_indicator = '[...]';
+
     foreach ($results as $result) {
         $entry = $result->entry;
         $point = strpos($entry, $search_term);
@@ -33,6 +35,14 @@ function contextualize_results($results, $search_term, $url_prefix = "") {
             }
 
             $context = substr($entry, $start, $end - $start);
+
+            if ($start > 0) {
+                $context = $more_indicator . $context;
+            }
+
+            if ($end < $length) {
+                $context = $context . $more_indicator;
+            }
 
             array_push($processed_results, array(
                 'url'             => $url_prefix . $result->url_title,

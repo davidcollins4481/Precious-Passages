@@ -24,7 +24,7 @@
                     -variety in the daily diet has always been associated with better 
                     health. And with variety in mind, your best choices should be foods 
                     that are the most nutrient-dense--the best nutritional-buys for your 
-                    grocery dollar. This is a list of what I consider to be the top 25 
+                    grocery dollar. This is a list of what I consider to be the top 25
                     foods everyone should eat.
                 </p>
                 <p>

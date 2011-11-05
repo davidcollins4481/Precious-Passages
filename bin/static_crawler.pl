@@ -66,16 +66,17 @@ sub load_index {
     $dbh->disconnect();
 }
 
-#TODO: maybe some kind of content validation. Check if there is enough content
+#TODO: More content validation would be nice here:
+# content length
+# spacing
 sub parse_page {
     my $html = shift;
-    
     $html =~ m|<title>(.*)</title>|;
     my $title = $1;
     
-    $html =~ s|\n||g;
-    $html =~ s|\s{2,}||g;
-    $html =~ s|\t||g;
+    $html =~ s|\n| |g;
+    $html =~ s|\s{2,}| |g;
+    $html =~ s|\t|    |g;
     
     $html =~ s|<!-- exclude -->.*<!-- /exclude -->||g;
     my $valid = $html =~ m|<!-- unique -->(.*)<!-- /unique -->|g;
@@ -83,8 +84,8 @@ sub parse_page {
     return undef if !$valid;
 
     my $content = $1;
-    $content =~ s|<.+?>| |g;
-    $content =~ s|\s{2,}||g;
+    $content =~ s|<.+?>|   |g;
+    $content =~ s|\s{2,}| |g;
     
     return undef if !$title || !$content;
     
@@ -96,12 +97,17 @@ sub parse_page {
 
 sub output_results {
     my $results = shift;
-    
+
     open(OUT, ">$out_file") || die $!;
     #print OUT "text|||url|||title\n";
-
     foreach my $r (@$results) {
-        print OUT $$r{content} .'|||' . $$r{path} .'|||'.$$r{title}."\n";
+        eval {
+            print OUT $$r{content} .'|||' . $$r{path} .'|||'.$$r{title}."\n";
+        };
+
+        if ($@) {
+            print $@, "\n";
+        }
     }
     
     close OUT;
