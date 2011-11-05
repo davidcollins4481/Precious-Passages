@@ -323,3 +323,40 @@ ul li {
     .search-result:hover {
         background-color: #FBFBFB;
     }
+    
+    .search-result.hidden {
+        display: none;
+    }
+
+    #search-container #pagination-container {
+        float: left;
+        position: relative;
+        padding: 10px 0px;
+        left: 10px;
+    }
+
+        #search-container #pagination-container .previous,
+        #search-container #pagination-container .next,
+        #search-container #pagination-container .pagination-link {
+            cursor: pointer;
+            color: #2A65AD;
+        }
+
+        #search-container #pagination-container .pagination-link {
+            padding: 0 5px;
+            text-decoration: underline;
+        }
+
+        #search-container #pagination-container .pagination-link.active {
+            text-decoration: none;
+            font-weight: bold;
+            cursor: default;
+        }
+
+        #search-container .invisible {
+            visibility: hidden;
+        }
+
+        #search-container .hidden {
+            display:none;
+        }
