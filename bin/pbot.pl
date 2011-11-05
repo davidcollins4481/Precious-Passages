@@ -8,7 +8,7 @@ use DBI;
 # config
 my $content_directory = '/home/david/Projects/Precious-Passages/application/views/static';
 my $domain = 'http://david.preciouspassage.com';
-my $out_file = "results";
+my $out_file = "results.tmp";
 ###
 
 my $ua = LWP::UserAgent->new;
@@ -34,6 +34,8 @@ foreach my $file (glob "${content_directory}/*") {
 output_results(\@results);
 
 load_index();
+
+system("rm $out_file");
 
 # load results into the database
 sub load_index {

@@ -35,8 +35,9 @@ class Search extends CI_Controller {
             
             // highlight the context
             for ($i = 0; $i < count($results); $i++) {
+                
                 $results[$i]['context_segment'] = 
-                    str_replace($query, '<b style="background-color:yellow">' . $query . '</b>', $results[$i]['context_segment']);
+                    str_replace($query, '<b style="background-color:yellow">' . $query . '</b>', strip_tags($results[$i]['context_segment']));
             }
 
             $data['message'] = ($count == 1) ? 
@@ -44,6 +45,8 @@ class Search extends CI_Controller {
                 :
                 'There are <i>' . $count . '</i> results for the search phrase ' . '<b>"' . $query . '"</b>';
         }
+
+        $data['search_term'] = $query;
 
         $data['query'] = $results;
         $this->load->view('search', $data);

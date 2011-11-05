@@ -25,7 +25,7 @@
                 <?php for($i = 0; $i < count($query);$i++) { ?>
                     <div id="search-result-<?php echo $i + 1 ?>" class="search-result <?php if ($i > $resultsPerPage - 1) echo "hidden"; ?>">
                         <h2>
-                            <a href="<?php echo $query[$i]['url']; ?>">
+                            <a href="<?php echo $query[$i]['url'] . "?term=" . $search_term; ?>">
                                 <?php echo $query[$i]['title']; ?>
                             </a>
                         </h2>

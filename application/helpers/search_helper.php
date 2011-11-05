@@ -18,7 +18,7 @@ function contextualize_results($results, $search_term, $url_prefix = "") {
             /*
              * This logic is a bit of a disaster
              */
-            $context_length = 250;
+            $context_length = 200;
             $start;
             $end;
 

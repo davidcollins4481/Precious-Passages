@@ -11,4 +11,5 @@
 
 <script type="text/javascript" src="/js/dojo/dojo/dojo.js"></script>
 <script type="text/javascript" src="/js/pp/sidebar/navigation.js"></script>
+<script type="text/javascript" src="/js/pp/util/highlighter.js"></script>
 
