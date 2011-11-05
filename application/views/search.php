@@ -4,7 +4,7 @@
 
 <?php
     $resultsPerPage = 5;
-    $pageCount = ceil(count($query) / ($resultsPerPage));
+    $pageCount = isset($query) ? ceil(count($query) / ($resultsPerPage)) : 0;
     $style = ($pageCount > 1) ? 'display:block' : 'display:none';
 ?>
 
