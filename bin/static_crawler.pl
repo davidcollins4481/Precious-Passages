@@ -58,7 +58,7 @@ sub load_index {
 
     foreach my $entry (@processed_lines) {
         my ($text, $url, $title) = ($dbh->quote($$entry{text}),$$entry{url},$$entry{title});
-        my $query = qq|INSERT INTO static_index(text,url,title) VALUES ("${text}","${url}","${title}")|;
+        my $query = qq|INSERT INTO static_index(entry,url_title,title) VALUES ("${text}","${url}","${title}")|;
        #print $query, "\n";
         $dbh->do($query);
     }

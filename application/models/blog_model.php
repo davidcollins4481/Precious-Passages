@@ -26,45 +26,10 @@ class Blog_model extends CI_Model {
         $this->db->or_like('title',$search_term);
         $this->db->or_like('summary',$search_term);
         $query = $this->db->get('blog');
+        $this->load->helper('search_helper');
         $results = $query->result();
 
-        $processed_results = array();
-
-        foreach ($results as $result) {
-            $entry = $result->entry;
-            $point = strpos($entry, $search_term);
-
-            if ($point) {
-                $length = strlen($entry);
-                $count_from_start = $length - $point;
-
-                // how many chars in front and back to be shown
-                /*
-                 * This logic is a bit of a disaster
-                 */
-                $context_length = 250;
-                $start;
-                $end;
-                if ($count_from_start < $context_length) {
-                    $start = 0;
-                    $end = $point + strlen($search_term) + $context_length;
-                } else if (strlen($search_term) + $context_length >= $length) {
-                    $start = $context_length;
-                    $end = $start + strlen($search_term) + $context_length;
-                } else {
-                    $start = 0;
-                    $end = $point + strlen($search_term) + $context_length;
-                }
-
-                $context = substr($entry, $start, $end);
-            }
-
-            array_push($processed_results, array(
-                'url'             => '/blog/entry/' . $result->url_title,
-                'title'           => $result->title,
-                'context_segment' => $context
-            ));
-        }
+        $processed_results = contextualize_results($results, $search_term);
 
         return $processed_results;
     }
