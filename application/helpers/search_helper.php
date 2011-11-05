@@ -1,6 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed.');
 
-function contextualize_results($results, $search_term) {
+function contextualize_results($results, $search_term, $url_prefix = "") {
     $processed_results = array();
     
     foreach ($results as $result) {
@@ -35,7 +35,7 @@ function contextualize_results($results, $search_term) {
             $context = substr($entry, $start, $end - $start);
 
             array_push($processed_results, array(
-                'url'             => $result->url_title,
+                'url'             => $url_prefix . $result->url_title,
                 'title'           => $result->title,
                 'context_segment' => $context
             ));

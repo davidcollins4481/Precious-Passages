@@ -26,7 +26,7 @@ class Search extends CI_Controller {
         $static_results = $this->static_content->search($args);
         $blog_results   = $this->blog->search($args);
 
-        $results = array_merge($static_results, $blog_results);
+        $results = array_merge($blog_results,$static_results);
 
         if (!count($results)) {
             $data['message'] = 'There are no results for the search phrase ' . '<b>"' . $query . '"</b>';

@@ -29,7 +29,7 @@ class Blog_model extends CI_Model {
         $this->load->helper('search_helper');
         $results = $query->result();
 
-        $processed_results = contextualize_results($results, $search_term);
+        $processed_results = contextualize_results($results, $search_term, '/blog/entry/');
 
         return $processed_results;
     }

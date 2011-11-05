@@ -354,7 +354,8 @@ ul li {
         }
 
         #search-container .invisible {
-            visibility: hidden;
+            color: #8CBEFA !important;
+            cursor: default !important;
         }
 
         #search-container .hidden {

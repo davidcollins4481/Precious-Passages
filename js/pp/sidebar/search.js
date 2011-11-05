@@ -54,6 +54,9 @@ dojo.addOnLoad(function() {
     
     if (search_container) {
         dojo.connect(dojo.byId('previous'),"onclick", null, function(evt) {
+            if (dojo.hasClass(this, "invisible")) 
+                return;
+
             console.log('previous');
             currentPage--;
             toggleNextPrevious();
@@ -62,6 +65,9 @@ dojo.addOnLoad(function() {
         });
 
         dojo.connect(dojo.byId('next'),"onclick", null, function(evt) {
+            if (dojo.hasClass(this, "invisible")) 
+                return;
+
             console.log('next');
             currentPage++;
             toggleNextPrevious();
