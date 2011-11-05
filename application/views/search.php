@@ -13,7 +13,7 @@
                 <?php foreach($query as $item) { ?>
                     <div class="search-result">
                         <h2>
-                            <a href="/blog/entry/<?php echo $item['url']; ?>">
+                            <a href="<?php echo $item['url']; ?>">
                                 <?php echo $item['title']; ?>
                             </a>
                         </h2>

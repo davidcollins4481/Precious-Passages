@@ -4,6 +4,7 @@ class Search extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('Blog_model', 'blog');
+        $this->load->model('static_content_model', 'static_content');
     }
 
     //the home page of the blog
@@ -22,8 +23,10 @@ class Search extends CI_Controller {
             'query' => $query
         );
 
-        //$data['query'] = $this->blog->search($args);
-        $results = $this->blog->search($args);
+        $static_results = $this->static_content->search($args);
+        $blog_results   = $this->blog->search($args);
+
+        $results = array_merge($static_results, $blog_results);
 
         if (!count($results)) {
             $data['message'] = 'There are no results for the search phrase ' . '<b>"' . $query . '"</b>';

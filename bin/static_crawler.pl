@@ -3,6 +3,7 @@
 use strict;
 use LWP::UserAgent;
 use File::Basename;
+use DBI;
 
 # config
 my $content_directory = '/home/david/Projects/Precious-Passages/application/views/static';
@@ -31,6 +32,39 @@ foreach my $file (glob "${content_directory}/*") {
 }
 
 output_results(\@results);
+
+load_index();
+
+# load results into the database
+sub load_index {
+    my $dbh = DBI->connect(
+        'DBI:mysql:precious_passage',
+        'dev',
+        'user'
+    ) || die "Could not connect to database: $DBI::errstr";
+
+    open(RESULTS, "$out_file") || die $!;
+    my @lines = <RESULTS>;
+    close RESULTS;
+
+    my @processed_lines = map {
+        my %data;
+        ($data{text}, $data{url}, $data{title}) = split('\|\|\|', $_);
+        \%data
+    } @lines;
+
+    # drop all entries
+    $dbh->do('delete from static_index where id');
+
+    foreach my $entry (@processed_lines) {
+        my ($text, $url, $title) = ($dbh->quote($$entry{text}),$$entry{url},$$entry{title});
+        my $query = qq|INSERT INTO static_index(text,url,title) VALUES ("${text}","${url}","${title}")|;
+       #print $query, "\n";
+        $dbh->do($query);
+    }
+
+    $dbh->disconnect();
+}
 
 #TODO: maybe some kind of content validation. Check if there is enough content
 sub parse_page {
@@ -64,7 +98,7 @@ sub output_results {
     my $results = shift;
     
     open(OUT, ">$out_file") || die $!;
-    print OUT "text|||url|||title\n";
+    #print OUT "text|||url|||title\n";
 
     foreach my $r (@$results) {
         print OUT $$r{content} .'|||' . $$r{path} .'|||'.$$r{title}."\n";

@@ -33,15 +33,6 @@
                 <li><a href="/blog/delete">Delete Entry</a></li>
             </ul>
         </div>
-        
-        <div>
-            <h2>Search</h2>
-            <ul>
-                <li>
-                    <button id="rebuild-index">Rebuild</button>
-                </li>
-            </ul>
-        </div>
     </div>
 </div>
 

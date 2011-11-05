@@ -60,7 +60,7 @@ class Blog_model extends CI_Model {
             }
 
             array_push($processed_results, array(
-                'url'             => $result->url_title,
+                'url'             => '/blog/entry/' . $result->url_title,
                 'title'           => $result->title,
                 'context_segment' => $context
             ));
