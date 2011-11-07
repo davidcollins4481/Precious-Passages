@@ -9,11 +9,12 @@ dojo.require("dijit._editor.plugins.TextColor");
 dojo.require("dijit._editor.plugins.LinkDialog");
 dojo.require("dijit._editor.plugins.Print");
 dojo.require("dijit._editor.plugins.ViewSource");
+dojo.require("pp.blog.plugins.LocalImageInserter");
 
 dojo.addOnLoad(function() {
 
     var editor = new dijit.Editor({
-        extraPlugins: ['insertImage','createLink', 'ViewSource', 'Print']
+        extraPlugins: ['insertImage','createLink', 'ViewSource', 'Print', 'LocalImageInserter']
     },  dojo.byId('editor')); 
 
     var postButton = dojo.byId('submit-btn');
