@@ -14,7 +14,7 @@ dojo.require("pp.blog.plugins.LocalImageInserter");
 dojo.addOnLoad(function() {
 
     var editor = new dijit.Editor({
-        extraPlugins: ['insertImage','createLink', 'ViewSource', 'Print', 'LocalImageInserter']
+        extraPlugins: ['insertImage','createLink', 'ViewSource', 'Print']
     },  dojo.byId('editor')); 
 
     var postButton = dojo.byId('submit-btn');
