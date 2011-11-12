@@ -5,8 +5,8 @@ body {
     font-family:"Trebuchet MS", Arial, Verdana;
     font-size:0.74em;
     color:#555555;
-    background-color:#FFFFFF;
     text-align:left;
+    background: url("/images/gradient.gif") no-repeat -158px -238px;
 }
 
 a {
@@ -36,7 +36,7 @@ ul li {
 
 #menu {
     width:100%;
-    padding-top:20px;
+    padding: 10px 0;
     margin-bottom:50px;
     color:#666;
     text-align:center;
@@ -44,9 +44,12 @@ ul li {
     font-size:11px;
     font-variant:small-caps;
     height: 20px;
+    /*background-color: #EFFCD7;*/
+    /*border-bottom: 1px solid #eee;*/
 }
 #menu a {
     text-decoration:none;
+    color: #666;
     padding:10px;
     padding-top:20px;
     padding-bottom:20px;
@@ -85,13 +88,14 @@ ul li {
 
 #header img.leaf {
     position:absolute;
+    display:none;
     opacity: .1;
-    top: -189px;
-    left: 0.8px;
-    -webkit-transform: rotate(237deg);
-    -moz-transform: rotate(237deg);
-    transform: rotate(237deg);
-    width: 700px;
+    top: -107px;
+    left: 96px;
+    -webkit-transform: rotate(244deg);
+    -moz-transform: rotate(244deg);
+    transform: rotate(244deg);
+    width: 480px;
 }
 
 #content {
@@ -177,6 +181,7 @@ ul li {
 #mainbar {
     width: 500px;
     padding-right:35px;
+    /*background-color:#F9F9F9;*/
     background-image:url(../images/backgrounds/mainbar.jpg);
     background-position:top right;
     background-repeat:no-repeat;
@@ -211,7 +216,7 @@ ul li {
     width:100%;
     border-top:1px solid #d8efa6;
     border-bottom:5px solid #94ae62;
-    background-color: #B5D62F;
+    background-color: #EFFFCB;
     padding-top:10px;
     padding-bottom:10px;
     color:#666;
