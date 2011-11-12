@@ -6,7 +6,8 @@ body {
     font-size:0.74em;
     color:#555555;
     text-align:left;
-    background: url("/images/gradient.gif") no-repeat -158px -238px;
+    /*background: url("/images/gradient.gif") no-repeat -158px -238px;*/
+    /*background: url("/images/texture.gif") repeat-x ;*/
 }
 
 a {
@@ -43,16 +44,35 @@ ul li {
     font-family:Verdana, Arial, Helvetica, sans-serif;
     font-size:11px;
     font-variant:small-caps;
-    height: 20px;
-    /*background-color: #EFFCD7;*/
-    /*border-bottom: 1px solid #eee;*/
+    height: 90px;
+    background-color: #F9FFED;
+    border-bottom: 1px solid #eee;
 }
+
+    #menu .container {
+        
+    }
+    
+        #menu .logo-container {
+            position:relative;
+            left: -87px;
+            top: -29px;
+        }
+        
+        #menu .link-container {
+            position: relative;
+            top: -207px;
+            left: -260px;
+        }
+
 #menu a {
     text-decoration:none;
     color: #666;
     padding:10px;
     padding-top:20px;
     padding-bottom:20px;
+    font-weight: normal;
+    text-transform: lowercase;
     
 }
 #menu a:hover {
@@ -63,6 +83,7 @@ ul li {
     width:750px;
     margin:0 auto 0 auto;
     margin-bottom:40px;
+    display:none;
 }
 #header h1 {
     font-family:"Century Gothic", "Trebuchet MS", "Arial Narrow", Arial, sans-serif;
@@ -218,9 +239,9 @@ ul li {
     padding-bottom:10px;
     color:#666;
     float: left;
-    height: 100px;
     text-align: center;
-    background: url("/images/footer-gradient.gif") no-repeat 75% 0%;
+    background-color: #F9FFED;
+    border-top: 1px solid #eee;
 }
 
 #footer a {
