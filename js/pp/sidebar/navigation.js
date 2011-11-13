@@ -35,7 +35,7 @@ dojo.declare(
 
         _initMenu: function(args) {
             var containerNode = new dijit.layout.AccordionContainer({
-                class: "submenu"
+                'class': "submenu"
             });
 
             dojo.place(containerNode.domNode, args.containerNode, "first");
@@ -81,9 +81,11 @@ dojo.declare(
                     c.selected = false;
                 }
 
+                var height = (rowHeight * links.length) + "px !important";
                 dojo.style(c.domNode, {
-                    height: (rowHeight * links.length) + "px !important"
+                    height: height + "px"
                 });
+                //c.domNode.style.setAttribute('style', "height: " + height);
                 
                 containerNode.addChild(c);
             }
