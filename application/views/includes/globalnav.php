@@ -1,7 +1,7 @@
         <div id="menu">
             <div class="container">
                 <div class="logo-container">
-                    <img src="/images/logo2.png" />
+                    <img src="/images/logo5.png" />
                 </div>
                 <div class="link-container">
                     <a href="/">home</a>
