@@ -19,7 +19,7 @@
                         <form method="GET" action="/search">
                             <label for="query">Search</label>
                             <input type="input" name="query" value="<?php if (isset($_GET["query"])) echo $_GET["query"]; ?>"/>
-                            <input type="submit" />
+                            <input value="Search" type="submit" />
                         </form>
                     </div>
 
