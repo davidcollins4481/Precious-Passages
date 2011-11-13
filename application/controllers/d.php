@@ -276,6 +276,42 @@ class d extends CI_Controller {
     public function breastfeeding() {
         $this->load->view('static/breastfeeding.php');
     }
+    
+    public function hypnosisForchildbirth() {
+        $this->load->view('static/hypnosisForChildbirth.php');
+    }
+    
+    public function vbac() {
+        $this->load->view('static/vbac.php');
+    }
+    
+    public function breechPresentation() {
+        $this->load->view('static/breechPresentation.php');
+    }
+    
+    public function turningABreech() {
+        $this->load->view('static/TurningABreech.php');
+    }
+    
+    public function induction() {
+        $this->load->view('static/induction.php');
+    }
+    
+    public function cimsFactSheet() {
+        $this->load->view('static/cimsFactSheet.php');
+    }
+    
+    public function gbs() {
+        $this->load->view('static/gbs.php');
+    }
+    
+    public function prenatalPenicillin() {
+        $this->load->view('static/prenatalPenicillin.php');
+    }
+    
+    public function laborade() {
+        $this->load->view('static/laborade.php');
+    }
 }
 
 /* End of file welcome.php */
