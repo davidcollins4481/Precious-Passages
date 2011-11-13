@@ -9,6 +9,7 @@ dojo.require("dijit._editor.plugins.TextColor");
 dojo.require("dijit._editor.plugins.LinkDialog");
 dojo.require("dijit._editor.plugins.Print");
 dojo.require("dijit._editor.plugins.ViewSource");
+dojo.require("pp.blog.plugins.LocalImageInserter");
 
 dojo.addOnLoad(function() {
 

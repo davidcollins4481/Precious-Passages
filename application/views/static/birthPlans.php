@@ -33,24 +33,24 @@
                     &nbsp; &nbsp; &nbsp;
                     <a href="" target="_blank">Sample Plan 2</a>                    
                 </div>
-				<p>
-					Be sure to thoroughly research anything you don't understand.  Informed 
-					consent is only possible if you understand each option you choose.  Also, 
-					do not feel restricted by the sample plans.  A birth plan is a very 
-					individual work that should reflect your personality and style.  Aim to 
-					have your plan completed around the 36th week of pregnancy.  This will give 
-					you a few office visits to discuss the plan with your doctor.  While what 
-					you want is important, realize that you may have to make compromises to 
-					comply with hospital policy.  Talking to your Doctor ahead of time will 
-					allow you to work out any sticking points and create a plan that is more 
-					likely to be honored.
+                <p>
+                    Be sure to thoroughly research anything you don't understand.  Informed 
+                    consent is only possible if you understand each option you choose.  Also, 
+                    do not feel restricted by the sample plans.  A birth plan is a very 
+                    individual work that should reflect your personality and style.  Aim to 
+                    have your plan completed around the 36th week of pregnancy.  This will give 
+                    you a few office visits to discuss the plan with your doctor.  While what 
+                    you want is important, realize that you may have to make compromises to 
+                    comply with hospital policy.  Talking to your Doctor ahead of time will 
+                    allow you to work out any sticking points and create a plan that is more 
+                    likely to be honored.
                 </p>
                 <p>
-					Here are a few websites to help you write your birth plan. <br/>
-					<a href="http://birthplan.com/" target="_blank">birthplan.com</a> <br/>
-					<a href="http://www.childbirth.org/articles/birthplans.html" target="_blank">childbirth.org</a> <br/>
-					<a href="http://www.thelaboroflove.com/forum/attachment/2.html" target="_blank">thelaboroflove.com</a> <br/>
-					<a href="http://www.babyzone.com/" target="_blank">babyzone.com</a>
+                    Here are a few websites to help you write your birth plan. <br/>
+                    <a href="http://birthplan.com/" target="_blank">birthplan.com</a> <br/>
+                    <a href="http://www.childbirth.org/articles/birthplans.html" target="_blank">childbirth.org</a> <br/>
+                    <a href="http://www.thelaboroflove.com/forum/attachment/2.html" target="_blank">thelaboroflove.com</a> <br/>
+                    <a href="http://www.babyzone.com/" target="_blank">babyzone.com</a>
                 </p>
             </div>
         </div>

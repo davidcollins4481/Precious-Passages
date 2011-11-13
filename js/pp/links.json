@@ -12,14 +12,8 @@
         ]
     },
     resources: {
-        "Pregnancy": [
-            { url: "/d/pregnancyAndBirth.php", name: "Pregnancy and Birth Websites" },
-            { url: "/d/gestationalDiabetes.php", name: "Gestational Diabetes" },
-            { url: "/d/billOfRights.php", name: "Pregnant Patient's Bill of Rights" },
-            { url: "/d/rhogam.php", name: "Rhogam and Rh Incompatability" }
-        ],
         "Labor and Delivery": [
-			{ url: "/d/homeBirth.php", name: "Homebirth" },
+            { url: "/d/homeBirth.php", name: "Homebirth" },
             { url: "/d/birthingMethods.php", name: "Birthing Methods" },
             { url: "/d/birthPlans.php", name: "Birth Plans" },
             { url: "/d/episiotomy.php", name: "Episiotomy" },
@@ -31,6 +25,12 @@
             { url: "/d/induction.php", name: "Induction" },
             { url: "/d/gbs.php", name: "Group B-Strep" },
             { url: "/d/laborade.php", name: "Laborade" }
+        ],
+        "Pregnancy": [
+            { url: "/d/pregnancyAndBirth.php", name: "Pregnancy and Birth Websites" },
+            { url: "/d/gestationalDiabetes.php", name: "Gestational Diabetes" },
+            { url: "/d/billOfRights.php", name: "Pregnant Patient's Bill of Rights" },
+            { url: "/d/rhogam.php", name: "Rhogam and Rh Incompatability" }
         ],
         "New Baby Care": [
             { url: "/d/breastfeeding.php", name: "Breastfeeding" },

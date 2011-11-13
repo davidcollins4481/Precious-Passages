@@ -25,23 +25,23 @@
                     On the site you can purchase the Hypnobabies home study course for $139. 
                 </p>
                 <p>
-					Kerry has written,
-					<a href="/d/hypnosisForChildbirth">
-						Hypnosis for Childbirth					
-					</a> , 
-					an article concisely explaining Hypnobabies and why she feels it is the 
-					best hypnosis program for childbirth.  
+                    Kerry has written,
+                    <a href="/d/hypnosisForChildbirth">
+                        Hypnosis for Childbirth                    
+                    </a> , 
+                    an article concisely explaining Hypnobabies and why she feels it is the 
+                    best hypnosis program for childbirth.  
                 </p>
                 <p>
-					For those of you interested in the difference between Hypnobirthing and 
-					Hypnobabies, 
-					<a href="http://www.birthnaturally.org/hypnobirthing.htm" target="_blank">click here</a> 
-					for a wonderful article by Laura Lund.
+                    For those of you interested in the difference between Hypnobirthing and 
+                    Hypnobabies, 
+                    <a href="http://www.birthnaturally.org/hypnobirthing.htm" target="_blank">click here</a> 
+                    for a wonderful article by Laura Lund.
                 </p>
                 <p>
-					Here are some useful sites:<br/>
-					<a href="http://www.birthnaturally.org/hypnobabies.htm" target="_blank">birthnaturally.org</a><br/>
-					<a href="http://www.pregnancybirthandbabies.com/options.htm" target="_blank">pregnancybirthandbabies.com</a>
+                    Here are some useful sites:<br/>
+                    <a href="http://www.birthnaturally.org/hypnobabies.htm" target="_blank">birthnaturally.org</a><br/>
+                    <a href="http://www.pregnancybirthandbabies.com/options.htm" target="_blank">pregnancybirthandbabies.com</a>
                 </p>
             </div>
         </div>

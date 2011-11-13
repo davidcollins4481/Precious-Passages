@@ -2,6 +2,15 @@
 <?php $this->load->view("includes/head_start.php") ?>
 <?php $this->load->view("includes/head_end.php") ?>
 <?php $this->load->view("includes/body_start.php") ?>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <?php $this->load->view("includes/globalnav.php") ?>
 
         <!-- unique -->
@@ -19,6 +28,7 @@
                         <a href="/blog/edit?entry_id=<?php echo $post->entry_id ?>">edit</a>
                     <?php } ?>
                 </p>
+                <div class="fb-like" data-send="true" data-width="450" data-show-faces="true"></div>
                 <p><a href="/index.php/blog/">Back to Blog</a></p>
             </div>
         </div>

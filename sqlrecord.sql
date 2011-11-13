@@ -18,7 +18,7 @@ VALUES ( 'a random title', 'this_is_the_greates_thing_ever', 'summary', 'entry',
 -- create static index
 CREATE TABLE static_index (
     id integer(10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    text TEXT NULL,
-    url TEXT NULL,
+    entry TEXT NULL,
+    url_title TEXT NULL,
     title varchar(255) NOT NULL
 );

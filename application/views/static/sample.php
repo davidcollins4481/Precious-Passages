@@ -14,7 +14,7 @@
                     Home Birth Advantages
                 </h1>
                 <p>
-					<img src="/images/resources/hipMassage2.jpg" alt="Hip Massage Fig 2" title="hipMassage2" class="articleimg" />
+                    <img src="/images/resources/hipMassage2.jpg" alt="Hip Massage Fig 2" title="hipMassage2" class="articleimg" />
                     To date, I have had five children.&nbsp; 
                     The first in the hospital, the other four at home.&nbsp; 
                     After experiencing both, I really prefer homebirthing. I support 

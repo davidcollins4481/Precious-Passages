@@ -14,7 +14,7 @@
                     The Vegan Diet
                 </h1>
                 <p>
-					
+                    
                 </p>
             </div>
         </div>

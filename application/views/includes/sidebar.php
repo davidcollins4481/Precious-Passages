@@ -18,7 +18,7 @@
                         <br/>
                         <form method="GET" action="/search">
                             <label for="query">Search</label>
-                            <input type="input" name="query" />
+                            <input type="input" name="query" value="<?php if (isset($_GET["query"])) echo $_GET["query"]; ?>"/>
                             <input type="submit" />
                         </form>
                     </div>

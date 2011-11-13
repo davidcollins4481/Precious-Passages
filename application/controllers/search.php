@@ -4,6 +4,7 @@ class Search extends CI_Controller {
     public function __construct() {
         parent::__construct();
         $this->load->model('Blog_model', 'blog');
+        $this->load->model('static_content_model', 'static_content');
     }
 
     //the home page of the blog
@@ -22,8 +23,10 @@ class Search extends CI_Controller {
             'query' => $query
         );
 
-        //$data['query'] = $this->blog->search($args);
-        $results = $this->blog->search($args);
+        $static_results = $this->static_content->search($args);
+        $blog_results   = $this->blog->search($args);
+
+        $results = array_merge($blog_results,$static_results);
 
         if (!count($results)) {
             $data['message'] = 'There are no results for the search phrase ' . '<b>"' . $query . '"</b>';
@@ -32,8 +35,9 @@ class Search extends CI_Controller {
             
             // highlight the context
             for ($i = 0; $i < count($results); $i++) {
+                
                 $results[$i]['context_segment'] = 
-                    str_replace($query, '<b style="background-color:yellow">' . $query . '</b>', $results[$i]['context_segment']);
+                    str_replace($query, '<b style="background-color:yellow">' . $query . '</b>', strip_tags($results[$i]['context_segment']));
             }
 
             $data['message'] = ($count == 1) ? 
@@ -41,6 +45,8 @@ class Search extends CI_Controller {
                 :
                 'There are <i>' . $count . '</i> results for the search phrase ' . '<b>"' . $query . '"</b>';
         }
+
+        $data['search_term'] = $query;
 
         $data['query'] = $results;
         $this->load->view('search', $data);

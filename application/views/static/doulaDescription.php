@@ -33,7 +33,7 @@
                     information to make an informed decision.  For answers to some 
                     common misconceptions regarding doulas read 
                     <a href="/d/doulaMythsVsReality">
-						Doula Myths vs Realities.
+                        Doula Myths vs Realities.
                     </a>
                 </p>
             </div>
@@ -45,18 +45,18 @@
                 
                 <p>
                     <ul>
-						<li>
-							50% Reduction in Cesarean Rate
-						</li>
-						<li>
-							25% Reduction in length of labor
-						</li>
-						<li>
-							40% Reduction in the need for labor stimulating drugs
-						</li>
-						<li>
-							60% Reduction in request for  epidural pain relief
-						</li>
+                        <li>
+                            50% Reduction in Cesarean Rate
+                        </li>
+                        <li>
+                            25% Reduction in length of labor
+                        </li>
+                        <li>
+                            40% Reduction in the need for labor stimulating drugs
+                        </li>
+                        <li>
+                            60% Reduction in request for  epidural pain relief
+                        </li>
                     </ul>
                     *Klaus, M.; Klaus, P.; Kennell, J. Mothering the Mother 1993
                 </p>
@@ -79,39 +79,39 @@
                 <p>    
                     These include: 
                     <ul>
-						<li>
-							Couples attempting a VBAC (vaginal birth after cesarean)
-						</li>
-						<li>
-							Women classified as high risk
-						</li>
-						<li>
-							Couples expecting twins or higher order multiples
-						</li>
-						<li>
-							Couples strongly committed to avoiding pain medication or 
-							routine interventions
-						</li>
-						<li>
-							Couples planning a home birth
-						</li>
-						<li>
-							Women laboring without the support of a partner
-						</li>
-						<li>
-							Couples who desire midwifery care but are unable to 
-							find a midwife
-						</li>
-						<li>
-							Couples attempting to overcome a 'bad' birth experience
-						</li>
+                        <li>
+                            Couples attempting a VBAC (vaginal birth after cesarean)
+                        </li>
+                        <li>
+                            Women classified as high risk
+                        </li>
+                        <li>
+                            Couples expecting twins or higher order multiples
+                        </li>
+                        <li>
+                            Couples strongly committed to avoiding pain medication or 
+                            routine interventions
+                        </li>
+                        <li>
+                            Couples planning a home birth
+                        </li>
+                        <li>
+                            Women laboring without the support of a partner
+                        </li>
+                        <li>
+                            Couples who desire midwifery care but are unable to 
+                            find a midwife
+                        </li>
+                        <li>
+                            Couples attempting to overcome a 'bad' birth experience
+                        </li>
                     </ul>
                 </p>
                 <p>
-					To learn more about doulas and access other links about pregnancy, 
-					birth, nutrition and newborns, visit 
-					<a href="http://www.dona.org" target="_blank">dona.org</a> or 
-					<a href="http://www.doulanetwork.com" target="_blank">doulanetwork.com</a>.
+                    To learn more about doulas and access other links about pregnancy, 
+                    birth, nutrition and newborns, visit 
+                    <a href="http://www.dona.org" target="_blank">dona.org</a> or 
+                    <a href="http://www.doulanetwork.com" target="_blank">doulanetwork.com</a>.
                 </p>
             </div>           
         </div>

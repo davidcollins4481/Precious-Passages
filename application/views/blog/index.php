@@ -49,7 +49,7 @@
                 <div class="blog_entry">
                     <h2 style="font-style: italic"><a href="/blog/entry/<?php echo $entry->url_title; ?>"><?php echo $entry->title; ?></a></h2>
                     <p>
-                        <?php echo $entry->summary; ?>
+                        <?php echo strip_tags($entry->summary); ?>
                         <a style="font-weight: normal" href="/blog/entry/<?php echo $entry->url_title; ?>">[...]</a>
                     </p>
                     -- Created <?php $time = strtotime($entry->creation_date); echo date('m/d/Y H:i', $time); ?> by <i><?php echo $entry->author; ?></i>

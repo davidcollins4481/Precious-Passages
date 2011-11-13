@@ -10,13 +10,25 @@ class Static_content_model extends CI_Model {
         $this->db->select('*'); 
 
         $query = $this->db->get('static_index');
-        
-        if ($query->num_rows() > 0)
-        {
-          return $query->result();
+
+        if ($query->num_rows() > 0) {
+            return $query->result();
         } else {
-          return array();
+            return array();
         }
+    }
+
+    public function search($args) {
+        $search_term = $args['query'];
+        $this->db->like('entry',$search_term);
+        $this->db->or_like('title',$search_term);
+        $query = $this->db->get('static_index');
+        $this->load->helper('search_helper');
+        $results = $query->result();
+
+        $processed_results = contextualize_results($results, $search_term);
+
+        return $processed_results;
     }
 }
 
