@@ -49,3 +49,7 @@
     color: #94AE62;
     background-color: #EFFCD7;
 }
+
+.dijitAccordionContainer-child {
+    height: auto !important;
+}

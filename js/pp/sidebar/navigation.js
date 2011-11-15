@@ -81,12 +81,6 @@ dojo.declare(
                     c.selected = false;
                 }
 
-                var height = (rowHeight * links.length) + "px !important";
-                dojo.style(c.domNode, {
-                    height: height + "px"
-                });
-                //c.domNode.style.setAttribute('style', "height: " + height);
-                
                 containerNode.addChild(c);
             }
 
