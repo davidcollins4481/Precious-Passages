@@ -2,13 +2,13 @@
     left: -241px;
 }
 
-input[name="password"],
-input[name="query"] {
+#sidebar input[name="password"],
+#sidebar input[name="query"] {
     margin: 5px 0;
 }
 
-input[name="username"],
-input[name="password"],
-input[name="query"] {
+#sidebar input[name="username"],
+#sidebar input[name="password"],
+#sidebar input[name="query"] {
     width: 150px;
 }
