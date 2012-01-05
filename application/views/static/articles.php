@@ -94,6 +94,11 @@
                                 The History of Midwifery and Childbirth in America: A 
                                 Timeline
                             </a>
+                        </li>
+                        <li>
+                            <a href="http://www.midwiferytoday.com/articles/preg_H1N1fluvirus.asp" target="_blank">
+                                Pregnancy and the H1N1 Flu Virus
+                            </a>
                         </li>                            
                     </ul>
                 </p>

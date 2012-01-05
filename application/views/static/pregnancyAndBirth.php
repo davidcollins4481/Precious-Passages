@@ -18,6 +18,15 @@
                 <p>
                     <dl>
                         <dt>
+                            <a href="http://www.wpclinic.org/parenting/fetal-development/first-trimester/" target="_blank">
+                                Fetal Development Photos
+                            </a>
+                        </dt>
+                        <dd>
+                            This site has great photos of fetal development. It shows 
+                            the how the baby grows each week.
+                        </dd>
+                        <dt>
                             <a href="http://www.childbirth.org" target="_blank">
                                 ChildBirth.org
                             </a>                        

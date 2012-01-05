@@ -14,9 +14,7 @@
                     Homebirth
                 </h1>
                 <p>
-                    To date, I have had five children.  The first in the hospital, the 
-                    other four at home.  After experiencing both, I really prefer 
-                    homebirthing. I support women regardless of their choice of birthplace; 
+                    I support women regardless of their choice of birthplace; 
                     in fact, couples birthing in a hospital need an advocate more than 
                     couples birthing at home.  Homebirth is not the right choice for every 
                     couple, but it is a viable alternative for any low risk mother.  As a 
@@ -62,6 +60,14 @@
                         </li>
                     </ul>
                 </p>
+                <hr/>
+                <h3>
+                    <a href="http://www.bmj.com/content/330/7505/1416?ehomPaper=" target="_blank">
+                        The largest single American study of planned homebirths with a 
+                        trained attendant has been published!
+                    </a>
+                </h3>
+                <hr/>
                 <p>
                     Here are some links to information about homebirth.
                     <ul>

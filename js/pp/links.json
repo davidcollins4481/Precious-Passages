@@ -30,13 +30,16 @@
             { url: "/d/pregnancyAndBirth.php", name: "Pregnancy and Birth Websites" },
             { url: "/d/gestationalDiabetes.php", name: "Gestational Diabetes" },
             { url: "/d/billOfRights.php", name: "Pregnant Patient's Bill of Rights" },
-            { url: "/d/rhogam.php", name: "Rhogam and Rh Incompatability" }
+            { url: "/d/rhogam.php", name: "Rhogam and Rh Incompatability" },
+            { url: "/d/twins.php", name: "Twins" }
         ],
         "New Baby Care": [
             { url: "/d/breastfeeding.php", name: "Breastfeeding" },
             { url: "/d/circumcision.php", name: "Circumcision" },
             { url: "/d/kangarooCare.php", name: "Kangaroo Care" },
-            { url: "/d/vitaminK.php", name: "Vitamin K" }
+            { url: "/d/vitaminK.php", name: "Vitamin K" },
+            { url: "/d/vaccines.php", name: "Vaccines" },
+            { url: "/d/newbornScreening.php", name: "Newborn Screening" }
         ],
         "Interventions": [
             { url: "/d/cesareanSection.php", name: "Cesarean Section" },

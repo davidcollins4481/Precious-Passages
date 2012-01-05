@@ -312,6 +312,30 @@ class d extends CI_Controller {
     public function laborade() {
         $this->load->view('static/laborade.php');
     }
+    
+    public function vaccines() {
+        $this->load->view('static/vaccines.php');
+    }
+    
+    public function informedConsent() {
+        $this->load->view('static/informedConsent.php');
+    }
+    
+    public function twins() {
+        $this->load->view('static/twins.php');
+    }
+    
+    public function newbornScreening() {
+        $this->load->view('static/newbornScreening.php');
+    }
+    
+    public function erikaBio() {
+        $this->load->view('static/erikaBio.php');
+    }
+    
+    public function alyssaBio() {
+        $this->load->view('static/alyssaBio.php');
+    }
 }
 
 /* End of file welcome.php */
