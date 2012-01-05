@@ -16,6 +16,12 @@ dojo.addOnLoad(function() {
             onValidate: function() {
                 var json = dojo.toJson(createUserForm.attr("value"));
                 var obj = dojo.fromJson(json);
+                
+                if (!obj.username || !obj.password || !obj.confirm) {
+                    alert("Empty fields are not allowed :(");
+                    return false;
+                }
+                
                 if (obj.password !== obj.confirm) {
                     alert("passwords do not match");
                     return false;

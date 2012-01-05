@@ -1,3 +1,14 @@
 #menu .link-container {
     left: -241px;
 }
+
+#sidebar input[name="password"],
+#sidebar input[name="query"] {
+    margin: 5px 0;
+}
+
+#sidebar input[name="username"],
+#sidebar input[name="password"],
+#sidebar input[name="query"] {
+    width: 150px;
+}
