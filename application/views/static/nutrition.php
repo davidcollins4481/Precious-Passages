@@ -152,7 +152,7 @@
                     </a>
                     to view her Top 25 Food All-Stars list. 
                     <br/><br/>
-                    <a href="/docs/nutritionCheck">
+                    <a href="/docs/nutritionCheck.pdf">
                         Your Daily Pregnancy Nutrition Checklist
                     </a>
                     This is a Word document that you can print daily to keep 
