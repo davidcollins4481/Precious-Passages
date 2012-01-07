@@ -3,7 +3,7 @@
 class d extends CI_Controller {
 
     public function index() {
-        $this->load->view('static/sample.php');
+        $this->load->view('static/home.php');
     }
 
     /* Add functions for static pages below this point */

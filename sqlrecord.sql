@@ -1,3 +1,5 @@
+--GRANT SELECT, INSERT, DELETE,UPDATE ON precious_passage.* TO dev@'localhost' IDENTIFIED BY 'user';
+
 -- create blog
 CREATE TABLE blog (
     entry_id integer(10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -21,4 +23,11 @@ CREATE TABLE static_index (
     entry TEXT NULL,
     url_title TEXT NULL,
     title varchar(255) NOT NULL
+);
+
+-- file table
+CREATE TABLE files (
+    id integer(10) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    filename TEXT NULL,
+    description TEXT NULL
 );
