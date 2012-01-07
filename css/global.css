@@ -287,6 +287,9 @@ ul li {
 .documents-container tr, 
 .documents-container td {
     border-bottom: 1px solid #eee;
+}
+
+th,tr,td {
     padding: 5px;
 }
 
