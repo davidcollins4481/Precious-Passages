@@ -1,6 +1,6 @@
 <?php
     $t = isset($title) && $title ? $title : 'Precious Passage';
-    $default_keywords = "Erika Obert, Doula, labor support, Midwife, midwifery, pregnancy, childbirth, Ohio, Akron, pregnant, labor, support, homebirth";
+    $default_keywords = "Erika Obert, Doula, labor support, Midwife, midwifery, pregnancy, childbirth, Ohio, Akron, pregnant, labor, support, homebirth, Canton, water birth, natural childbirth";
     $keywords = isset($meta_keywords) && $meta_keywords ? $meta_keywords : $default_keywords;
 ?>
 
