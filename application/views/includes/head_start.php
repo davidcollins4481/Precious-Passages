@@ -5,7 +5,7 @@
 ?>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=<?php echo config_item('charset');?>" />
     <meta name="keywords" content="<?php echo $keywords ?>">
     <title><?php echo $t ?></title>
         <?php $this->load->view("includes/css.php") ?>
