@@ -3,7 +3,7 @@
 class d extends CI_Controller {
 
     public function index() {
-        $this->load->view('static/home.php');
+        $this->load->view('static/index.php');
     }
 
     /* Add functions for static pages below this point */
@@ -109,8 +109,8 @@ class d extends CI_Controller {
         $this->load->view('static/episiotomy.php');
     }
     
-    public function laborPainManagment() {
-        $this->load->view('static/laborPainManagment.php');
+    public function laborPainManagement() {
+        $this->load->view('static/laborPainManagement.php');
     }
     
     public function natureAndManage() {
@@ -335,6 +335,10 @@ class d extends CI_Controller {
     
     public function alyssaBio() {
         $this->load->view('static/alyssaBio.php');
+    }
+    
+    public function testimonials() {
+        $this->load->view('static/testimonials.php');
     }
 }
 
