@@ -29,9 +29,9 @@
                     shorter.
                 </p>
                 <div align="center">
-                    <a href="" target="_blank">Sample Plan 1</a>
+                    <a href="/birthplans/samplePlanOne" target="_blank">Sample Plan 1</a>
                     &nbsp; &nbsp; &nbsp;
-                    <a href="" target="_blank">Sample Plan 2</a>                    
+                    <a href="/birthplans/samplePlanTwo" target="_blank">Sample Plan 2</a>                    
                 </div>
                 <p>
                     Be sure to thoroughly research anything you don't understand.  Informed 

@@ -1,5 +1,5 @@
 <?php $this->load->view("includes/doctype_html.php") ?>
-<?php $this->load->view("includes/head_start.php", array("title" => "Nutrition")) ?>
+<?php $this->load->view("includes/head_start.php", array("title" => "Nutrition", "meta_keywords" => "Tom Brewer nutrition pregnancy" )) ?>
 <?php $this->load->view("includes/head_end.php") ?>
 <?php $this->load->view("includes/body_start.php") ?>
 <?php $this->load->view("includes/globalnav.php") ?>
@@ -152,7 +152,7 @@
                     </a>
                     to view her Top 25 Food All-Stars list. 
                     <br/><br/>
-                    <a href="/docs/nutritionCheck">
+                    <a href="/docs/nutritionCheck.pdf">
                         Your Daily Pregnancy Nutrition Checklist
                     </a>
                     This is a Word document that you can print daily to keep 

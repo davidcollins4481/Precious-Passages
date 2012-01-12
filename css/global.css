@@ -62,7 +62,7 @@ ul li {
         #menu .link-container {
             position: relative;
             top: -207px;
-            left: -264px;
+            left: -229px;
         }
 
 #menu a {
@@ -305,6 +305,9 @@ ul li {
 .documents-container tr, 
 .documents-container td {
     border-bottom: 1px solid #eee;
+}
+
+th,tr,td {
     padding: 5px;
 }
 

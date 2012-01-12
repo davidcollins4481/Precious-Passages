@@ -36,6 +36,7 @@
                         <a href="/gallery">gallery</a>
                         <a href="/bio">about me</a>
                         <a href="/blog">blog</a>
+                        <a href="/d/testimonials">testimonials</a>
                     </div>
                 </div>
             </div>
