@@ -17,7 +17,7 @@
             { url: "/d/birthingMethods.php", name: "Birthing Methods" },
             { url: "/d/birthPlans.php", name: "Birth Plans" },
             { url: "/d/episiotomy.php", name: "Episiotomy" },
-            { url: "/d/laborPainManagment.php", name: "Labor Pain Management" },
+            { url: "/d/laborPainManagement.php", name: "Labor Pain Management" },
             { url: "/d/waterbirth.php", name: "Waterbirth" },
             { url: "/d/aromatherapy.php", name: "Aromatherapy" },
             { url: "/d/vbac.php", name: "VBAC" },

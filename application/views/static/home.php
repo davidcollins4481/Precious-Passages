@@ -21,22 +21,21 @@
             <div id="mainbar">
                 <h1>
                     <a name="intro" id="intro"></a>
-                    Home Birth Advantages
+                    Supporting women, nurturing families.
                 </h1>
                 
-                <img src="images/resources/dreamtime.jpg" alt="dream time" title="dreamtime" class="articleimg" />
+                <img src="/images/resources/dreamtime.jpg" alt="dream time" title="dream time" class="articleimg" />
                 
                 <p>
-                    To date, I have had five children.&nbsp; 
-                    The first in the hospital, the other four at home.&nbsp; 
-                    After experiencing both, I really prefer homebirthing. I support 
-                    women regardless of their choice of birthplace; in fact, couples 
-                    birthing in a hospital need an advocate more than couples birthing at 
-                    home.&nbsp; Homebirth is not the right choice for every couple, but 
-                    it is a viable alternative for any low risk mother.&nbsp; As a DEM, 
-                    I strongly suggest that any couple hoping to achieve a drug and 
-                    intervention free birth consider homebirthing.&nbsp; Here are a 
-                    few of the advantages to having your baby at home.&nbsp; </font>
+                    To date, I have had six children.&nbsp; 
+                    The first in the hospital, the other five at home. After experiencing 
+                    both, I really prefer homebirthing. I support women regardless of their 
+                    choice of birthplace; in fact, couples birthing in a hospital need an 
+                    advocate more than couples birthing at home. Homebirth is not the right 
+                    choice for every couple, but it is a viable alternative for any low risk 
+                    mother. As a DEM, I strongly suggest that any couple hoping to achieve 
+                    a drug and intervention free birth consider homebirthing. Here are a 
+                    few of the advantages to having your baby at home.
                     <ul>
                         <li>
                             Birth is perceived as a normal physiologic event, not a medical

@@ -234,6 +234,24 @@ ul li {
     height: 120px;
 }
 
+#mainbar .homeLeft {
+    padding:5px;
+    border:1px solid #eeeeee;
+    margin-left:90px;
+    margin-top:20px;
+    margin-bottom:20px;
+    height: 120px;
+}
+
+#mainbar .homeRight {
+    padding:5px;
+    border:1px solid #eeeeee;
+    margin-left:70px;
+    margin-top:20px;
+    margin-bottom:20px;
+    height: 120px;
+}
+
 #footer {
     width:100%;
     padding-top:10px;
