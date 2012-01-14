@@ -9,6 +9,10 @@ class birthplans extends CI_Controller {
         $this->load->view('birthplans/plan1.php');
     }
     
+    public function samplePlanOnePost() {
+        $this->load->view('birthplans/plan1post.php');
+    }
+    
     public function samplePlanTwo() {
         $this->load->view('birthplans/plan2.php');
     }

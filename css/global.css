@@ -181,7 +181,8 @@ ul li {
     }
 
     #sidebar input,
-    #edit-container input {
+    #edit-container input,
+    .birthplan input {
         border: 1px solid #ccc;
     }
 
