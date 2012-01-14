@@ -214,18 +214,18 @@
                         <b>Cesarean Section Delivery</b><br />
                         <input type="checkbox" name="cesarean1" value="I feel very strongly that I would like to avoid a cesarean delivery" />I feel very strongly that I would like to avoid a cesarean delivery<br />
                         <input type="checkbox" name="cesarean2" value="If a cesarean is necessary, I expect to be fully informed of all procedures and actively participate in decision-making." />If a cesarean is necessary, I expect to be fully informed of all procedures and actively participate in decision-making.<br />
-                        <input type="checkbox" name="cesarean3" value="yes" />I would like (coach) to be present during the surgery.<br />
-                        <input type="checkbox" name="cesarean4" value="yes" />Please explain the surgery to me as it happens.<br />
-                        <input type="checkbox" name="cesarean5" value="yes" />I would prefer general anesthesia in an emergency only.<br />
-                        <input type="checkbox" name="cesarean6" value="yes" />I would prefer epidural anesthesia, if possible, in order to remain conscious through the delivery.<br />
-                        <input type="checkbox" name="cesarean7" value="yes" />I would prefer spinal anesthesia for the procedure.<br />
-                        <input type="checkbox" name="cesarean8" value="yes" />I would like to have a respectful atmosphere without chatter during any part of the surgical procedure.<br />
-                        <input type="checkbox" name="cesarean9" value="yes" />If possible, please do not strap my arms to the table during the procedure.<br />
-                        <input type="checkbox" name="cesarean10" value="yes" />If conditions permit, I would like to be the first to hold the baby after the delivery.<br />
-                        <input type="checkbox" name="cesarean11" value="yes" />If possible, I would like to breastfeed the baby immediately after the birth.<br />
-                        <input type="checkbox" name="cesarean12" value="yes" />If conditions permit, the baby should be given to (coach) immediately after the birth.<br />
-                        <input type="checkbox" name="cesarean13" value="yes" />I would like our plans outlined here for after the birth to be followed as closely as possible.<br />
-                        <input type="checkbox" name="cesarean14" value="yes" />Please lower the screen just before delivery so I may see the birth of the baby<br />
+                        <input type="checkbox" name="cesarean3" value="I would like (coach) to be present during the surgery." />I would like (coach) to be present during the surgery.<br />
+                        <input type="checkbox" name="cesarean4" value="Please explain the surgery to me as it happens." />Please explain the surgery to me as it happens.<br />
+                        <input type="checkbox" name="cesarean5" value="I would prefer general anesthesia in an emergency only." />I would prefer general anesthesia in an emergency only.<br />
+                        <input type="checkbox" name="cesarean6" value="I would prefer epidural anesthesia, if possible, in order to remain conscious through the delivery." />I would prefer epidural anesthesia, if possible, in order to remain conscious through the delivery.<br />
+                        <input type="checkbox" name="cesarean7" value="I would prefer spinal anesthesia for the procedure." />I would prefer spinal anesthesia for the procedure.<br />
+                        <input type="checkbox" name="cesarean8" value="I would like to have a respectful atmosphere without chatter during any part of the surgical procedure." />I would like to have a respectful atmosphere without chatter during any part of the surgical procedure.<br />
+                        <input type="checkbox" name="cesarean9" value="If possible, please do not strap my arms to the table during the procedure." />If possible, please do not strap my arms to the table during the procedure.<br />
+                        <input type="checkbox" name="cesarean10" value="If conditions permit, I would like to be the first to hold the baby after the delivery." />If conditions permit, I would like to be the first to hold the baby after the delivery.<br />
+                        <input type="checkbox" name="cesarean11" value="If possible, I would like to breastfeed the baby immediately after the birth." />If possible, I would like to breastfeed the baby immediately after the birth.<br />
+                        <input type="checkbox" name="cesarean12" value="If conditions permit, the baby should be given to (coach) immediately after the birth." />If conditions permit, the baby should be given to (coach) immediately after the birth.<br />
+                        <input type="checkbox" name="cesarean13" value="I would like our plans outlined here for after the birth to be followed as closely as possible." />I would like our plans outlined here for after the birth to be followed as closely as possible.<br />
+                        <input type="checkbox" name="cesarean14" value="Please lower the screen just before delivery so I may see the birth of the baby" />Please lower the screen just before delivery so I may see the birth of the baby<br />
                         <br />
                         &#160;</span></p>
 
@@ -234,13 +234,13 @@
 
                     <p class="MsoNormal"><span style="font-family: Arial">
                     <b>Perineal Care</b><br />
-                    <input type="checkbox" name="peri1" value="yes" />I prefer not to have an episiotomy unless it is medically indicated.<br />
-                    <input type="checkbox" name="peri2" value="yes" />To avoid episiotomy or tearing, (coach) or my labor assistant will perform perineal massage with oil and apply hot compresses.<br />
-                    <input type="checkbox" name="peri3" value="yes" />To help my perineum stretch, please help guide my pushing efforts by letting me know when to push and when to stop.<br />
-                    <input type="checkbox" name="peri4" value="yes" />I would rather tear than have an episiotomy.<br />
-                    <input type="checkbox" name="peri5" value="yes" />I would rather have an episiotomy than risk a tear.<br />
-                    <input type="checkbox" name="peri6" value="yes" />Please administer local anesthesia when repairing any episiotomy or tear(s).<br />
-                    <input type="checkbox" name="peri7" value="yes" />Please suture tears only if necessary.<br />
+                    <input type="checkbox" name="peri1" value="I prefer not to have an episiotomy unless it is medically indicated." />I prefer not to have an episiotomy unless it is medically indicated.<br />
+                    <input type="checkbox" name="peri2" value="To avoid episiotomy or tearing, (coach) or my labor assistant will perform perineal massage with oil and apply hot compresses." />To avoid episiotomy or tearing, (coach) or my labor assistant will perform perineal massage with oil and apply hot compresses.<br />
+                    <input type="checkbox" name="peri3" value="To help my perineum stretch, please help guide my pushing efforts by letting me know when to push and when to stop." />To help my perineum stretch, please help guide my pushing efforts by letting me know when to push and when to stop.<br />
+                    <input type="checkbox" name="peri4" value="I would rather tear than have an episiotomy." />I would rather tear than have an episiotomy.<br />
+                    <input type="checkbox" name="peri5" value="I would rather have an episiotomy than risk a tear." />I would rather have an episiotomy than risk a tear.<br />
+                    <input type="checkbox" name="peri6" value="Please administer local anesthesia when repairing any episiotomy or tear(s)." />Please administer local anesthesia when repairing any episiotomy or tear(s).<br />
+                    <input type="checkbox" name="peri7" value="Please suture tears only if necessary." />Please suture tears only if necessary.<br />
                     <br />
                     &#160;</span></p>
 
@@ -250,19 +250,19 @@
 
                     <p class="MsoNormal"><span style="font-family: Arial"><br />
                     <b>Delivery</b><br />
-                    <input type="checkbox" name="delivery1" value="yes" />Even if I am fully dilated, and assuming the baby is not in distress, I would like to wait until I feel the urge to push before beginning the pushing phase.<br />
-                    <input type="checkbox" name="delivery2" value="yes" />I prefer to push or not push according to my instincts and would prefer not to have guidance or coaching in this effort.<br />
-                    <input type="checkbox" name="delivery3" value="yes" />I do not want to use stirrups while pushing.<br />
-                    <input type="checkbox" name="delivery4" value="yes" />I would like the freedom to push and deliver in any position I like.<br />
-                    <input type="checkbox" name="delivery5" value="yes" />I would appreciate help from (coach) and staff supporting my legs as I push.<br />
-                    <input type="checkbox" name="delivery6" value="yes" />I would like to deliver in a birthing pool and have made arrangements to rent one for the birth.<br />
-                    <input type="checkbox" name="delivery7" value="yes" />I would like to have a mirror available and adjusted so I can see the baby&#39;s head crowning.<br />
-                    <input type="checkbox" name="delivery8" value="yes" />I would like the opportunity to touch my baby&#39;s head as it crowns.<br />
-                    <input type="checkbox" name="delivery9" value="yes" />I would like a soothing environment during the actual birth, with dim lights and quiet voices.<br />
-                    <input type="checkbox" name="delivery10" value="yes" />I would like (coach) to help catch the baby.<br />
-                    <input type="checkbox" name="delivery11" value="yes" />I would like (other) to help catch the baby.<br />
-                    <input type="checkbox" name="delivery12" value="yes" />I would like to help catch the baby.<br />
-                    <input type="checkbox" name="delivery13" value="yes" />I would like to have the birth recorded with photographs, video tape and/or tape recording.<br />
+                    <input type="checkbox" name="delivery1" value="Even if I am fully dilated, and assuming the baby is not in distress, I would like to wait until I feel the urge to push before beginning the pushing phase." />Even if I am fully dilated, and assuming the baby is not in distress, I would like to wait until I feel the urge to push before beginning the pushing phase.<br />
+                    <input type="checkbox" name="delivery2" value="I prefer to push or not push according to my instincts and would prefer not to have guidance or coaching in this effort." />I prefer to push or not push according to my instincts and would prefer not to have guidance or coaching in this effort.<br />
+                    <input type="checkbox" name="delivery3" value="I do not want to use stirrups while pushing." />I do not want to use stirrups while pushing.<br />
+                    <input type="checkbox" name="delivery4" value="I would like the freedom to push and deliver in any position I like." />I would like the freedom to push and deliver in any position I like.<br />
+                    <input type="checkbox" name="delivery5" value="I would appreciate help from (coach) and staff supporting my legs as I push." />I would appreciate help from (coach) and staff supporting my legs as I push.<br />
+                    <input type="checkbox" name="delivery6" value="I would like to deliver in a birthing pool and have made arrangements to rent one for the birth." />I would like to deliver in a birthing pool and have made arrangements to rent one for the birth.<br />
+                    <input type="checkbox" name="delivery7" value="I would like to have a mirror available and adjusted so I can see the baby&#39;s head crowning." />I would like to have a mirror available and adjusted so I can see the baby&#39;s head crowning.<br />
+                    <input type="checkbox" name="delivery8" value="I would like the opportunity to touch my baby&#39;s head as it crowns." />I would like the opportunity to touch my baby&#39;s head as it crowns.<br />
+                    <input type="checkbox" name="delivery9" value="I would like a soothing environment during the actual birth, with dim lights and quiet voices." />I would like a soothing environment during the actual birth, with dim lights and quiet voices.<br />
+                    <input type="checkbox" name="delivery10" value="I would like (coach) to help catch the baby." />I would like (coach) to help catch the baby.<br />
+                    <input type="checkbox" name="delivery11" value="I would like (other) to help catch the baby." />I would like (other) to help catch the baby.<br />
+                    <input type="checkbox" name="delivery12" value="I would like to help catch the baby." />I would like to help catch the baby.<br />
+                    <input type="checkbox" name="delivery13" value="I would like to have the birth recorded with photographs, video tape and/or tape recording." />I would like to have the birth recorded with photographs, video tape and/or tape recording.<br />
                     &#160;</span></p>
 
                     <div class="MsoNormal" align="center" style="text-align: center">
@@ -271,17 +271,17 @@
 
                     <p class="MsoNormal"><span style="font-family: Arial"><br />
                     <b>After birth</b><br />
-                    <input type="checkbox" name="after1" value="yes" />Please place the baby on my stomach/chest immediately after delivery.<br />
-                    <input type="checkbox" name="after2" value="yes" />I would like to breastfeed the baby immediately.<br />
-                    <input type="checkbox" name="after3" value="yes" />(coach) would like the option to cut the cord.<br />
-                    <input type="checkbox" name="after4" value="yes" />(other) would like the option to cut the cord.<br />
-                    <input type="checkbox" name="after5" value="yes" />I would like the option to cut the cord.<br />
-                    <input type="checkbox" name="after6" value="yes" />Please allow the umbilical cord to stop pulsating before it is cut.<br />
-                    <input type="checkbox" name="after7" value="yes" />I have made arrangements for donation of the umbilical cord blood.<br />
-                    <input type="checkbox" name="after8" value="yes" />I have made arrangements to bank the umbilical cord blood.<br />
-                    <input type="checkbox" name="after9" value="yes" />I prefer to wait for spontaneous delivery of the placenta and do not want a routine injection of pitocin.<br />
-                    <input type="checkbox" name="after10" value="yes" />Please show me the placenta after it is delivered.<br />
-                    <input type="checkbox" name="after11" value="yes" />Please remove my IV/Heparin lock/catheter as soon as possible after delivery.<br />
+                    <input type="checkbox" name="after1" value="Please place the baby on my stomach/chest immediately after delivery." />Please place the baby on my stomach/chest immediately after delivery.<br />
+                    <input type="checkbox" name="after2" value="I would like to breastfeed the baby immediately." />I would like to breastfeed the baby immediately.<br />
+                    <input type="checkbox" name="after3" value="(coach) would like the option to cut the cord." />(coach) would like the option to cut the cord.<br />
+                    <input type="checkbox" name="after4" value="(other) would like the option to cut the cord." />(other) would like the option to cut the cord.<br />
+                    <input type="checkbox" name="after5" value="I would like the option to cut the cord." />I would like the option to cut the cord.<br />
+                    <input type="checkbox" name="after6" value="Please allow the umbilical cord to stop pulsating before it is cut." />Please allow the umbilical cord to stop pulsating before it is cut.<br />
+                    <input type="checkbox" name="after7" value="I have made arrangements for donation of the umbilical cord blood." />I have made arrangements for donation of the umbilical cord blood.<br />
+                    <input type="checkbox" name="after8" value="I have made arrangements to bank the umbilical cord blood." />I have made arrangements to bank the umbilical cord blood.<br />
+                    <input type="checkbox" name="after9" value="I prefer to wait for spontaneous delivery of the placenta and do not want a routine injection of pitocin." />I prefer to wait for spontaneous delivery of the placenta and do not want a routine injection of pitocin.<br />
+                    <input type="checkbox" name="after10" value="Please show me the placenta after it is delivered." />Please show me the placenta after it is delivered.<br />
+                    <input type="checkbox" name="after11" value="Please remove my IV/Heparin lock/catheter as soon as possible after delivery." />Please remove my IV/Heparin lock/catheter as soon as possible after delivery.<br />
                     &#160;</span></p>
 
                     <div class="MsoNormal" align="center" style="text-align: center">
@@ -290,19 +290,19 @@
 
                     <p class="MsoNormal"><span style="font-family: Arial"><br />
                     <b>Newborn Care</b><br />
-                    <input type="checkbox" name="newborn1" value="yes" />I would like to hold the baby skin-to-skin during the first hours to help regulate baby&#39;s body temperature.<br />
-                    <input type="checkbox" name="newborn2" value="yes" />I would like to hold the baby through delivery of the placenta and any repair procedures.<br />
-                    <input type="checkbox" name="newborn3" value="yes" />Please evaluate and bathe the baby at my bedside.<br />
-                    <input type="checkbox" name="newborn4" value="yes" />If possible, please evaluate the baby on my abdomen.<br />
-                    <input type="checkbox" name="newborn5" value="yes" />If the baby must go to the nursery for evaluation or medical treatment, (coach), or someone I designate, will accompany the baby at all times.<br />
-                    <input type="checkbox" name="newborn6" value="yes" />I would prefer to bathe the baby myself, at my discretion.<br />
-                    <input type="checkbox" name="newborn7" value="yes" />Please delay eye medication for the baby until we are well past the initial bonding period (a couple hours after the birth).<br />
-                    <input type="checkbox" name="newborn9" value="yes" />If available, would prefer erythromycin eye treatment or other antibiotic eye drops instead of silver nitrate.<br />
-                    <input type="checkbox" name="newborn8" value="yes" />I would like to waive the administration of eye antibiotics.<br />
-                    <input type="checkbox" name="newborn10" value="yes" />I would prefer to have Vitamin K administered orally.<br />
-                    <input type="checkbox" name="newborn11" value="yes" />I would like to waive the administration of routine Vitamin K, unless medically indicated.<br />
-                    <input type="checkbox" name="newborn12" value="yes" />I would like to defer the PKU screening.<br />
-                    <input type="checkbox" name="newborn13" value="yes" />I would like to defer the following vaccinations:<br />
+                    <input type="checkbox" name="newborn1" value="I would like to hold the baby skin-to-skin during the first hours to help regulate baby&#39;s body temperature." />I would like to hold the baby skin-to-skin during the first hours to help regulate baby&#39;s body temperature.<br />
+                    <input type="checkbox" name="newborn2" value="I would like to hold the baby through delivery of the placenta and any repair procedures." />I would like to hold the baby through delivery of the placenta and any repair procedures.<br />
+                    <input type="checkbox" name="newborn3" value="Please evaluate and bathe the baby at my bedside." />Please evaluate and bathe the baby at my bedside.<br />
+                    <input type="checkbox" name="newborn4" value="If possible, please evaluate the baby on my abdomen." />If possible, please evaluate the baby on my abdomen.<br />
+                    <input type="checkbox" name="newborn5" value="If the baby must go to the nursery for evaluation or medical treatment, (coach), or someone I designate, will accompany the baby at all times." />If the baby must go to the nursery for evaluation or medical treatment, (coach), or someone I designate, will accompany the baby at all times.<br />
+                    <input type="checkbox" name="newborn6" value="I would prefer to bathe the baby myself, at my discretion." />I would prefer to bathe the baby myself, at my discretion.<br />
+                    <input type="checkbox" name="newborn7" value="Please delay eye medication for the baby until we are well past the initial bonding period (a couple hours after the birth)." />Please delay eye medication for the baby until we are well past the initial bonding period (a couple hours after the birth).<br />
+                    <input type="checkbox" name="newborn9" value="If available, would prefer erythromycin eye treatment or other antibiotic eye drops instead of silver nitrate." />If available, would prefer erythromycin eye treatment or other antibiotic eye drops instead of silver nitrate.<br />
+                    <input type="checkbox" name="newborn8" value="I would like to waive the administration of eye antibiotics." />I would like to waive the administration of eye antibiotics.<br />
+                    <input type="checkbox" name="newborn10" value="I would prefer to have Vitamin K administered orally." />I would prefer to have Vitamin K administered orally.<br />
+                    <input type="checkbox" name="newborn11" value="I would like to waive the administration of routine Vitamin K, unless medically indicated." />I would like to waive the administration of routine Vitamin K, unless medically indicated.<br />
+                    <input type="checkbox" name="newborn12" value="I would like to defer the PKU screening." />I would like to defer the PKU screening.<br />
+                    <input type="checkbox" name="newborn13" value="I would like to defer the following vaccinations:" />I would like to defer the following vaccinations:<br />
                     &#160;</span></p>
 
                     <div class="MsoNormal" align="center" style="text-align: center">
@@ -312,18 +312,18 @@
                     <p class="MsoNormal"><span style="font-family: Arial"><br />
                     <b>Postpartum</b> (<a style="color: #324094; font-weight: normal; font-style: normal; text-decoration: none; text-underline: none; text-line-through: none" href=
                     "http://sheknows.com/inside/Pregnancy/Postpartum/"><span style="color: windowtext">Click here</span></a> for postpartum features)<br />
-                    <input type="checkbox" name="post1" value="yes" />I would prefer not to be catheterized until I&#39;ve had some private time to attempt urination on my own.<br />
-                    <input type="checkbox" name="post2" value="yes" />If available, I would prefer a private room.<br />
-                    <input type="checkbox" name="post3" value="yes" />I would like to have the baby room-in with me at all times.<br />
-                    <input type="checkbox" name="post4" value="yes" />Once I&#39;ve had time to recover, I would like the baby to room-in with me.<br />
-                    <input type="checkbox" name="post5" value="yes" />I would like the baby to room-in with me during the day, but stay in the nursery at night.<br />
-                    <input type="checkbox" name="post6" value="yes" />I would like the baby in the nursery at night, but brought to me for breastfeeding on demand.<br />
-                    <input type="checkbox" name="post7" value="yes" />I would like the baby in the nursery and brought to me on request and for breastfeeding.<br />
-                    <input type="checkbox" name="post8" value="yes" />I would like my (coach) to room-in with me.<br />
-                    <input type="checkbox" name="post9" value="yes" />I would like (other) to room-in with me.<br />
-                    <input type="checkbox" name="post10" value="yes" />I would like my other children to have free visitation access.<br />
-                    <input type="checkbox" name="post11" value="yes" />Assuming I feel up to it and the baby is healthy, I would like to be released from the hospital as soon as possible following the birth.<br />
-                    <input type="checkbox" name="post12" value="yes" />I would like permission for access to my chart and the baby&#39;s chart.<br />
+                    <input type="checkbox" name="post1" value="I would prefer not to be catheterized until I&#39;ve had some private time to attempt urination on my own." />I would prefer not to be catheterized until I&#39;ve had some private time to attempt urination on my own.<br />
+                    <input type="checkbox" name="post2" value="If available, I would prefer a private room." />If available, I would prefer a private room.<br />
+                    <input type="checkbox" name="post3" value="I would like to have the baby room-in with me at all times." />I would like to have the baby room-in with me at all times.<br />
+                    <input type="checkbox" name="post4" value="Once I&#39;ve had time to recover, I would like the baby to room-in with me." />Once I&#39;ve had time to recover, I would like the baby to room-in with me.<br />
+                    <input type="checkbox" name="post5" value="I would like the baby to room-in with me during the day, but stay in the nursery at night." />I would like the baby to room-in with me during the day, but stay in the nursery at night.<br />
+                    <input type="checkbox" name="post6" value="I would like the baby in the nursery at night, but brought to me for breastfeeding on demand." />I would like the baby in the nursery at night, but brought to me for breastfeeding on demand.<br />
+                    <input type="checkbox" name="post7" value="I would like the baby in the nursery and brought to me on request and for breastfeeding." />I would like the baby in the nursery and brought to me on request and for breastfeeding.<br />
+                    <input type="checkbox" name="post8" value="I would like my (coach) to room-in with me." />I would like my (coach) to room-in with me.<br />
+                    <input type="checkbox" name="post9" value="I would like (other) to room-in with me." />I would like (other) to room-in with me.<br />
+                    <input type="checkbox" name="post10" value="I would like my other children to have free visitation access." />I would like my other children to have free visitation access.<br />
+                    <input type="checkbox" name="post11" value="Assuming I feel up to it and the baby is healthy, I would like to be released from the hospital as soon as possible following the birth." />Assuming I feel up to it and the baby is healthy, I would like to be released from the hospital as soon as possible following the birth.<br />
+                    <input type="checkbox" name="post12" value="I would like permission for access to my chart and the baby&#39;s chart." />I would like permission for access to my chart and the baby&#39;s chart.<br />
                     <br />
                     &#160;</span></p>
 
@@ -334,13 +334,13 @@
                     <p class="MsoNormal"><span style="font-family: Arial"><br />
                     <b>Breastfeeding</b> (<a style="color: #324094; font-weight: normal; font-style: normal; text-decoration: none; text-underline: none; text-line-through: none" href=
                     "http://sheknows.com/inside/Baby/Breastfeeding/"><span style="color: windowtext">Click here</span></a> for information about breastfeeding)<br />
-                    <input type="checkbox" name="bfing1" value="yes" />I plan to breastfeed and want to nurse immediately following the birth.<br />
-                    <input type="checkbox" name="bfing2" value="yes" />Please do not give the baby supplements (including formula, glucose, or plain water) without my consent, unless there is an urgent medical necessity.<br />
-                    <input type="checkbox" name="bfing3" value="yes" />Unless I am unable to give my consent, please do not give the baby any supplements without first informing me of the reason(s) and seeking my consent.<br />
-                    <input type="checkbox" name="bfing4" value="yes" />Please do not give the baby a pacifier.<br />
-                    <input type="checkbox" name="bfing5" value="yes" />I would like to know more about breastfeeding.<br />
-                    <input type="checkbox" name="bfing6" value="yes" />I would like to meet with the staff lactation consultant.<br />
-                    <input type="checkbox" name="bfing7" value="yes" />I do not plan to breastfeed.<br />
+                    <input type="checkbox" name="bfing1" value="I plan to breastfeed and want to nurse immediately following the birth." />I plan to breastfeed and want to nurse immediately following the birth.<br />
+                    <input type="checkbox" name="bfing2" value="Please do not give the baby supplements (including formula, glucose, or plain water) without my consent, unless there is an urgent medical necessity." />Please do not give the baby supplements (including formula, glucose, or plain water) without my consent, unless there is an urgent medical necessity.<br />
+                    <input type="checkbox" name="bfing3" value="Unless I am unable to give my consent, please do not give the baby any supplements without first informing me of the reason(s) and seeking my consent." />Unless I am unable to give my consent, please do not give the baby any supplements without first informing me of the reason(s) and seeking my consent.<br />
+                    <input type="checkbox" name="bfing4" value="Please do not give the baby a pacifier." />Please do not give the baby a pacifier.<br />
+                    <input type="checkbox" name="bfing5" value="I would like to know more about breastfeeding." />I would like to know more about breastfeeding.<br />
+                    <input type="checkbox" name="bfing6" value="I would like to meet with the staff lactation consultant." />I would like to meet with the staff lactation consultant.<br />
+                    <input type="checkbox" name="bfing7" value="I do not plan to breastfeed." />I do not plan to breastfeed.<br />
                     &#160;</span></p>
 
                     <div class="MsoNormal" align="center" style="text-align: center">
@@ -349,10 +349,10 @@
 
                     <p class="MsoNormal"><span style="font-family: Arial"><br />
                     <b>Additional notes</b><br />
-                    <input type="checkbox" name="other1" value="yes" />I would like to take still photographs during labor and the birth.<br />
-                    <input type="checkbox" name="other2" value="yes" />I would like to make a videorecording of labor and/or the birth.<br />
-                    <input type="checkbox" name="circ1" value="yes" />I am not planning to have the baby circumcised.<br />
-                    <input type="checkbox" name="circ2" value="yes" />I am planning for the baby to be circumcised before we check out of the hospital. (Note: Do not waive Vitamin K shot in this event)<br />
+                    <input type="checkbox" name="other1" value="I would like to take still photographs during labor and the birth." />I would like to take still photographs during labor and the birth.<br />
+                    <input type="checkbox" name="other2" value="I would like to make a videorecording of labor and/or the birth." />I would like to make a videorecording of labor and/or the birth.<br />
+                    <input type="checkbox" name="circ1" value="I am not planning to have the baby circumcised." />I am not planning to have the baby circumcised.<br />
+                    <input type="checkbox" name="circ2" value="I am planning for the baby to be circumcised before we check out of the hospital. (Note: Do not waive Vitamin K shot in this event)" />I am planning for the baby to be circumcised before we check out of the hospital. (Note: Do not waive Vitamin K shot in this event)<br />
                     <br />
                     &#160;</span></p>
 
