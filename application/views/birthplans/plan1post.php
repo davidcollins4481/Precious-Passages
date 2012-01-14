@@ -131,7 +131,7 @@
         }
 
         $other = array();
-        $other_count = 2;
+        $other_count = 13;
         $option_name = "other";
 
         for ($i = 1; $i < $other_count; $i++) {
@@ -142,7 +142,7 @@
         }
 
         $circ = array();
-        $circ_count = 2;
+        $circ_count = 13;
         $option_name = "circ";
 
         for ($i = 1; $i < $circ_count; $i++) {
