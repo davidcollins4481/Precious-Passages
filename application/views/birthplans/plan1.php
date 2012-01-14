@@ -137,14 +137,14 @@
 
                     <p><span style="font-family: Arial; color: windowtext">
                     <b>Please Note</b><br />
-                    <input type="checkbox" name="special1" value="yes" />I have tested positive for <a style="color: #324094; font-weight: normal; font-style: normal; text-decoration: none; text-underline: none; text-line-through: none" href="http://sheknows.com/inside/look/422.htm"><span style=
+                    <input type="checkbox" name="special1" value="I have tested positive for Group B Strep" />I have tested positive for <a style="color: #324094; font-weight: normal; font-style: normal; text-decoration: none; text-underline: none; text-line-through: none" href="http://sheknows.com/inside/look/422.htm"><span style=
                     "color: windowtext">Group B Strep</span></a>.<br />
-                    <input type="checkbox" name="special2" value="yes" />My bloodtype is Rh- (Rhesus Negative).<br />
-                    <input type="checkbox" name="special6" value="yes" />I have gestational diabetes.<br />
-                    <input type="checkbox" name="special7" value="yes" />I am diabetic.<br />
-                    <input type="checkbox" name="special3" value="yes" />I am hard of hearing.<br />
-                    <input type="checkbox" name="special4" value="yes" />My vision is impaired.<br />
-                    <input type="checkbox" name="special5" value="yes" />I would like to wear contact lenses or glasses at all times when conscious.<br />
+                    <input type="checkbox" name="special2" value="My bloodtype is Rh- (Rhesus Negative)." />My bloodtype is Rh- (Rhesus Negative).<br />
+                    <input type="checkbox" name="special3" value="I have gestational diabetes." />I have gestational diabetes.<br />
+                    <input type="checkbox" name="special4" value="I am diabetic." />I am diabetic.<br />
+                    <input type="checkbox" name="special5" value="I am hard of hearing." />I am hard of hearing.<br />
+                    <input type="checkbox" name="special6" value="My vision is impaired." />My vision is impaired.<br />
+                    <input type="checkbox" name="special7" value="I would like to wear contact lenses or glasses at all times when conscious." />I would like to wear contact lenses or glasses at all times when conscious.<br />
                     <br />
                     &#160;</span></p>
 
@@ -152,25 +152,25 @@
                         <p class="MsoNormal" style="border: medium none; padding: 0in"><span style="font-family: Arial"><br />
                         <b>Labor</b> (<a style="color: #324094; font-weight: normal; font-style: normal; text-decoration: none; text-underline: none; text-line-through: none" href="http://sheknows.com/inside/Pregnancy/Birth/"><span style=
                         "color: windowtext">Click here</span></a> for articles about labor and birth)<br />
-                        <input type="checkbox" name="labor1" value="yes" />Please perform no routine prepatory tasks (shaving, enema, etc.), unless requested.<br />
+                        <input type="checkbox" name="labor1" value="Please perform no routine prepatory tasks (shaving, enema, etc.), unless requested." />Please perform no routine prepatory tasks (shaving, enema, etc.), unless requested.<br />
                         <input type="checkbox" name="labor2" value="yes" />I would like to have an enema upon admission to the hospital.<br />
-                        <input type="checkbox" name="labor3" value="yes" />I expect that doctors and hospital staff will discuss all procedures with me before they are performed.<br />
-                        <input type="checkbox" name="labor4" value="yes" />I would like to be free to walk, change positions and use the bathroom as needed or desired.<br />
-                        <input type="checkbox" name="labor5" value="yes" />I prefer to wear my own clothes, rather than a hospital gown.<br />
-                        <input type="checkbox" name="labor6" value="yes" />I prefer to eat and drink throughout labor, as desired.<br />
-                        <input type="checkbox" name="labor7" value="yes" />I will remain hydrated by drinking moderate amounts of fluids (water, juice, ice chips).<br />
-                        <input type="checkbox" name="labor8" value="yes" />So I can stay as mobile as possible, I would prefer to have a heparin lock adminstered instead of an IV.<br />
-                        <input type="checkbox" name="labor9" value="yes" />Please do not administer an IV or heparin lock unless there is a clear medical indication that such is necessary.<br />
-                        <input type="checkbox" name="labor10" value="yes" />I would like a quiet, soothing environment during labor, with dim lights and minimal interruptions.<br />
-                        <input type="checkbox" name="labor11" value="yes" />I would like to play my own music.<br />
-                        <input type="checkbox" name="labor12" value="yes" />Please limit the number of vaginal exams.<br />
-                        <input type="checkbox" name="labor13" value="yes" />I wish to labor freely in the birthing tub or shower.<br />
-                        <input type="checkbox" name="labor14" value="yes" />As long as the baby is doing well, I prefer that fetal heart tones be monitored intermittently with an external monitor or doppler, even if the membranes have ruptured.<br />
-                        <input type="checkbox" name="labor15" value="yes" />If fetal distress is suspected and time permits, I would like confirmation of this with a fetal scalp blood sample before proceeding with other interventions.<br />
-                        <input type="checkbox" name="labor16" value="yes" />Please allow me to vocalize as desired during labor and birth without comment or criticism.<br />
-                        <input type="checkbox" name="labor17" value="yes" />I do not mind observation by students, interns or staff.<br />
-                        <input type="checkbox" name="labor18" value="yes" />Please do not permit observers such as interns, students or unnecessary staff into the room without my permission.<br />
-                        <input type="checkbox" name="labor19" value="yes" />To preserve my privacy and dignity, I would prefer that everyone knock before entering.<br />
+                        <input type="checkbox" name="labor3" value="I expect that doctors and hospital staff will discuss all procedures with me before they are performed." />I expect that doctors and hospital staff will discuss all procedures with me before they are performed.<br />
+                        <input type="checkbox" name="labor4" value="I would like to be free to walk, change positions and use the bathroom as needed or desired." />I would like to be free to walk, change positions and use the bathroom as needed or desired.<br />
+                        <input type="checkbox" name="labor5" value="I prefer to wear my own clothes, rather than a hospital gown." />I prefer to wear my own clothes, rather than a hospital gown.<br />
+                        <input type="checkbox" name="labor6" value="I prefer to eat and drink throughout labor, as desired." />I prefer to eat and drink throughout labor, as desired.<br />
+                        <input type="checkbox" name="labor7" value="I will remain hydrated by drinking moderate amounts of fluids (water, juice, ice chips)." />I will remain hydrated by drinking moderate amounts of fluids (water, juice, ice chips).<br />
+                        <input type="checkbox" name="labor8" value="So I can stay as mobile as possible, I would prefer to have a heparin lock adminstered instead of an IV." />So I can stay as mobile as possible, I would prefer to have a heparin lock adminstered instead of an IV.<br />
+                        <input type="checkbox" name="labor9" value="Please do not administer an IV or heparin lock unless there is a clear medical indication that such is necessary." />Please do not administer an IV or heparin lock unless there is a clear medical indication that such is necessary.<br />
+                        <input type="checkbox" name="labor10" value="I would like a quiet, soothing environment during labor, with dim lights and minimal interruptions." />I would like a quiet, soothing environment during labor, with dim lights and minimal interruptions.<br />
+                        <input type="checkbox" name="labor11" value="I would like to play my own music." />I would like to play my own music.<br />
+                        <input type="checkbox" name="labor12" value="Please limit the number of vaginal exams." />Please limit the number of vaginal exams.<br />
+                        <input type="checkbox" name="labor13" value="I wish to labor freely in the birthing tub or shower." />I wish to labor freely in the birthing tub or shower.<br />
+                        <input type="checkbox" name="labor14" value="As long as the baby is doing well, I prefer that fetal heart tones be monitored intermittently with an external monitor or doppler, even if the membranes have ruptured." />As long as the baby is doing well, I prefer that fetal heart tones be monitored intermittently with an external monitor or doppler, even if the membranes have ruptured.<br />
+                        <input type="checkbox" name="labor15" value="If fetal distress is suspected and time permits, I would like confirmation of this with a fetal scalp blood sample before proceeding with other interventions." />If fetal distress is suspected and time permits, I would like confirmation of this with a fetal scalp blood sample before proceeding with other interventions.<br />
+                        <input type="checkbox" name="labor16" value="Please allow me to vocalize as desired during labor and birth without comment or criticism." />Please allow me to vocalize as desired during labor and birth without comment or criticism.<br />
+                        <input type="checkbox" name="labor17" value="I do not mind observation by students, interns or staff." />I do not mind observation by students, interns or staff.<br />
+                        <input type="checkbox" name="labor18" value="Please do not permit observers such as interns, students or unnecessary staff into the room without my permission." />Please do not permit observers such as interns, students or unnecessary staff into the room without my permission.<br />
+                        <input type="checkbox" name="labor19" value="To preserve my privacy and dignity, I would prefer that everyone knock before entering." />To preserve my privacy and dignity, I would prefer that everyone knock before entering.<br />
                         <br />
                         &#160;</span></p>
                     </div>
@@ -181,14 +181,13 @@
 
                     <p class="MsoNormal"><span style="font-family: Arial">
                     <b>Labor Induction/Augmentation</b><br />
-                    <input type="checkbox" name="induction1" value="yes" />I would like to avoid <a style="color: #324094; font-weight: normal; font-style: normal; text-decoration: none; text-underline: none; text-line-through: none" href=
-                    "http://sheknows.com/inside/Pregnancy/Birth/Labor_Induction/"><span style="color: windowtext">induction</span></a> unless it is medically necessary.<br />
-                    <input type="checkbox" name="induction2" value="yes" />As long as the baby and I are healthy, I do not want to discuss induction prior to 42 weeks.<br />
-                    <input type="checkbox" name="induction3" value="yes" />If my pregnancy progresses past 40 weeks, I would prefer to base the decision to induce on the results of the baby&#39;s biophysical profiles, not on my own personal discomfort or impatience.<br />
-                    <input type="checkbox" name="induction4" value="yes" />I would like to try alternative means of labor augmentation, like walking or nipple stimulation, before pitocin or artificial rupture of membranes is attempted.<br />
-                    <input type="checkbox" name="induction5" value="yes" />If induction is necessary, I would like to attempt it with prostaglandin gel or another means before pitocin is administered.<br />
-                    <input type="checkbox" name="induction6" value="yes" />If induction is attempted, but fails, I would like to come back at another time rather than pursue further intervention (assuming my membranes are intact and that waiting presents no danger to the baby or myself).<br />
-                    <input type="checkbox" name="induction7" value="yes" />Please do not rupture my membranes artificially unless medically indicated.<br />
+                    <input type="checkbox" name="induction1" value="I would like to avoid induction unless it is medically necessary." />I would like to avoid <a style="color: #324094; font-weight: normal; font-style: normal; text-decoration: none; text-underline: none; text-line-through: none" href="http://sheknows.com/inside/Pregnancy/Birth/Labor_Induction/"><span style="color: windowtext">induction</span></a> unless it is medically necessary.<br />
+                    <input type="checkbox" name="induction2" value="As long as the baby and I are healthy, I do not want to discuss induction prior to 42 weeks." />As long as the baby and I are healthy, I do not want to discuss induction prior to 42 weeks.<br />
+                    <input type="checkbox" name="induction3" value="If my pregnancy progresses past 40 weeks, I would prefer to base the decision to induce on the results of the baby&#39;s biophysical profiles, not on my own personal discomfort or impatience." />If my pregnancy progresses past 40 weeks, I would prefer to base the decision to induce on the results of the baby&#39;s biophysical profiles, not on my own personal discomfort or impatience.<br />
+                    <input type="checkbox" name="induction4" value="I would like to try alternative means of labor augmentation, like walking or nipple stimulation, before pitocin or artificial rupture of membranes is attempted." />I would like to try alternative means of labor augmentation, like walking or nipple stimulation, before pitocin or artificial rupture of membranes is attempted.<br />
+                    <input type="checkbox" name="induction5" value="If induction is necessary, I would like to attempt it with prostaglandin gel or another means before pitocin is administered." />If induction is necessary, I would like to attempt it with prostaglandin gel or another means before pitocin is administered.<br />
+                    <input type="checkbox" name="induction6" value="If induction is attempted, but fails, I would like to come back at another time rather than pursue further intervention (assuming my membranes are intact and that waiting presents no danger to the baby or myself)." />If induction is attempted, but fails, I would like to come back at another time rather than pursue further intervention (assuming my membranes are intact and that waiting presents no danger to the baby or myself).<br />
+                    <input type="checkbox" name="induction7" value="Please do not rupture my membranes artificially unless medically indicated." />Please do not rupture my membranes artificially unless medically indicated.<br />
                     <br />
                     &#160;</span></p>
 
@@ -197,24 +196,24 @@
                     </div>
 
                     <p class="MsoNormal"><b><span style="font-family: Arial">Anesthesia/Pain Medication</span></b> <span style="font-family: Arial"><br />
-                    <input type="checkbox" name="anes1" value="yes" />Please do not offer anesthesia/analgesia unless I ask for it.<br />
-                    <input type="checkbox" name="anes2" value="yes" />If I ask for pain relief, please feel free to offer nonmedical choices for coping and/or remind me how close I am to the birth.<br />
-                    <input type="checkbox" name="anes3" value="yes" />I would like to avoid all narcotics, if possible.<br />
-                    <input type="checkbox" name="anes4" value="yes" />I prefer an epidural to narcotic pain medication.<br />
-                    <input type="checkbox" name="anes5" value="yes" />If pain relief is considered, I would like to try a narcotic before an epidural.<br />
-                    <input type="checkbox" name="anes6" value="yes" />I would like to try having narcotics-only administered in the epidural line before progressing to full anesthesia.<br />
-                    <input type="checkbox" name="anes7" value="yes" />I would like to have an epidural as soon as permissable.<br />
-                    <input type="checkbox" name="anes8" value="yes" />I would like to have the epidural catheter placed upon my admission to the hospital.<br />
-                    <input type="checkbox" name="anes9" value="yes" />I would like to have a light dose (walking) epidural.<br />
-                    <input type="checkbox" name="anes10" value="yes" />I would like the epidural to wear off slightly as I approach full dilation and the pushing stage.<br />
+                    <input type="checkbox" name="anes1" value="Please do not offer anesthesia/analgesia unless I ask for it." />Please do not offer anesthesia/analgesia unless I ask for it.<br />
+                    <input type="checkbox" name="anes2" value="If I ask for pain relief, please feel free to offer nonmedical choices for coping and/or remind me how close I am to the birth." />If I ask for pain relief, please feel free to offer nonmedical choices for coping and/or remind me how close I am to the birth.<br />
+                    <input type="checkbox" name="anes3" value="I would like to avoid all narcotics, if possible." />I would like to avoid all narcotics, if possible.<br />
+                    <input type="checkbox" name="anes4" value="I prefer an epidural to narcotic pain medication." />I prefer an epidural to narcotic pain medication.<br />
+                    <input type="checkbox" name="anes5" value="If pain relief is considered, I would like to try a narcotic before an epidural." />If pain relief is considered, I would like to try a narcotic before an epidural.<br />
+                    <input type="checkbox" name="anes6" value="I would like to try having narcotics-only administered in the epidural line before progressing to full anesthesia." />I would like to try having narcotics-only administered in the epidural line before progressing to full anesthesia.<br />
+                    <input type="checkbox" name="anes7" value="I would like to have an epidural as soon as permissable." />I would like to have an epidural as soon as permissable.<br />
+                    <input type="checkbox" name="anes8" value="I would like to have the epidural catheter placed upon my admission to the hospital." />I would like to have the epidural catheter placed upon my admission to the hospital.<br />
+                    <input type="checkbox" name="anes9" value="I would like to have a light dose (walking) epidural." />I would like to have a light dose (walking) epidural.<br />
+                    <input type="checkbox" name="anes10" value="I would like the epidural to wear off slightly as I approach full dilation and the pushing stage." />I would like the epidural to wear off slightly as I approach full dilation and the pushing stage.<br />
                     <br />
                     &#160;</span></p>
 
                     <div style="mso-element: para-border-div; mso-border-top-alt: solid windowtext .75pt; border-left: medium none; border-right: medium none; border-top: 1.0pt solid windowtext; border-bottom: medium none; padding-left: 0in; padding-right: 0in; padding-top: 1.0pt; padding-bottom: 0in">
                         <p class="MsoNormal" style="border: medium none; padding: 0in"><span style="font-family: Arial"><br />
                         <b>Cesarean Section Delivery</b><br />
-                        <input type="checkbox" name="cesarean1" value="yes" />I feel very strongly that I would like to avoid a cesarean delivery<br />
-                        <input type="checkbox" name="cesarean2" value="yes" />If a cesarean is necessary, I expect to be fully informed of all procedures and actively participate in decision-making.<br />
+                        <input type="checkbox" name="cesarean1" value="I feel very strongly that I would like to avoid a cesarean delivery" />I feel very strongly that I would like to avoid a cesarean delivery<br />
+                        <input type="checkbox" name="cesarean2" value="If a cesarean is necessary, I expect to be fully informed of all procedures and actively participate in decision-making." />If a cesarean is necessary, I expect to be fully informed of all procedures and actively participate in decision-making.<br />
                         <input type="checkbox" name="cesarean3" value="yes" />I would like (coach) to be present during the surgery.<br />
                         <input type="checkbox" name="cesarean4" value="yes" />Please explain the surgery to me as it happens.<br />
                         <input type="checkbox" name="cesarean5" value="yes" />I would prefer general anesthesia in an emergency only.<br />

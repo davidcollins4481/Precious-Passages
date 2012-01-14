@@ -11,6 +11,8 @@ class birthplans extends CI_Controller {
     
     public function samplePlanOnePost() {
         $this->load->view('birthplans/plan1post.php');
+        
+
     }
     
     public function samplePlanTwo() {
