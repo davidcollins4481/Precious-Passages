@@ -162,7 +162,20 @@
 </head>
 
 <body>
-    
+    <div style="width: 700px;">
+        <p class="MsoNormal" style="border: medium none; padding: 0in"><span style="font-family: Arial">DATE</span></p>
+        <p class="MsoNormal" style="border: medium none; padding: 0in"><span style="font-family: Arial">Dear _________________________ ,</span></p>
+        <p>
+            <span style="font-family: Arial">We are looking forward to sharing our birth experience with you. 
+            We have created this birth plan in order to outline some of our preferences for birth. We
+            would appreciate you reviewing this plan, and would be happy to do so with you. We understand 
+            that there may be situations in which our choices may not be possible, but we hope that you will 
+            help us to move toward our goals as much as possible and to make this labor and birth a great
+            experience. We do not want to replace the medical personnel, but instead want to be informed of 
+            any procedures in advance, and to be allowed the chance to give informed consent. Please feel free 
+            to ask if you have any questions or comments. Thank you!</span>
+        </p>
+    </div>
     <p>Title: <?php echo $title ?></p>
     <p>Name: <?php echo $name ?></p>
     <p>Caregiver: <?php echo $caregiver ?></p>
