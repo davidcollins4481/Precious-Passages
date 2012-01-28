@@ -70,8 +70,8 @@ RedirectMatch "Homebirth\.htm" /d/homeBirth.php
 RedirectMatch "hospital versus homebirth cost comparison\.htm" /d/costComparison.php
 RedirectMatch "Hypnobabies\.htm" /d/hypnobabies.php
 RedirectMatch "hypnosis_for_childbirth\.htm" /d/hypnosisForChildbirth.php
-RedirectMatch "index\.htm" /
-RedirectMatch "index\\.html" /
+#RedirectMatch "index\.htm" /
+#RedirectMatch "index\\.html" /
 RedirectMatch "induction\.htm" /d/induction.php
 RedirectMatch "informed consent vaccinations\.htm" /d/informedConsent.php
 RedirectMatch "kangaroo_care\.htm" /d/kangarooCare.php
