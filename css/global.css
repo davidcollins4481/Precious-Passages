@@ -435,3 +435,14 @@ th,tr,td {
         #search-container .hidden {
             display:none;
         }
+
+/* home page */
+.jsnipImageSwitcher {
+    width: 350px;
+    text-align: center;
+    margin: 10px 20px 10px 40px;
+}
+
+    .jsnipImageSwitcher img {
+        height: 225px;
+    }
