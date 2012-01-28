@@ -12,34 +12,43 @@
             <div id="mainbar">
                 <h1>
                     <a name="intro" id="intro"></a>
-                    Erika Obert
+                    Erika Obert, DEM
                 </h1>
                 <h3>
-                    Midwife
+                    Direct Entry Midwife
                 </h3>
                 <p>
                     <img src="/images/resources/erika.jpg" alt="Erika Obert" title="Erika Obert" class="articleimg" />
-                    What led me to become a doula, and ultimately to decide to pursue 
-                    midwifery, is my intense desire to give other women and their partners 
-                    what my husband and I had; a positive, life-changing birth experience.    
-                    In comparison to our hospital birth experience, our home water births 
-                    were family centered, respectful and gentle.  My labors were shorter and 
-                    less painful due to the support my husband and I received from our 
-                    midwife and to the feeling of security the birth environment brought us.  
-                    While homebirth is not for everyone, it is a safe and viable alternative 
-                    for any low-risk woman.
+                     I began my college career at Kent State University hoping to pursue 
+                     medical research.  My coursework included biology, genetics, chemistry, 
+                     anatomy, physiology, evolution, microbiology, and ecology.  As I moved 
+                     through the curriculum, I discovered that big pharma and mainstream 
+                     medicine did not support my philosophy of holistic living. Our first 
+                     child was born in the hospital while I was in my final semester of 
+                     college.  My husband and I found her birth very dissatisfying mostly due 
+                     to the powerlessness and lack of respect given to us and our baby by the 
+                     hospital medical model.  
                 </p>
                 <p>
-                    My midwifery education is through The Michigan School of Traditional 
+                    After completing my college education and having our second child at home 
+                    with a midwife, I knew that midwifery was my calling.  Our other five 
+                    children have been born at home in water.  We surrounded ourselves with 
+                    the right people at the right time, in the place that was right for us. 
+                    My labors were shorter and less painful due to the support my husband and 
+                    I received from our midwife and to the feeling of security the birth 
+                    environment brought us.  While homebirth is not for everyone, it is a safe 
+                    and viable alternative for any low-risk woman.
+                </p>
+                <p>
+                    My birth and postpartum doula training were through DONA International. 
+                    My midwifery education was through The Michigan School of Traditional 
                     Midwifery.  MSTM is a distance learning program which combines didactic 
-                    education with skills conferences.    I continue to consult with the 
-                    school, present at MSTM Skills Conferences and mentor students.  In 
-                    addition I hold certifications in CPR, First Aid, Neonatal Resuscitation, 
-                    Blood Borne Pathogens Safety, and water birth.  I am a DONA trained Birth 
-                    and Postpartum doula.  I have been published in Having a Baby Today and 
-                    Midwifery Today.  In 2011 I attended The Farm Midwifery Center’s Advanced 
-                    Midwifery Workshop.  I have been serving birthing families since 2003 and 
-                    have been a midwife since 2006. 
+                    education with skills workshops. I still consult with the school and 
+                    mentor students.  I am certified in Neonatal Resuscitation, 
+                    Adult/Child/Infant CPR, and first aid. I am waterbirth certified through 
+                    Waterbirth International.  Most recently, in August of 2011, I spent a 
+                    week at The Farm in Summertown Tennessee refreshing my skills through 
+                    their Advanced Midwifery Workshop.
                 </p>
             </div>
         </div>

@@ -340,6 +340,14 @@ class d extends CI_Controller {
     public function testimonials() {
         $this->load->view('static/testimonials.php');
     }
+    
+    public function aboutMe() {
+        $this->load->view('static/aboutMe.php');
+    }
+    
+    public function contactUs() {
+        $this->load->view('static/contactUs.php');
+    }
 }
 
 /* End of file welcome.php */

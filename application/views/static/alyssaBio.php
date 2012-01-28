@@ -12,10 +12,10 @@
             <div id="mainbar">
                 <h1>
                     <a name="intro" id="intro"></a>
-                    Alyssa Taylor
+                    Alyssa Taylor, DEM
                 </h1>
                 <h3>
-                    Apprentice Midwife
+                    Direct Entry Midwife
                 </h3>
                 <p>
                     <img src="/images/resources/alyssa.jpg" alt="Alyssa Taylor" title="Alyssa Taylor" class="articleimg" />
