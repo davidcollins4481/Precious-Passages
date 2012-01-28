@@ -4,16 +4,6 @@
                 </div>
 
                 <div id="menu-container">
-                    <div id="user-container">
-                        <?php 
-                            $session = $this->session;
-                            $session->userdata('logged_in') ? 
-                            $this->load->view('includes/user.php')
-                            :
-                            $this->load->view('includes/login.php') 
-                        ?>
-                    </div>
-
                     <div class="search-container">
                         <br/>
                         <form method="GET" action="/search">
@@ -24,5 +14,14 @@
                     </div>
 
                     <div id="navigation-container" dojoType="pp.sidebar.navigation"></div>
+                    <div id="user-container">
+                        <?php
+                            $session = $this->session;
+                            $session->userdata('logged_in') ?
+                            $this->load->view('includes/user.php')
+                            :
+                            $this->load->view('includes/login.php')
+                        ?>
+                    </div>
                 </div>
             </div>
