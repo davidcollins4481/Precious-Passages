@@ -218,6 +218,10 @@ ul li {
     float: left;
 }
 
+#mainbar .contactTbl {
+    width:225px;
+}
+
 #mainbar h1 {
     font-family:"Century Gothic", "Trebuchet MS", "Arial Narrow", Arial, sans-serif;
     font-size:25px;
