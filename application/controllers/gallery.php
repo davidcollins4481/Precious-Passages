@@ -17,12 +17,12 @@ class gallery extends CI_Controller {
              * Erika's user: abbeysmom1971@gmail.com
              * Album Id: 5647822452656257313
              */
-            $query->setUser("davidcollins4481");
+            $query->setUser("abbeysmom1971");
 
             // album MUST be set to public for this to work!
             // comes from URL of RSS feed for album
             //$query->setAlbumId("5555395504381076721");
-            $query->setAlbumId("5547307457720721249");
+            $query->setAlbumId("5647822452656257313");
             $query->setImgMax('640');
             $albumFeed = $gp->getAlbumFeed($query);
 
