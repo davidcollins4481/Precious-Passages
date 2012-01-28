@@ -1,0 +1,4 @@
+AuthName "Restricted Area" 
+AuthType Basic 
+AuthUserFile /home/david/Projects/Precious-Passages/p/.htpasswd
+require valid-user
