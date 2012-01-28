@@ -19,36 +19,36 @@
     <div id="search-container">
         <div id="content">
             <?php $this->load->view("includes/sidebar.php") ?>
-
-            <?php if (isset($query) && count($query)) { ?>
-                <p><?php echo $message; ?></p>
-                <?php for($i = 0; $i < count($query);$i++) { ?>
-                    <div id="search-result-<?php echo $i + 1 ?>" class="search-result <?php if ($i > $resultsPerPage - 1) echo "hidden"; ?>">
-                        <h2>
-                            <a href="<?php echo $query[$i]['url'] . "?term=" . $search_term; ?>">
-                                <?php echo $query[$i]['title']; ?>
-                            </a>
-                        </h2>
-                        <p>
-                            <?php echo $query[$i]['context_segment']; ?>
-                        </p>
-                    </div>
+            <div class="search-result-container">
+                <?php if (isset($query) && count($query)) { ?>
+                    <p><?php echo $message; ?></p>
+                    <?php for($i = 0; $i < count($query);$i++) { ?>
+                        <div id="search-result-<?php echo $i + 1 ?>" class="search-result <?php if ($i > $resultsPerPage - 1) echo "hidden"; ?>">
+                            <h2>
+                                <a href="<?php echo $query[$i]['url'] . "?term=" . $search_term; ?>">
+                                    <?php echo $query[$i]['title']; ?>
+                                </a>
+                            </h2>
+                            <p>
+                                <?php echo $query[$i]['context_segment']; ?>
+                            </p>
+                        </div>
+                    <?php } ?>
+                <?php } else { ?>
+                    <p><?php echo $message; ?></p>
                 <?php } ?>
-            <?php } else { ?>
-                <p><?php echo $message; ?></p>
-            <?php } ?>
-            
-            <div id="pagination-container" style="<?php echo $style; ?>">
-                <span id="previous" class="invisible previous">Previous</span>
-                <?php
-                    for ($i = 1;$i <= $pageCount; $i++) {
-                        $selectedClass = $i == 1 ? ' active' : '';
-                        echo '<span id="page-' . $i . '" class="pagination-link' . $selectedClass . '">' . $i. '</span>';
-                    }
-                ?>
-                <span id="next" class="next">Next</span>
-            </div>
 
+                <div id="pagination-container" style="<?php echo $style; ?>">
+                    <span id="previous" class="invisible previous">Previous</span>
+                    <?php
+                        for ($i = 1;$i <= $pageCount; $i++) {
+                            $selectedClass = $i == 1 ? ' active' : '';
+                            echo '<span id="page-' . $i . '" class="pagination-link' . $selectedClass . '">' . $i. '</span>';
+                        }
+                    ?>
+                    <span id="next" class="next">Next</span>
+                </div>
+            </div>
         </div>
     </div>
 

@@ -4,6 +4,7 @@
                 </div>
 
                 <div id="menu-container">
+                    <div id="navigation-container" dojoType="pp.sidebar.navigation"></div>
                     <div class="search-container">
                         <br/>
                         <form method="GET" action="/search">
@@ -12,8 +13,6 @@
                             <input value="Search" type="submit" />
                         </form>
                     </div>
-
-                    <div id="navigation-container" dojoType="pp.sidebar.navigation"></div>
                     <div id="user-container">
                         <?php
                             $session = $this->session;
