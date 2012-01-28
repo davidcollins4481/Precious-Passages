@@ -233,22 +233,34 @@ ul li {
     height: 120px;
 }
 
-#mainbar .homeLeft {
+#mainbar .homeLimg {
+    float:left;
     padding:5px;
     border:1px solid #eeeeee;
-    margin-left:90px;
     margin-top:20px;
-    margin-bottom:20px;
-    height: 120px;
+    margin-bottom:25px;
+    height: 185px;
 }
 
-#mainbar .homeRight {
+#mainbar .homeRimg {
+    float:right;
     padding:5px;
     border:1px solid #eeeeee;
-    margin-left:70px;
     margin-top:20px;
-    margin-bottom:20px;
-    height: 120px;
+    margin-bottom:25px;
+    height: 185px;
+}
+
+#mainbar .homeMSTMimg {
+    padding:5px;
+    border:1px dotted #eeeeee;
+    margin-top:10px;
+    margin-bottom:10px;
+    width: 400px;
+}
+
+#mainbar .homep {
+padding-top: 20px;
 }
 
 #footer {
