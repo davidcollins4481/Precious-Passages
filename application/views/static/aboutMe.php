@@ -17,19 +17,16 @@
                 
                 <table>
                     <tr>
-                        <td>
-                            Erika Obert, DEM
+                        <td class="aboutTbl">
+                            <a href="/d/erikaBio.php">
+                                Erika Obert, DEM <img src="/images/resources/erika2.jpg" alt="Erika Obert" title="Erika Obert" class="aboutimg" />
+                            </a>
                         </td>
-                        <td>
-                            <img src="/images/resources/erika.jpg" alt="Erika Obert" title="Erika Obert" width="100px" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Alyssa Taylor, DEM
-                        </td>
-                        <td>
-                            <img src="/images/resources/alyssa.jpg" alt="Alyssa Taylor" title="Alyssa Taylor" width="100px" />
+                        <td width="50"></td>
+                        <td class="aboutTbl">
+                            <a href="/d/alyssaBio.php">
+                                Alyssa Taylor, DEM <img src="/images/resources/alyssa.jpg" alt="Alyssa Taylor" title="Alyssa Taylor" class="aboutimg" />
+                            </a>
                         </td>
                     </tr>
                 </table>

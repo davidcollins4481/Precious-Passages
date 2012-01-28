@@ -62,12 +62,12 @@ ul li {
         #menu .link-container {
             position: relative;
             top: -207px;
-            left: -190px;
+            left: -170px;
         }
         
         @media screen and (-webkit-min-device-pixel-ratio:0) {
             #menu .link-container {
-                left: -229px;
+                left: -212px;
             }
         }
 
@@ -220,6 +220,17 @@ ul li {
 
 #mainbar .contactTbl {
     width:225px;
+}
+
+#mainbar .aboutTbl {
+    width:160px;
+}
+
+#mainbar .aboutimg {
+    width:40px;
+    float:right;
+    border:1px double #eeeeee;
+    padding:2px;
 }
 
 #mainbar h1 {
