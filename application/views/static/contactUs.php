@@ -28,7 +28,7 @@
                             (330) 577-5180
                             <br/>
                             <br/>
-                            <a href="mailto:">
+                            <a href="mailto:bornintopeace@gmail.com">
                                 Alyssa Taylor, DEM
                             </a>
                         </td>
@@ -43,66 +43,53 @@
                             (330) 577-5180
                             <br/>
                             <br/>
-                            <a href="mailto:">
+                            <a href="mailto:bornintopeace@gmail.com">
                                 Alyssa Taylor, DEM
                             </a>
                         </td>
                     </tr>
-                    <tr>
+                    <!--<tr>
                         <td class="contactTbl">
                             <h3>
                                 Belly Casting
                             </h3>
-                            <!--<a href="mailto:">
+                            <a href="mailto:">
                                 
-                            </a>-->
+                            </a>
                         </td>
                         <td class="contactTbl">
                             <h3>
                                 Photography
                             </h3>
-                            <!--<a href="">
+                            <a href="">
                                 
-                            </a>-->
+                            </a>
                         </td>
-                    </tr>
-                    <tr>
-                        <td class="contactTbl">
-                            
-                        </td>
-                        <td class="contactTbl">
-                            
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="contactTbl">
-                            
-                        </td>
-                        <td class="contactTbl">
-                            
-                        </td>
-                    </tr>
+                    </tr>-->
                 </table>
                 
                 <hr/>
                 
-                <table>
+                <!--<table>
                     <tr>
                         <td class="contactTbl">
                             <h3>
                                 Office Address
                             </h3>
                             **Some Address in Akron**
-                            <br/>
-                            **map link**
-                            
                         </td>
                         <td class="contactTbl">
                             <h3>
                                 Mailing Address
                             </h3>
-                            **the address you would like to recieve mail at if different from office 
-                            address**
+                            **the address you would like to recieve mail at if different from 
+                            office address**
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Office Location
+                            <iframe width="450" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=345+Poplar+Ave+NW,+Canton,+OH+44708&amp;aq=0&amp;oq=345+Popla&amp;sll=37.0625,-95.677068&amp;sspn=37.735377,56.513672&amp;ie=UTF8&amp;hq=&amp;hnear=345+Poplar+Ave+NW,+Canton,+Ohio+44708&amp;t=m&amp;ll=40.802635,-81.420965&amp;spn=0.019491,0.025749&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=345+Poplar+Ave+NW,+Canton,+OH+44708&amp;aq=0&amp;oq=345+Popla&amp;sll=37.0625,-95.677068&amp;sspn=37.735377,56.513672&amp;ie=UTF8&amp;hq=&amp;hnear=345+Poplar+Ave+NW,+Canton,+Ohio+44708&amp;t=m&amp;ll=40.802635,-81.420965&amp;spn=0.019491,0.025749&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left" target="_blank">View Larger Map</a></small>
                         </td>
                     </tr>
                 </table>
@@ -117,15 +104,9 @@
                     during the following hours:
                     <br/>
                     **Your office hours**
-                </p>
+                </p>-->
                 
-                <hr/>
                 
-                <h3>
-                    Map to Our Office
-                </h3>
-                
-                <iframe width="220" height="220" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=345+Poplar+Ave+NW,+Canton,+OH+44708&amp;aq=0&amp;oq=345+Popla&amp;sll=37.0625,-95.677068&amp;sspn=37.735377,56.513672&amp;ie=UTF8&amp;hq=&amp;hnear=345+Poplar+Ave+NW,+Canton,+Ohio+44708&amp;t=m&amp;ll=40.802635,-81.420965&amp;spn=0.019491,0.025749&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=345+Poplar+Ave+NW,+Canton,+OH+44708&amp;aq=0&amp;oq=345+Popla&amp;sll=37.0625,-95.677068&amp;sspn=37.735377,56.513672&amp;ie=UTF8&amp;hq=&amp;hnear=345+Poplar+Ave+NW,+Canton,+Ohio+44708&amp;t=m&amp;ll=40.802635,-81.420965&amp;spn=0.019491,0.025749&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left" target="_blank">View Larger Map</a></small>
             </div>
         </div>
         <!-- /unique -->
