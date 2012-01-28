@@ -36,3 +36,67 @@ php_value upload_max_filesize 20M
 php_value post_max_size 20M
 php_value max_execution_time 200
 php_value max_input_time 200
+
+RedirectMatch "abstract_about_prenatal_penicill\.htm" /d/prenatalPenicillin.php
+RedirectMatch "all_about_hypnobirthing\.htm" /d/hypnobirthing.php
+RedirectMatch "anti-d exploring midwifery knowledge\.htm" /d/antiD.php
+RedirectMatch "Aromatherapy\.htm" /d/aromatherapy.php
+RedirectMatch "Articles\.htm" /d/articles.php
+RedirectMatch "Birth Affirmations\.htm" /d/birthAffirmations.php
+RedirectMatch "Birthing Methods\.htm" /d/birthingMethods.php
+RedirectMatch "Birth Plan\.htm" /d/birthPlans.php
+RedirectMatch "birthworks\.htm" /d/birthworks.php
+RedirectMatch "Books\.htm" /d/books.php
+RedirectMatch "bradley_method\.htm" /d/bradleyMethod.php
+RedirectMatch "Breastfeeding\.htm" /d/breastfeeding.php
+RedirectMatch "breech_presentation_caesarean_op\.htm" /d/breechPresentation.php
+RedirectMatch "Cascade of Interventions\.htm" /d/interventionCascade.php
+RedirectMatch "cesarean_section\.htm" /d/cesareanSecion.php
+RedirectMatch "choosing_a_childbirth_educator\.htm" /d/chooseAnEducator.php
+RedirectMatch "choosing_exercise_activities_dur\.htm" /d/choosingActivities.php
+RedirectMatch "CIMS Fact Sheet on Induction\.htm" /d/cimsFactSheet.php
+RedirectMatch "circumcision\.htm" /d/circumcision.php
+RedirectMatch "Doula Myths -vs- Doula Realities\.htm" /d/doulaMythsVsReality.php
+RedirectMatch "Doula Service\.htm" /d/doulaServices.php
+RedirectMatch "easing_labor_pain\.htm" /d/easingLaborPain.php
+RedirectMatch "eight_ways_to_increase_the_safet\.htm" /d/eightWays.php
+RedirectMatch "epidurals_for_labor_pain\.htm" /d/epiduralsForPain.php
+RedirectMatch "Episiotomy\.htm" /d/episiotomy.php
+RedirectMatch "exercise_during_pregnancy\.htm" /d/exercise.php
+RedirectMatch "Gestational Diabetes\.htm" /d/gestationalDiabetes.php
+RedirectMatch "herbal_dictionary\.htm" /d/herbalDictionary.php
+RedirectMatch "Herbs to Avoid During Pregnancy\.htm" /d/herbsToAvoid.php
+RedirectMatch "Homebirth\.htm" /d/homeBirth.php
+RedirectMatch "hospital versus homebirth cost comparison\.htm" /d/costComparison.php
+RedirectMatch "Hypnobabies\.htm" /d/hypnobabies.php
+RedirectMatch "hypnosis_for_childbirth\.htm" /d/hypnosisForChildbirth.php
+RedirectMatch "index\.htm" /
+RedirectMatch "index\\.html" /
+RedirectMatch "induction\.htm" /d/induction.php
+RedirectMatch "informed consent vaccinations\.htm" /d/informedConsent.php
+RedirectMatch "kangaroo_care\.htm" /d/kangarooCare.php
+RedirectMatch "laborade\.htm" /d/laborade.php
+RedirectMatch "lamaze_method__approved_by_t\.htm" /d/lamaze.php
+RedirectMatch "Massage Techniques for Childbirth\.htm" /d/massageTechniques.php
+RedirectMatch "Midwifery Service\.htm" /d/midwiferyServices.php
+RedirectMatch "nature_and_management_of_lab\.htm" /d/natureAndManage.php
+RedirectMatch "newborn_screening\.htm" /d/newbornScreening
+RedirectMatch "Nutrition\.htm" /d/nutrition.php
+RedirectMatch "Pregnancy and Birth\.htm" /d/pregnancyAndBirth.php
+RedirectMatch "rhogam1\.htm" /d/rhogam.php
+RedirectMatch "SAMPLE PLAN 1\.htm" /birthplans/samplePlanOne
+RedirectMatch "SAMPLE PLAN 2\.htm" /birthplans/samplePlanTwo
+RedirectMatch "TENS\.htm" /d/tens.php
+RedirectMatch "testimonials\.htm" /d/testimonials.php
+RedirectMatch "The Basic Diet\.htm" /d/basicDiet.php
+RedirectMatch "The Belief in Vaccines\.htm" /d/vaccines.php
+RedirectMatch "The Lacto-Ovo Diet\.htm" /d/lactoDiet.php
+RedirectMatch "The Pain Medication Cesarean Section Connection\.htm" /d/painMedSecConn.php
+RedirectMatch "The Vegan Diet\.htm" /d/veganDiet.php
+RedirectMatch "twins\.htm" /d/twins.php
+RedirectMatch "Vaccines\.htm" /d/vaccines.php
+RedirectMatch "VBAC\.htm" /d/vbac.php
+RedirectMatch "Vitamin K\.htm" /d/vitaminK.php
+RedirectMatch "vitamins\.htm" /d/vitamins.php
+RedirectMatch "Waterbirth Basics\.htm" /d/waterbirthBasics.php
+RedirectMatch "waterbirth\.htm" /d/waterbirth.php
