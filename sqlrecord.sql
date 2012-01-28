@@ -1,13 +1,5 @@
--- GRANT SELECT, INSERT, DELETE,UPDATE ON precious_passage.* TO dev@'localhost' IDENTIFIED BY 'user';
 
--- needed?
-CREATE DATABASE precious_passage
-CHARACTER SET utf8
-DEFAULT CHARACTER SET utf8
-COLLATE utf8_unicode_ci
-DEFAULT COLLATE utf8_unicode_ci; 
-
-use precious_passage;
+use preciouspassage;
 
 -- create blog
 CREATE TABLE blog (
@@ -50,4 +42,4 @@ CREATE TABLE `ci_sessions` (
   PRIMARY KEY (`session_id`)
 ) DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;;
 
-GRANT SELECT, INSERT, DELETE,UPDATE ON precious_passage.* TO dev@'localhost' IDENTIFIED BY 'user';
+
