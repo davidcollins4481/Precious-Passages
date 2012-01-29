@@ -113,6 +113,10 @@
                 
                 <br/>
                 
+                <a href="http://www.facebook.com/pages/Precious-Passage-Birth-Services/52022083462" target="_blank">
+                    <img src="/images/resources/facebook.png" alt="facebook" title="facebook" class="facebook" />
+                </a>
+                
                 <h5>
                     *Note: The opinions found on this site are my own and should not be 
                     construed as endorsing or promoting any organization, person, or method.
