@@ -19,7 +19,7 @@
                     <tr>
                         <td class="contactTbl">
                             <h3>
-                                Midwifery &amp; Doula Services
+                                Midwifery Services
                             </h3>
                             <a href="mailto:erikao@preciouspassage.com">
                                 Erika Obert, DEM
@@ -31,10 +31,12 @@
                             <a href="mailto:bornintopeace@gmail.com">
                                 Alyssa Taylor, DEM
                             </a>
+                            <br/>
+                            (330) 400-1217
                         </td>
                         <td class="contactTbl">
                             <h3>
-                                Placental Encapsulation
+                                Doula Services
                             </h3>
                             <a href="mailto:erikao@preciouspassage.com">
                                 Erika Obert, DEM
@@ -46,50 +48,59 @@
                             <a href="mailto:bornintopeace@gmail.com">
                                 Alyssa Taylor, DEM
                             </a>
+                            <br/>
+                            (330) 400-1217
                         </td>
                     </tr>
-                    <!--<tr>
+                    <tr>
                         <td class="contactTbl">
                             <h3>
                                 Belly Casting
                             </h3>
-                            <a href="mailto:">
-                                
+                            <a href="mailto:stefoh@aol.com">
+                                Stefani Glass
                             </a>
+                            <br/>
+                            (330) 304-3544
                         </td>
                         <td class="contactTbl">
                             <h3>
                                 Photography
                             </h3>
-                            <a href="">
-                                
+                            <a href="mailto:stefoh@aol.com">
+                                Stefani Glass
                             </a>
+                            <br/>
+                            (330) 304-3544
                         </td>
-                    </tr>-->
+                    </tr>
                 </table>
                 
                 <hr/>
                 
-                <!--<table>
+                <table>
                     <tr>
                         <td class="contactTbl">
                             <h3>
                                 Office Address
                             </h3>
-                            **Some Address in Akron**
+                            572 W Market Street Suite #5
+                            <br/>
+                            Akron, Ohio 44302
                         </td>
                         <td class="contactTbl">
                             <h3>
                                 Mailing Address
                             </h3>
-                            **the address you would like to recieve mail at if different from 
-                            office address**
+                            7894 Nicodemus Rd.
+                            <br/>
+                            Ravenna, Ohio 44266
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
                             Office Location
-                            <iframe width="450" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=345+Poplar+Ave+NW,+Canton,+OH+44708&amp;aq=0&amp;oq=345+Popla&amp;sll=37.0625,-95.677068&amp;sspn=37.735377,56.513672&amp;ie=UTF8&amp;hq=&amp;hnear=345+Poplar+Ave+NW,+Canton,+Ohio+44708&amp;t=m&amp;ll=40.802635,-81.420965&amp;spn=0.019491,0.025749&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=345+Poplar+Ave+NW,+Canton,+OH+44708&amp;aq=0&amp;oq=345+Popla&amp;sll=37.0625,-95.677068&amp;sspn=37.735377,56.513672&amp;ie=UTF8&amp;hq=&amp;hnear=345+Poplar+Ave+NW,+Canton,+Ohio+44708&amp;t=m&amp;ll=40.802635,-81.420965&amp;spn=0.019491,0.025749&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left" target="_blank">View Larger Map</a></small>
+                            <iframe width="450" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=572+W+Market+Street+++Suite+%235+++Akron+Ohio+44302&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=37.735377,56.513672&amp;ie=UTF8&amp;hq=&amp;hnear=572+W+Market+St,+Akron,+Ohio+44302&amp;t=m&amp;ll=41.092419,-81.536407&amp;spn=0.019406,0.025749&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=572+W+Market+Street+++Suite+%235+++Akron+Ohio+44302&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=37.735377,56.513672&amp;ie=UTF8&amp;hq=&amp;hnear=572+W+Market+St,+Akron,+Ohio+44302&amp;t=m&amp;ll=41.092419,-81.536407&amp;spn=0.019406,0.025749&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left" target="_blank">View Larger Map</a></small>
                         </td>
                     </tr>
                 </table>
@@ -97,15 +108,18 @@
                 <hr/>
                 
                 <h3>
-                    Office Hours
+                    Office Hours &amp; Meetings
                 </h3>
                 <p>
-                    Our office hours are by appointment only. Appointments may be scheduled
-                    during the following hours:
+                    Our office hours are by appointment only.
                     <br/>
-                    **Your office hours**
-                </p>-->
-                
+                    Appointments may be scheduled Sunday - Saturday between 10am and 7pm.
+                    <br/>
+                    <br/>
+                    We plan to begin holding group meetings monthly by appointment. 
+                    <br/>
+                    More details on this will follow soon.
+                </p>
                 
             </div>
         </div>

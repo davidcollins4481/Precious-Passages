@@ -341,8 +341,8 @@ class d extends CI_Controller {
         $this->load->view('static/testimonials.php');
     }
     
-    public function aboutMe() {
-        $this->load->view('static/aboutMe.php');
+    public function aboutUs() {
+        $this->load->view('static/aboutUs.php');
     }
     
     public function contactUs() {
