@@ -1,5 +1,22 @@
+<?php
+    $images = array(
+        "/images/homeimgs/alyssa2.jpg",
+        "/images/homeimgs/alyssa.jpg",
+        "/images/homeimgs/ana baby_edited.JPG",
+        "/images/homeimgs/dreamstimeweb_554857.jpg",
+        "/images/homeimgs/dreamtime.jpg",
+        "/images/homeimgs/erika.jpg",
+        "/images/homeimgs/index.1.gif",
+        "/images/homeimgs/Pictures 19 015.jpg",
+        "/images/homeimgs/Pictures 19 024.jpg"
+    );
+?>
+
 <?php $this->load->view("includes/doctype_html.php") ?>
 <?php $this->load->view("includes/head_start.php", array("title" => "Precious Passage Birtrh Services")) ?>
+
+<script type="text/javascript" src="/js/pp/imageSwitcher.js"></script>
+
 <?php $this->load->view("includes/head_end.php") ?>
 <?php $this->load->view("includes/body_start.php") ?>
 <?php $this->load->view("includes/globalnav.php") ?>
@@ -23,7 +40,7 @@
                     <a name="intro" id="intro"></a>
                     "Supporting women, nurturing families"
                 </h1>
-                
+
                 <p class="homep">
                     Erika Obert founded Precious Passage Birth Services in 2004 to serve 
                     birthing families in the Northeast Ohio area as a doula.  Since that 
@@ -33,15 +50,17 @@
                     woman's life.  It is our heartfelt desire to give you the gift of a birth 
                     experience that you will want to remember.
                 </p>
-                
-                <img src="/images/resources/erika.jpg" alt="Erika" title="Erika" class="homeLimg" />
-                
-                <img src="/images/resources/alyssa2.jpg" alt="Erika" title="Erika" class="homeRimg" />
-                
+
+                <div class="jsnipImageSwitcher">
+                    <?php foreach ($images as $image) { ?>
+                        <img src="<?php echo $image?>" />
+                    <?php } ?>
+                </div>
+
                 <h2>
                     Precious Passage offers these services:
                 </h2>
-                
+
                 <ul>
                     <li>
                         Homebirth Midwifery
