@@ -42,7 +42,7 @@
                 <?php } ?>
 
                 <?php if (!$query) { ?>
-                    <p>No Entries</p>
+                    <p><i>No Entries Yet</i></p>
                 <?php } ?>
 
                 <?php foreach ($query as $entry) { ?>

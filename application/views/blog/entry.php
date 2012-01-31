@@ -1,5 +1,13 @@
 <?php $this->load->view("includes/doctype_html.php") ?>
-<?php $this->load->view("includes/head_start.php") ?>
+<?php $this->load->view("includes/head_start.php", array("title" => $post->title)) ?>
+
+<meta property="og:title" content="<?php echo $post->title;?>"/>
+<meta property="og:site_name" content="preciouspassage.com"/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content="http://www.preciouspassage.com/images/resources/logo.jpg"/>
+<meta property="og:description" content="<?php echo $post->title;?>"/> 
+<meta property="fb:admins" content="52022083462"/>
+
 <?php $this->load->view("includes/head_end.php") ?>
 <?php $this->load->view("includes/body_start.php") ?>
 <div id="fb-root"></div>

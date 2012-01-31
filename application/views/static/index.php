@@ -13,7 +13,7 @@
 ?>
 
 <?php $this->load->view("includes/doctype_html.php") ?>
-<?php $this->load->view("includes/head_start.php", array("title" => "Precious Passage Birtrh Services")) ?>
+<?php $this->load->view("includes/head_start.php", array("title" => "Precious Passage Birth Services")) ?>
 
 <script type="text/javascript" src="/js/pp/imageSwitcher.js"></script>
 

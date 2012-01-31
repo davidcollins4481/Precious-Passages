@@ -62,19 +62,23 @@ ul li {
         #menu .link-container {
             position: relative;
             top: -207px;
-            left: -170px;
+            left: -174px;
         }
         
         @media screen and (-webkit-min-device-pixel-ratio:0) {
             #menu .link-container {
-                left: -212px;
+                left: -199px;
+            }
+
+            #menu a {
+                padding: 7px !important;
             }
         }
 
 #menu a {
     text-decoration:none;
     color: #666;
-    padding:7px;
+    padding:3px;
     padding-top:20px;
     padding-bottom:20px;
     font-weight: normal;
