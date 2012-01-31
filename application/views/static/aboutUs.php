@@ -12,7 +12,7 @@
             <div id="mainbar">
                 <h1>
                     <a name="intro" id="intro"></a>
-                    Meet the Midwives
+                    Meet Our Midwives
                 </h1>
                 
                 <table>
@@ -26,6 +26,20 @@
                         <td class="aboutTbl">
                             <a href="/d/alyssaBio.php">
                                 Alyssa Taylor, DEM <img src="/images/resources/alyssa3.jpg" alt="Alyssa Taylor" title="Alyssa Taylor" class="aboutimg" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                
+                <h1>
+                    Meet Photographer
+                </h1>
+                
+                <table>
+                    <tr>
+                        <td class="aboutTbl">
+                            <a href="mailto:stefoh@aol.com">
+                                Stefani Glass <img src="/images/resources/stefani2.jpg" alt="Stefani Glass" title="Stefani Glass" class="aboutimg" />
                             </a>
                         </td>
                     </tr>

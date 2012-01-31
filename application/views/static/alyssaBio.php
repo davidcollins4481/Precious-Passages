@@ -18,7 +18,7 @@
                     Direct Entry Midwife
                 </h3>
                 <p>
-                    <img src="/images/resources/alyssa.jpg" alt="Alyssa Taylor" title="Alyssa Taylor" class="articleimg" />
+                    <img src="/images/resources/alyssa3.jpg" alt="Alyssa Taylor" title="Alyssa Taylor" class="articleimg" />
                     Alyssa started her midwifery journey after the birth or her oldest 
                     daughter inspired her to help other families have a better birth 
                     experience than her own.  Previously, Alyssa studied Business and 
