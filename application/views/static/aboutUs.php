@@ -19,13 +19,13 @@
                     <tr>
                         <td class="aboutTbl">
                             <a href="/d/erikaBio.php">
-                                Erika Obert, DEM <img src="/images/resources/erika2.jpg" alt="Erika Obert" title="Erika Obert" class="aboutimg" />
+                                Erika Obert, DEM <img src="/images/resources/erika3.jpg" alt="Erika Obert" title="Erika Obert" class="aboutimg" />
                             </a>
                         </td>
                         <td width="50"></td>
                         <td class="aboutTbl">
                             <a href="/d/alyssaBio.php">
-                                Alyssa Taylor, DEM <img src="/images/resources/alyssa.jpg" alt="Alyssa Taylor" title="Alyssa Taylor" class="aboutimg" />
+                                Alyssa Taylor, DEM <img src="/images/resources/alyssa3.jpg" alt="Alyssa Taylor" title="Alyssa Taylor" class="aboutimg" />
                             </a>
                         </td>
                     </tr>
