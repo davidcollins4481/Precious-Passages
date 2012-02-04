@@ -10,7 +10,6 @@ class MY_Loader extends CI_Loader {
     {
         parent::__construct();
 
-        //$this->CI =& get_instance();
         $agent = load_class('User_agent');
         $mobile = $agent->is_mobile || $_COOKIE["mobile"];
 

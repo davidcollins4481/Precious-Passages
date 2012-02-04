@@ -1,0 +1,36 @@
+/* Android Portrait | iPhone Landscape */
+@media screen and (min-width: 480px)
+{
+    #wrapper {width: 460px; }
+}
+
+/* Android Landscape */
+@media screen and (min-width: 481px)
+{
+    #wrapper {width: 780px; }
+}
+
+/* home page */
+ul.navigation {
+    padding-left: 0px;
+}
+
+ul.navigation li {
+    border-top: 1px solid #eee;
+    list-style-type: none;
+    background-color: #F9FFED;
+    padding: 5px 20px 5px 20px;
+}
+
+ul.navigation li.submenu-item {
+    background: url("/images/backgrounds/submenua.gif") no-repeat 200px 10px #F9FFED;
+}
+
+ul.subnav {
+    padding-left: 0;
+}
+
+ul.subnav li {
+    border: none;
+}
+
