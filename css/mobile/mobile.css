@@ -1,13 +1,18 @@
-/* Android Portrait | iPhone Landscape */
-@media screen and (min-width: 480px)
-{
-    #wrapper {width: 460px; }
+body {
+    font-size: 14px;
+    margin: 0;
 }
 
-/* Android Landscape */
-@media screen and (min-width: 481px)
-{
-    #wrapper {width: 780px; }
+a {
+    color:#4D87CE;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+#wrapper { width: 320px; margin: 0 auto;}
+#menu {
+    background-color: #F9FFED;
+    border-bottom: 1px solid #EEE;
 }
 
 /* home page */
@@ -22,15 +27,58 @@ ul.navigation li {
     padding: 5px 20px 5px 20px;
 }
 
-ul.navigation li.submenu-item {
-    background: url("/images/backgrounds/submenua.gif") no-repeat 200px 10px #F9FFED;
+ul.navigation a.menu-item {
+    background: url("/images/backgrounds/submenua.gif") no-repeat 200px 10px;
+    display: block;
+    padding: 5px 20px 5px 20px;
+    border-bottom: 1px solid #EEE;
 }
 
 ul.subnav {
     padding-left: 0;
+    display: none;
 }
 
 ul.subnav li {
     border: none;
 }
 
+/* home page */
+.jsnipImageSwitcher {
+    width: 320px;
+    text-align: center;
+    
+}
+
+    .jsnipImageSwitcher img {
+        height: 225px;
+        width: 320px;
+    }
+
+.search-container {
+    padding: 0 10px 10px 10px;
+    float: left;
+    width: 300px;
+}
+
+    .search-container input[type="input"] {
+        width: 75%;
+        border: 1px solid #eee;
+        float: left;
+        height: 17px;
+    }
+
+    .search-container input[type="image"] {
+        float: left;
+        padding-left: 5px;
+    }
+
+#footer .link-container {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+    #footer .link-container a {
+        padding: 0 10px;
+    }
+    

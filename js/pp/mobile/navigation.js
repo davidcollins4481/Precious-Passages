@@ -25,12 +25,12 @@ dojo.declare(
                 dataKey: "resources"
             });
         },
-        
+
         _initMenu: function(args) {
             var data = this.dataSource[args.dataKey];
             
             var menuTitle = dojo.doc.createElement("a");
-            dojo.addClass(menuTitle, "submenu-item");
+            dojo.addClass(menuTitle, "menu-item");
             menuTitle.innerHTML = args.dataKey;
             this.containerNode.appendChild(menuTitle);
             
@@ -47,6 +47,7 @@ dojo.declare(
                 ul.appendChild(tempMenuTitle);
                 
                 var tempUl = dojo.doc.createElement("ul");
+                dojo.addClass(tempUl, "subnav");
                 dojo.place(tempUl, tempMenuTitle, "after" );
                 dojo.forEach(links, function(l) {
                     var li = dojo.doc.createElement("li");
@@ -55,19 +56,6 @@ dojo.declare(
                 });
                 console.log(name);
             }
-        },
-
-        _loadDataSource: function() {
-            var self = this;
-            var minute = new Date().getMinutes();
-            dojo.xhrGet({
-                url: "/js/pp/links.json?cachebuster=" + minute,
-                handleAs: "json",
-                handle: function(data){
-                    self.dataSource = data;
-                    self.init();
-                }
-            });
         }
     }
 );
