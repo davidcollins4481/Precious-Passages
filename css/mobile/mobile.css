@@ -1,5 +1,5 @@
 body {
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
 }
 
@@ -28,7 +28,7 @@ ul.navigation li {
 }
 
 ul.navigation a.menu-item {
-    background: url("/images/backgrounds/submenua.gif") no-repeat 200px 10px;
+    background: url("/images/backgrounds/submenua.gif") no-repeat 285px 10px;
     display: block;
     padding: 5px 20px 5px 20px;
     border-bottom: 1px solid #EEE;
