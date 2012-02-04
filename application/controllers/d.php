@@ -1,11 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class d extends CI_Controller {
-
     public function index() {
-        $this->load->library("user_agent");
+        $agent = load_class('User_agent');
 
-        if ($this->agent->is_mobile || $_COOKIE["mobile"]) {
+        if ($agent->is_mobile || $_COOKIE["mobile"]) {
             $this->load->view('mobile_index.php');
         } else {
             $this->load->view('static/index.php');

@@ -7,6 +7,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=<?php echo config_item('charset');?>" />
     <meta name="keywords" content="<?php echo $keywords ?>">
+    <meta name="viewport" content="width=320;" />
     <title><?php echo $t ?></title>
         <?php $this->load->view("includes/css.php") ?>
         <?php $this->load->view("includes/js.php") ?>
