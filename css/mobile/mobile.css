@@ -16,6 +16,10 @@ a {
     border-bottom: 1px solid #EEE;
 }
 
+#content {
+    margin: 0 10px 10px 10px;
+}
+
 /* home page */
 ul.navigation {
     padding-left: 0px;

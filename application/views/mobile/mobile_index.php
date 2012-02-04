@@ -1,11 +1,8 @@
 <?php
     $images = array(
-        "/images/homeimgs/ana baby_edited.JPG",
         "/images/homeimgs/dreamstimeweb_554857.jpg",
         "/images/homeimgs/dreamtime.jpg",
         "/images/homeimgs/erika.jpg",
-        "/images/homeimgs/Pictures 19 015.jpg",
-        "/images/homeimgs/Pictures 19 024.jpg"
     );
 ?>
 
