@@ -38,6 +38,16 @@ dojo.declare(
             dojo.addClass(ul, "subnav");
             dojo.place(ul, menuTitle, "after");
             
+            dojo.connect(menuTitle, "onclick", function(e) {
+
+                var currentStyle = dojo.style(ul, "display");
+                var nextStyle = currentStyle === "block" ? "none" : "block";
+
+                dojo.style(ul, {
+                    display: nextStyle || "block"
+                });
+            });
+
             for (submenu in data) {
                 var name = submenu;
                 var links = data[name];
@@ -45,13 +55,26 @@ dojo.declare(
                 var tempMenuTitle = dojo.doc.createElement("a");
                 tempMenuTitle.innerHTML = name;
                 ul.appendChild(tempMenuTitle);
-                
+
                 var tempUl = dojo.doc.createElement("ul");
                 dojo.addClass(tempUl, "subnav");
                 dojo.place(tempUl, tempMenuTitle, "after" );
+                ul.appendChild(tempMenuTitle);
+
+                dojo.connect(tempMenuTitle, "onclick", function(e) {
+                    var currentStyle = dojo.style(tempUl, "display");
+                    var nextStyle = currentStyle === "block" ? "none" : "block";
+                    dojo.style(tempUl, {
+                        display: nextStyle || "block"
+                    });
+                });
+
                 dojo.forEach(links, function(l) {
                     var li = dojo.doc.createElement("li");
-                    li.innerHTML = l.name;
+                    var internalLink = dojo.doc.createElement("a");
+                    internalLink.href = l.url;
+                    internalLink.innerHTML = l.name;
+                    li.appendChild(internalLink);
                     tempUl.appendChild(li);
                 });
                 console.log(name);

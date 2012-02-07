@@ -44,6 +44,10 @@ ul.subnav {
     display: none;
 }
 
+    ul.subnav a {
+        display: block;
+    }
+    
 ul.subnav li {
     border: none;
 }
