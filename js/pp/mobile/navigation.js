@@ -30,7 +30,7 @@ dojo.declare(
             var data = this.dataSource[args.dataKey];
             
             var menuTitle = dojo.doc.createElement("a");
-            dojo.addClass(menuTitle, "menu-item");
+            dojo.addClass(menuTitle, "menu-item one");
             menuTitle.innerHTML = args.dataKey;
             this.containerNode.appendChild(menuTitle);
             
@@ -39,7 +39,6 @@ dojo.declare(
             dojo.place(ul, menuTitle, "after");
             
             dojo.connect(menuTitle, "onclick", function(e) {
-
                 var currentStyle = dojo.style(ul, "display");
                 var nextStyle = currentStyle === "block" ? "none" : "block";
 
@@ -53,6 +52,8 @@ dojo.declare(
                 var links = data[name];
                 
                 var tempMenuTitle = dojo.doc.createElement("a");
+                dojo.addClass(tempMenuTitle, "menu-item two");
+
                 tempMenuTitle.innerHTML = name;
                 ul.appendChild(tempMenuTitle);
 
@@ -72,6 +73,7 @@ dojo.declare(
                 dojo.forEach(links, function(l) {
                     var li = dojo.doc.createElement("li");
                     var internalLink = dojo.doc.createElement("a");
+                    dojo.addClass(internalLink, "menu-item three");
                     internalLink.href = l.url;
                     internalLink.innerHTML = l.name;
                     li.appendChild(internalLink);

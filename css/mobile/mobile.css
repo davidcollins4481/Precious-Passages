@@ -29,15 +29,22 @@ ul.navigation li {
     border-top: 1px solid #eee;
     list-style-type: none;
     background-color: #F9FFED;
-    padding: 5px 20px 5px 20px;
 }
 
 ul.navigation a.menu-item {
-    background: url("/images/backgrounds/submenua.gif") no-repeat 285px 10px;
+    background: url("/images/backgrounds/submenua.gif") no-repeat 285px 13px;
     display: block;
-    padding: 5px 20px 5px 20px;
+    padding: 10px 20px;
     border-bottom: 1px solid #EEE;
 }
+
+    ul.navigation a.two {
+        padding-left: 50px;
+    }
+
+    ul.navigation a.three {
+        padding-left: 75px;
+    }
 
 ul.subnav {
     padding-left: 0;
