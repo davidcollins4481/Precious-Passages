@@ -34,17 +34,24 @@ ul.navigation li {
 ul.navigation a.menu-item {
     background: url("/images/backgrounds/submenua.gif") no-repeat 285px 13px;
     display: block;
-    padding: 10px 20px;
+    padding: 10px 0px;
     border-bottom: 1px solid #EEE;
     cursor: pointer;
 }
 
     ul.navigation a.two {
-        padding-left: 50px;
+        padding-left: 0px;
+        padding-bottom: 0px;
     }
 
     ul.navigation a.three {
         padding-left: 50px;
+    }
+
+    span.title-span {
+        padding-left: 25px;
+        display: block;
+        padding-bottom: 8px;
     }
 
 ul.subnav {

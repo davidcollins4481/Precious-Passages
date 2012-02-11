@@ -50,18 +50,21 @@ dojo.declare(
             for (submenu in data) {
                 var name = submenu;
                 var links = data[name];
-                
+
                 var tempMenuTitle = dojo.doc.createElement("a");
+                var titleSpan = dojo.doc.createElement("span");
+                dojo.addClass(titleSpan, "title-span");
+                tempMenuTitle.appendChild(titleSpan);
                 dojo.addClass(tempMenuTitle, "menu-item two");
 
-                tempMenuTitle.innerHTML = name;
+                titleSpan.innerHTML = name;
                 ul.appendChild(tempMenuTitle);
 
                 var tempUl = dojo.doc.createElement("ul");
                 dojo.addClass(tempUl, "subnav");
                 dojo.place(tempUl, tempMenuTitle, "last" );
                 ul.appendChild(tempMenuTitle);
-console.log("connecting " + name);
+
                 dojo.connect(tempMenuTitle, "onclick", function(e) {
                     var menuNav = dojo.query("ul.subnav", this)[0];
                     var currentStyle = dojo.style(menuNav, "display");
