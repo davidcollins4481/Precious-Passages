@@ -1,7 +1,7 @@
         <div id="footer">
             <div class="link-container">
                 <a href="/">home</a>
-                <a href="/gallery">gallery</a>
+                <!--<a href="/gallery">gallery</a>-->
                 <a href="/d/aboutUs">about</a><br/>
                 <a href="/blog">blog</a>
                 <a href="/d/testimonials">testimonials</a>

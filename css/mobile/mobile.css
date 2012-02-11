@@ -36,6 +36,7 @@ ul.navigation a.menu-item {
     display: block;
     padding: 10px 20px;
     border-bottom: 1px solid #EEE;
+    cursor: pointer;
 }
 
     ul.navigation a.two {
@@ -43,7 +44,7 @@ ul.navigation a.menu-item {
     }
 
     ul.navigation a.three {
-        padding-left: 75px;
+        padding-left: 50px;
     }
 
 ul.subnav {

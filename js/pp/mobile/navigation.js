@@ -59,13 +59,14 @@ dojo.declare(
 
                 var tempUl = dojo.doc.createElement("ul");
                 dojo.addClass(tempUl, "subnav");
-                dojo.place(tempUl, tempMenuTitle, "after" );
+                dojo.place(tempUl, tempMenuTitle, "last" );
                 ul.appendChild(tempMenuTitle);
-
+console.log("connecting " + name);
                 dojo.connect(tempMenuTitle, "onclick", function(e) {
-                    var currentStyle = dojo.style(tempUl, "display");
+                    var menuNav = dojo.query("ul.subnav", this)[0];
+                    var currentStyle = dojo.style(menuNav, "display");
                     var nextStyle = currentStyle === "block" ? "none" : "block";
-                    dojo.style(tempUl, {
+                    dojo.style(menuNav, {
                         display: nextStyle || "block"
                     });
                 });
@@ -79,7 +80,6 @@ dojo.declare(
                     li.appendChild(internalLink);
                     tempUl.appendChild(li);
                 });
-                console.log(name);
             }
         }
     }
