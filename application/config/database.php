@@ -42,9 +42,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'dev';
-$db['default']['password'] = 'user';
-$db['default']['database'] = 'precious_passage';
+$db['default']['username'] = 'frantic1_pp';
+$db['default']['password'] = '$r&D^87*yxgu';
+$db['default']['database'] = 'frantic1_pp';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
