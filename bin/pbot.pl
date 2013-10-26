@@ -6,20 +6,23 @@ use File::Basename;
 use DBI;
 
 # config
-my $content_directory = '/home/david/Projects/Precious-Passages/application/views/static';
-my $domain = 'http://david.preciouspassage.com';
+my $content_directory = '/Users/david/Projects/Precious-Passages/application/views/static';
+my $domain = 'http://preciouspassage.franticpedantic.com';
 my $out_file = "results.tmp";
 ###
 
 my $ua = LWP::UserAgent->new;
 my @results = ();
 
+my $count = 0;
 foreach my $file (glob "${content_directory}/*") {
     my $filename = basename($file);
+    $count++;
     # remove extension
     my $path = "/d/${filename}";
+    print "Parsing: $path\n";
     my $response = $ua->get("${domain}${path}");
-    
+    sleep 1; 
     if ($response->is_success) {
         my $content = $response->decoded_content;
         my $parsed = parse_page($content);
@@ -39,10 +42,17 @@ system("rm $out_file");
 
 # load results into the database
 sub load_index {
+    my $database = '';
+    my $hostname = '';
+    my $port = '';
+    my $user = '';
+    my $pass = '';
+
+    my $dsn = "DBI:mysql:database=$database;host=$hostname;port=$port"; 
     my $dbh = DBI->connect(
-        'DBI:mysql:precious_passage',
-        'dev',
-        'user'
+        $dsn,
+        $user,
+        $pass
     ) || die "Could not connect to database: $DBI::errstr";
 
     open(RESULTS, "$out_file") || die $!;
